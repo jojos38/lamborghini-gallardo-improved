@@ -18,21 +18,21 @@
         {"nodeWeight":0.5},
         {"selfCollision":false}
         {"group":"gallardo_exhaust"},
-        ["exh4rr",-0.68, 2.045, 0.24],
-        ["exh4r",-0.48, 2.105, 0.24],
-        ["exh4l", 0.48, 2.105, 0.24],
-        ["exh4ll", 0.68, 2.045, 0.24],
+        ["exh4rr",-0.72, 1.945, 0.34],
+        ["exh4r",-0.48, 1.945, 0.34],
+        ["exh4l", 0.48, 1.945, 0.34],
+        ["exh4ll", 0.72, 1.945, 0.34],
 
-        ["exh5rr",-0.67, 2.085, 0.34],
-        ["exh5r",-0.48, 2.145, 0.35],
-        ["exh5l", 0.48, 2.145, 0.35],
-        ["exh5ll", 0.67, 2.085, 0.34],
+        ["exh5rr",-0.72, 1.945, 0.34],
+        ["exh5r",-0.48, 1.945, 0.45],
+        ["exh5l", 0.48, 1.945, 0.45],
+        ["exh5ll", 0.72, 1.945, 0.45],
 
         //rigidifier
-        ["exh6r",-0.57, 1.96, 0.29],
-        ["exh6l", 0.57, 1.96, 0.29],
-        ["exh6rr",-0.58, 2.07, 0.29{"afterFireAudioCoef":0.75,"afterFireVisualCoef":0.5, "exhaustAudioMufflingCoef": 0}],
-        ["exh6ll", 0.58, 2.07, 0.29{"afterFireAudioCoef":0.75,"afterFireVisualCoef":0.5, "exhaustAudioMufflingCoef": 0}],
+        ["exh6r",-0.60, 1.80, 0.33],
+        ["exh6l", 0.60, 1.80, 0.33],
+        ["exh6rr",-0.60, 1.80, 0.45{"afterFireAudioCoef":0.75,"afterFireVisualCoef":0.5, "exhaustAudioMufflingCoef": 0}],
+        ["exh6ll", 0.60, 1.80, 0.45{"afterFireAudioCoef":0.75,"afterFireVisualCoef":0.5, "exhaustAudioMufflingCoef": 0}],
         {"group":""},
     ],
     "beams": [
