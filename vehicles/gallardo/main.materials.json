@@ -40,6 +40,86 @@
     "activeLayers": 2,
 	"version": 1.5
   },
+  "gallardo_paint.skin.glitter": {
+    "name": "gallardo_paint.skin.glitter",
+    "mapTo": "gallardo_paint.skin.glitter",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/gallardo/gallardo_b.color.dds",
+        "metallicFactor": 1,
+        "roughnessMap": "vehicles/gallardo/gallardo_r.data.dds"
+      },
+      {
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/gallardo/gallardo_cc.data.dds",
+        "colorPaletteMap": "/vehicles/gallardo/gallardo_p.color.dds",
+        "colorPaletteMapUseUV": 1,
+        "detailNormalMap": "/vehicles/gallardo/noise",
+        "detailNormalMapStrength": 0.65,
+        "detailScale": [
+          20,
+          40
+        ],
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/gallardo/gallardo_n.dds",
+        "opacityMap": "/vehicles/gallardo/gallardo_cc.data.dds"
+      },
+      {},
+      {}
+    ],
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2,
+	"version": 1.5
+  },
+  "gallardo_paint.skin.rain": {
+    "name": "gallardo_paint.skin.rain",
+    "mapTo": "gallardo_paint.skin.rain",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/gallardo/gallardo_b.color.dds",
+        "metallicFactor": 1,
+        "roughnessMap": "vehicles/gallardo/gallardo_r.data.dds"
+      },
+      {
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/gallardo/gallardo_cc.data.dds",
+        "colorPaletteMap": "/vehicles/gallardo/gallardo_p.color.dds",
+        "colorPaletteMapUseUV": 1,
+        "detailNormalMap": "/vehicles/gallardo/noise",
+        "detailNormalMapStrength": 0.65,
+        "detailScale": [
+          20,
+          40
+        ],
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/gallardo/gallardo_n.dds",
+        "opacityMap": "/vehicles/gallardo/gallardo_cc.data.dds"
+      },
+      {},
+      {}
+    ],
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2,
+	"version": 1.5
+  },
   "gallardo_paint.skin.vb": {
     "name": "gallardo_paint.skin.vb",
     "class": "Material",
@@ -1990,6 +2070,90 @@
     ],
     "mapTo": "gallardo_highbeam",
 	"activeLayers": 0
+  },
+   "gallardo_lcd1": {
+    "name": "gallardo_lcd1",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_lcd1",
+    "activeLayers": 1
+  },
+   "gallardo_lcd2": {
+    "name": "gallardo_lcd2",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_lcd2",
+    "activeLayers": 1
+  },
+   "gallardo_lcd3": {
+    "name": "gallardo_lcd3",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_lcd3",
+    "activeLayers": 1
+  },
+   "gallardo_lcd4": {
+    "name": "gallardo_lcd4",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_lcd4",
+    "activeLayers": 1
+  },
+   "gallardo_lcd5": {
+    "name": "gallardo_lcd5",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_lcd5",
+    "activeLayers": 1
+  },
+   "gallardo_lcd6": {
+    "name": "gallardo_lcd6",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_lcd6",
+    "activeLayers": 1
+  },
+   "lowhighbeam": {
+    "name": "lowhighbeam",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "lowhighbeam",
+    "activeLayers": 1
   },
   "gallardo_black": {
     "name": "gallardo_black",

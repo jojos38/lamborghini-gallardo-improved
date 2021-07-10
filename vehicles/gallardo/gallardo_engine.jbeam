@@ -411,7 +411,7 @@
     "slotType" : "gallardo_engine_ecu",
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
-        ["$revLimiterRPM", "range", "rpm", "Engine", 8000, 4500, 10000, "RPM Limit", "RPM where the rev limiter prevents further revving", {"stepDis":50}],
+        ["$revLimiterRPM", "range", "rpm", "Engine", 8000, 4500, 9000, "RPM Limit", "RPM where the rev limiter prevents further revving", {"stepDis":50}],
         ["$revLimiterCutTime", "range", "s", "Engine", 0.15, 0.01, 0.5, "RPM Limit Cut Time", "How fast the rev limiter cycles", {"stepDis":0.01}],
     ],
     "mainEngine":{

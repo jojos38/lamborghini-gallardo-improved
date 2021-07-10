@@ -20,43 +20,14 @@ local function reset()
 end
 
 local function updateGFX(dt)
-  gearIndex = electrics.values.gearIndex or 0
---First
-  if gearIndex >= 0.5 and gearIndex < 1.5 then
-    electrics.values['disp_1'] = 1
-  else
-    electrics.values['disp_1'] = 0
-  end
---Second
-  if gearIndex >= 1.5 and gearIndex < 2.5 then
-    electrics.values['disp_2'] = 1
-  else
-    electrics.values['disp_2'] = 0
-  end
---Third
-  if gearIndex >= 2.5 and gearIndex < 3.5 then
-    electrics.values['disp_3'] = 1
-  else
-    electrics.values['disp_3'] = 0
-  end
---Fourth
-  if gearIndex >= 3.5 and gearIndex < 4.5 then
-    electrics.values['disp_4'] = 1
-  else
-    electrics.values['disp_4'] = 0
-  end
---Fifth
-  if gearIndex >= 4.5 and gearIndex < 5.5 then
-    electrics.values['disp_5'] = 1
-  else
-    electrics.values['disp_5'] = 0
-  end
---Sixth
-  if gearIndex >= 5.5 then
-    electrics.values['disp_6'] = 1
-  else
-    electrics.values['disp_6'] = 0
-  end
+	if not electrics then return end
+	gearIndex = electrics.values.gearIndex or 0
+	electrics.values['disp_1'] = gearIndex == 1
+	electrics.values['disp_2'] = gearIndex == 2
+	electrics.values['disp_3'] = gearIndex == 3
+	electrics.values['disp_4'] = gearIndex == 4
+	electrics.values['disp_5'] = gearIndex == 5
+	electrics.values['disp_6'] = gearIndex == 6
 end
 
 -- public interface
