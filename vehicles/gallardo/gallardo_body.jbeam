@@ -106,22 +106,22 @@
          ["mesh", "[group]:", "nonFlexMaterials"],
          //body
          ["gallardo_body", ["gallardo_body","gallardo_roof"]],
-         ["gallardo_engbaycrap", ["gallardo_body"]],
-         ["gallardo_frunk", ["gallardo_body"]],
-         ["gallardo_heatshield", ["gallardo_body"]],
+         //["gallardo_engbaycrap", ["gallardo_body"]],
+         //["gallardo_frunk", ["gallardo_body"]],
+         //["gallardo_heatshield", ["gallardo_body"]],
          //stuff
-         ["gallardo_brakelines", ["gallardo_body","gallardo_hub_F_b"]],
+         //["gallardo_brakelines", ["gallardo_body","gallardo_hub_F_b"]],
          //interior
          ["gallardo_dash", ["gallardo_dash"]],
          ["gallardo_intmirror", ["gallardo_roof"]],
-         ["gallardo_sunvisor", ["gallardo_roof"]],
-         ["gallardo_rearint", ["gallardo_rearint"]],
+         //["gallardo_sunvisor", ["gallardo_roof"]],
+         //["gallardo_rearint", ["gallardo_rearint"]],
 
          //["gallardo_gauges", ["gallardo_dash"]],
          //["gallardo_screen", ["gallardo_dash"]],
          //temp
-         ["gallardo_subframe_F", ["gallardo_subframe_F","gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_uppermounts_F"]],
-         ["gallardo_subframe_R", ["gallardo_subframe_R","gallardo_lowermounts_R","gallardo_uppermounts_R"]],
+         //["gallardo_subframe_F", ["gallardo_subframe_F","gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_uppermounts_F"]],
+         //["gallardo_subframe_R", ["gallardo_subframe_R","gallardo_lowermounts_R","gallardo_uppermounts_R"]],
          //gauge lights
          //["gallardo_decals_gauges", ["gallardo_dash"]],
     ],

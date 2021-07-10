@@ -1,0 +1,14 @@
+{
+"Config Type":"Factory",
+"Performance Class":"9",
+"Drivetrain":"AWD",
+"Body Style":"Coupe",
+"Value":147999,
+"Description":"Bicolore base AWD model sold from 2011-2014 with a semi-automatic transmission",
+"Configuration":"LP560-4 Bicolore (SA)",
+"Induction Type":"NA",
+"default_color":"Solar",
+"Propulsion":"ICE",
+"Transmission":"Semi-Automatic",
+"Fuel Type":"Gasoline"
+}

@@ -12,10 +12,10 @@
          {"deformGroup":"windshield_break", "deformMaterialBase":"gallardo_glass", "deformMaterialDamaged":"gallardo_windshield_dmg"}
          ["gallardo_windshield", ["gallardo_windshield"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound1", "deformVolume":0.7}],
          {"deformGroup":"windshield_break", "deformMaterialBase":"gallardo_glass_int", "deformMaterialDamaged":"gallardo_glass_int"}
-         ["gallardo_windshield_int", ["gallardo_windshield"]],
+         //["gallardo_windshield_int", ["gallardo_windshield"]],
 
          {"deformGroup":"windshield_break", "deformMaterialBase":"glass_invisible", "deformMaterialDamaged":"glass_mirror"}
-         ["gallardo_windshield_dmg", ["gallardo_windshield"]],
+         //["gallardo_windshield_dmg", ["gallardo_windshield"]],
 
          {"deformGroup":"sideglass_R_break", "deformMaterialBase":"gallardo_glass", "deformMaterialDamaged":"gallardo_glass_dmg"}
          ["gallardo_sideglass_R", ["gallardo_body","gallardo_roof"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound5", "deformVolume":0.7}],
@@ -23,14 +23,14 @@
          ["gallardo_sideglass_L", ["gallardo_body","gallardo_roof"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound6", "deformVolume":0.7}],
 
          {"deformGroup":"sideglass_R_break", "deformMaterialBase":"gallardo_glass_int", "deformMaterialDamaged":"gallardo_glass_dmg"}
-         ["gallardo_sideglass_R_int", ["gallardo_body","gallardo_roof"]],
+         //["gallardo_sideglass_R_int", ["gallardo_body","gallardo_roof"]],
          {"deformGroup":"sideglass_L_break", "deformMaterialBase":"gallardo_glass_int", "deformMaterialDamaged":"gallardo_glass_dmg"}
-         ["gallardo_sideglass_L_int", ["gallardo_body","gallardo_roof"]],
+         //["gallardo_sideglass_L_int", ["gallardo_body","gallardo_roof"]],
 
          {"deformGroup":""}
          ["gallardo_wipers", ["gallardo_body","gallardo_roof","gallardo_engine_bay"]],
          ["gallardo_backlight", ["gallardo_body","gallardo_roof"]],
-		 ["gallardo_backlight_int", ["gallardo_body","gallardo_roof"]],
+		 //["gallardo_backlight_int", ["gallardo_body","gallardo_roof"]],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],

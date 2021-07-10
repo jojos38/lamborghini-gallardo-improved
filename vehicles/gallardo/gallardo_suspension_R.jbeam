@@ -25,12 +25,11 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          //rear running gear
-         ["gallardo_lowerarm_R", ["gallardo_lowermounts_R","gallardo_lowerarm_R_a","gallardo_lowerarm_R_b"]],
-         
-         ["gallardo_upperarm_R", ["gallardo_uppermounts_R","gallardo_upperarm_R"]],
-         ["gallardo_trailingarm_R", ["gallardo_trailingarm_R","gallardo_trailingmounts_R","gallardo_lowerarm_R_b","gallardo_lowermounts_R"]],
-         ["gallardo_pushrod_R", ["gallardo_pushrod_R","gallardo_shockbottom_R"]],
-         ["gallardo_pushrod_triangle_R", ["gallardo_pushrod_R","gallardo_coilover_RR","gallardo_coilover_RL"]],
+         //["gallardo_lowerarm_R", ["gallardo_lowermounts_R","gallardo_lowerarm_R_a","gallardo_lowerarm_R_b"]],
+         //["gallardo_upperarm_R", ["gallardo_uppermounts_R","gallardo_upperarm_R"]],
+         //["gallardo_trailingarm_R", ["gallardo_trailingarm_R","gallardo_trailingmounts_R","gallardo_lowerarm_R_b","gallardo_lowermounts_R"]],
+         //["gallardo_pushrod_R", ["gallardo_pushrod_R","gallardo_shockbottom_R"]],
+         //["gallardo_pushrod_triangle_R", ["gallardo_pushrod_R","gallardo_coilover_RR","gallardo_coilover_RL"]],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -447,9 +446,9 @@
     }
     "slotType" : "gallardo_coilover_R",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_coilover_RR", ["gallardo_coilover_RR","gallardo_coilover_R"]],
-         ["gallardo_coilover_RL", ["gallardo_coilover_RL","gallardo_coilover_R"]],
+         //["gallardo_coilover_RL", ["gallardo_coilover_RL","gallardo_coilover_R"]],
     ],
     "beams": [
           ["id1:", "id2:"],
@@ -496,9 +495,9 @@
     }
     "slotType" : "gallardo_coilover_R",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_coilover_RR", ["gallardo_coilover_RR","gallardo_coilover_R"]],
-         ["gallardo_coilover_RL", ["gallardo_coilover_RL","gallardo_coilover_R"]],
+         //["gallardo_coilover_RL", ["gallardo_coilover_RL","gallardo_coilover_R"]],
     ],
     "beams": [
           ["id1:", "id2:"],
@@ -545,9 +544,9 @@
     }
     "slotType" : "gallardo_coilover_R",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_coilover_RR", ["gallardo_coilover_RR","gallardo_coilover_R"]],
-         ["gallardo_coilover_RL", ["gallardo_coilover_RL","gallardo_coilover_R"]],
+         //["gallardo_coilover_RL", ["gallardo_coilover_RL","gallardo_coilover_R"]],
     ],
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"]
@@ -618,7 +617,7 @@
     }
     "slotType" : "gallardo_swaybar_R",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_swaybar_R", ["gallardo_shockbottom_R", "gallardo_uppermounts_R", "gallardo_lowermounts_R", "gallardo_lowerarm_R_a","gallardo_lowerarm_R_b"]],
     ],
     "nodes": [
@@ -671,7 +670,7 @@
     }
     "slotType" : "gallardo_swaybar_R",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_swaybar_R", ["gallardo_shockbottom_R", "gallardo_uppermounts_R", "gallardo_lowermounts_R", "gallardo_lowerarm_R_a","gallardo_lowerarm_R_b"]],
     ],
     "nodes": [
@@ -724,7 +723,7 @@
     }
     "slotType" : "gallardo_swaybar_R",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_swaybar_R", ["gallardo_shockbottom_R", "gallardo_uppermounts_R", "gallardo_lowermounts_R", "gallardo_lowerarm_R_a","gallardo_lowerarm_R_b"]],
     ],
     "variables": [

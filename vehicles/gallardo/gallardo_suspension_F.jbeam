@@ -27,9 +27,9 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          //front running gear
-         ["gallardo_upperarm_F", ["gallardo_uppermounts_F","gallardo_upperarm_F"]],
-         ["gallardo_lowerarm_F", ["gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_lowerarm_F","gallardo_shockbottom_F"]],
-         ["gallardo_hub_F", ["gallardo_lowerarm_F","gallardo_upperarm_F","gallardo_tierod_F","gallardo_hub_F"]],
+         //["gallardo_upperarm_F", ["gallardo_uppermounts_F","gallardo_upperarm_F"]],
+         //["gallardo_lowerarm_F", ["gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_lowerarm_F","gallardo_shockbottom_F"]],
+         //["gallardo_hub_F", ["gallardo_lowerarm_F","gallardo_upperarm_F","gallardo_tierod_F","gallardo_hub_F"]],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -346,7 +346,7 @@
     }
     "slotType" : "gallardo_coilover_F",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_coilover_F", ["gallardo_shockbottom_F","gallardo_shocktop_F"]],
     ],
     "beams": [
@@ -391,7 +391,7 @@
     }
     "slotType" : "gallardo_coilover_F",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_coilover_F", ["gallardo_shockbottom_F","gallardo_shocktop_F"]],
     ],
     "beams": [
@@ -439,7 +439,7 @@
     }
     "slotType" : "gallardo_coilover_F",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_coilover_F", ["gallardo_shockbottom_F","gallardo_shocktop_F"]],
     ],
     "variables": [
@@ -495,7 +495,7 @@
     }
     "slotType" : "gallardo_swaybar_F",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_swaybar_F", ["gallardo_lowerarm_F","gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_uppermounts_F"]],
     ],
     "nodes": [
@@ -550,7 +550,7 @@
     }
     "slotType" : "gallardo_swaybar_F",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_swaybar_F", ["gallardo_lowerarm_F","gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_uppermounts_F"]],
     ],
     "nodes": [
@@ -605,7 +605,7 @@
     }
     "slotType" : "gallardo_swaybar_F",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_swaybar_F", ["gallardo_lowerarm_F","gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_uppermounts_F"]],
     ],
     "nodes": [
@@ -671,8 +671,8 @@
     ],
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["gallardo_steeringbox", ["gallardo_body","gallardo_lowermounts_a_F","gallardo_lowermounts_b_F"]],
-         ["gallardo_tierod_F", ["gallardo_tierod_F","gallardo_hub_F","gallardo_lowerarm_FR","gallardo_lowerarm_FL","gallardo_lowermounts_a_F","gallardo_tierod_inner"]],
+         //["gallardo_steeringbox", ["gallardo_body","gallardo_lowermounts_a_F","gallardo_lowermounts_b_F"]],
+         //["gallardo_tierod_F", ["gallardo_tierod_F","gallardo_hub_F","gallardo_lowerarm_FR","gallardo_lowerarm_FL","gallardo_lowermounts_a_F","gallardo_tierod_inner"]],
     ],
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"]
@@ -745,8 +745,8 @@
     ],
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["gallardo_steeringbox", ["gallardo_body","gallardo_lowermounts_a_F","gallardo_lowermounts_b_F"]],
-         ["gallardo_tierod_F", ["gallardo_tierod_F","gallardo_hub_F","gallardo_lowerarm_FR","gallardo_lowerarm_FL","gallardo_lowermounts_a_F","gallardo_tierod_inner"]],
+         //["gallardo_steeringbox", ["gallardo_body","gallardo_lowermounts_a_F","gallardo_lowermounts_b_F"]],
+         //["gallardo_tierod_F", ["gallardo_tierod_F","gallardo_hub_F","gallardo_lowerarm_FR","gallardo_lowerarm_FL","gallardo_lowermounts_a_F","gallardo_tierod_inner"]],
     ],
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"]
@@ -840,8 +840,8 @@
     },
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["gallardo_diff_F", ["gallardo_body","gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_uppermounts_F"]],
-         ["gallardo_halfshaft_F", ["gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_hub_F","gallardo_tierod_F","gallardo_lowerarm_F","gallardo_upperarm_F"]],
+         //["gallardo_diff_F", ["gallardo_body","gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_uppermounts_F"]],
+         //["gallardo_halfshaft_F", ["gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_hub_F","gallardo_tierod_F","gallardo_lowerarm_F","gallardo_upperarm_F"]],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -891,9 +891,9 @@
         "authors":"BeamNG",
         "name":"Front Driveshaft",
         "value":200,
-    }
+    },
     "slotType" : "gallardo_driveshaft",
-    "powertrain" : [
+	"powertrain" : [
         ["type", "name", "inputName", "inputIndex"]
         ["shaft", "driveshaft", "transfercase", 2, {"breakTriggerBeam":"driveshaft", "uiName":"Front Driveshaft", "electricsName":"driveshaft", "friction":2}]
     ],

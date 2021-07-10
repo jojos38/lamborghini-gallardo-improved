@@ -37,7 +37,7 @@
             [7000, 472],
             [7500, 452],
             [8000, 420],
-            [9000, 291],
+            [8200, 291],
         ],
 
         "idleRPM":950,
@@ -60,20 +60,20 @@
         "requiredEnergyType":"gasoline",
 
         //exhaust
-        "particulates":0.02
-        "instantAfterFireCoef": 0.75,
-        "sustainedAfterFireCoef": 0.5,
+        "particulates":0.04
+        "instantAfterFireCoef": 1.0,
+        "sustainedAfterFireCoef": 0.75,
 
         //cooling and oil system
-        "thermalsEnabled":true
-        "engineBlockMaterial":"aluminum"
-        "oilVolume":6
+        "thermalsEnabled":true,
+        "engineBlockMaterial":"aluminum",
+        "oilVolume":6,
 
         //engine durability
-        "cylinderWallTemperatureDamageThreshold":160
-        "headGasketDamageThreshold":1500000
-        "pistonRingDamageThreshold":1500000
-        "connectingRodDamageThreshold":2000000
+        "cylinderWallTemperatureDamageThreshold":160,
+        "headGasketDamageThreshold":1500000,
+        "pistonRingDamageThreshold":1500000,
+        "connectingRodDamageThreshold":2000000,
 
         "maxTorqueRating": 650,
         "maxOverTorqueDamage": 2000,
@@ -88,25 +88,69 @@
         "soundConfig": "soundConfig",
 		"soundConfigExhaust": "soundConfigExhaust",
         
-        "instantAfterFireSound": "event:>Vehicle>Afterfire>01_Single_EQ3",
-        "sustainedAfterFireSound": "event:>Vehicle>Afterfire>01_Single_EQ3",
-        "shiftAfterFireSound": "event:>Vehicle>Afterfire>01_Multi_EQ3",
+        "instantAfterFireSound": "event:>Vehicle>Afterfire>i4_01>single",
+        "sustainedAfterFireSound": "event:>Vehicle>Afterfire>i4_01>multi",
+        "shiftAfterFireSound": "event:>Vehicle>Afterfire>i4_01>shift",
+		"instantAfterFireVolumeCoef": 10.0,
+        "sustainedAfterFireVolumeCoef": 10.0,
+        "shiftAfterFireVolumeCoef": 10.0,
+		
+		//starter motor
+        "starterSample":"event:>Engine>Starter>i4_2001_eng",
+        "starterSampleExhaust":"event:>Engine>Starter>i4_2001_exh",
+        "shutOffSampleEngine":"event:>Engine>Shutoff>i4_2001_eng",
+        "shutOffSampleExhaust":"event:>Engine>Shutoff>i4_2001_exh",
+        "starterVolume":0.10,
+        "starterVolumeExhaust":1.0,
+        "shutOffVolumeEngine":0.15,
+        "shutOffVolumeExhaust":0.7,
+        "starterThrottleKillTime":0.5,
+        "idleRPMStartRate":0.8,
+        "idleRPMStartCoef":4
     },
     "soundConfig": {
         "sampleName": "lam_huracan_15_engine",
-        "mainGain": -13,
-        "maxLoadMix": 0.65,
-        "minLoadMix": 0,
-        "onLoadGain":1,
-        "offLoadGain":0.4,
-    },
-    "soundConfigExhaust": {
-        "sampleName": "lam_huracan_15_exhaust",
-        "mainGain": -7,
-        "maxLoadMix": 0.65,
+        "mainGain": -10,
+        "maxLoadMix": 1.5,
         "minLoadMix": 0,
         "onLoadGain":1,
         "offLoadGain":0.2,
+		
+		"eqLowGain": 12,
+        "eqLowFreq": 400,
+        "eqLowWidth": 0.3,
+
+        "eqHighGain": 12,
+        "eqHighFreq": 12000,
+        "eqHighWidth": 0.3,
+
+        "lowShelfGain":16,
+        "lowShelfFreq":120,
+
+        "highShelfGain":15,
+        "highShelfFreq":11000,
+
+        "fundamentalFrequencyCylinderCount":10,
+        "eqFundamentalGain": 0
+    },
+    "soundConfigExhaust": {
+        "sampleName": "lam_huracan_15_exhaust",
+        "mainGain": -15,
+        "maxLoadMix": 1.5,
+        "minLoadMix": 0,
+        "onLoadGain":0.7,
+        "offLoadGain":0.2,
+		
+		"eqLowGain": 13,
+        "eqLowFreq": 100,
+        "eqLowWidth": 0.2,
+
+        "eqHighGain": 5,
+        "eqHighFreq": 10000,
+        "eqHighWidth": 0.2,
+
+        "fundamentalFrequencyCylinderCount":10,
+        "eqFundamentalGain": 0
     },
     "vehicleController": {
         "clutchLaunchStartRPM":2000,
@@ -118,7 +162,7 @@
     },
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["gallardo_enginebadge_v10", ["gallardo_body","gallardo_roof"]],
+         //["gallardo_enginebadge_v10", ["gallardo_body","gallardo_roof"]],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -195,13 +239,13 @@
     }
     "slotType" : "gallardo_engine_ecu",
     "mainEngine":{
-        "idleRPM":800,
-        "revLimiterRPM":8700,
+        "idleRPM":820,
+        "revLimiterRPM":8200,
         "revLimiterType":"timeBased",
         "revLimiterCutTime":0.15,
     },
     "vehicleController": {
-        "highShiftUpRPM":8000
+        "highShiftUpRPM":7800
     },
 },
 "gallardo_engine_internals": {

@@ -10,7 +10,7 @@
          ["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_tailgate", ["gallardo_tailgate"]],
          {"deformGroup":"tailgateglass_break", "deformMaterialBase":"gallardo_lights", "deformMaterialDamaged":"gallardo_lights_dmg"}
-         ["gallardo_chmsl", ["gallardo_tailgate"]],
+         //["gallardo_chmsl", ["gallardo_tailgate"]],
          {"deformGroup":""},
     ],
     "slots": [

@@ -7,7 +7,7 @@
     }
     "slotType" : "gallardo_bumperbar_F",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_bumperbar_F", ["gallardo_bumperbar"]],
     ],
     "nodes": [

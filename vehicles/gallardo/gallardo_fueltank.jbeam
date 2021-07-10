@@ -7,9 +7,9 @@
     }
     "slotType" : "gallardo_fueltank",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "none"],
          ["gallardo_fueltank", ["gallardo_body"]],
-         ["gallardo_fuellines", ["gallardo_body"]],
+         //["gallardo_fuellines", ["gallardo_body"]],
     ],
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"]

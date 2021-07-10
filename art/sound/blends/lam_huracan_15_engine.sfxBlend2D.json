@@ -18,9 +18,8 @@
 			["art/sound/engine/fm7/lam_huracan_15/Engine_05572.wav", 5572],
 			["art/sound/engine/fm7/lam_huracan_15/Engine_06073.wav", 6073],
 			["art/sound/engine/fm7/lam_huracan_15/Engine_06583.wav", 6583],
-			["art/sound/engine/fm7/lam_huracan_15/Engine_07326.wav", 7326]
-        ]
-        ,
+			["art/sound/engine/fm7/lam_huracan_15/Engine_07326.wav", 7550]
+        ],
         [
 			["art/sound/engine/fm7/lam_huracan_15/Engine_01169.wav", 1169],
 			["art/sound/engine/fm7/lam_huracan_15/Engine_01521.wav", 1521],
@@ -34,7 +33,7 @@
 			["art/sound/engine/fm7/lam_huracan_15/Engine_05572.wav", 5572],
 			["art/sound/engine/fm7/lam_huracan_15/Engine_06073.wav", 6073],
 			["art/sound/engine/fm7/lam_huracan_15/Engine_06583.wav", 6583],
-			["art/sound/engine/fm7/lam_huracan_15/Engine_07326.wav", 7326]
+			["art/sound/engine/fm7/lam_huracan_15/Engine_07326.wav", 7550]
 		]
     ]
 }

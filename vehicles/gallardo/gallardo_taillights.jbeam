@@ -25,7 +25,7 @@
             "lightAttenuation":{"x":0, "y":1, "z":1}
             "lightCastShadows":false
             "flareName":"vehicleBrakeLightFlare"
-            "flareScale":0.25
+            "flareScale":0.02
         }
         //taillights
         ["brake" ,         "SPOTLIGHT"        , "tl4r", "tl3r", "tl2r", {"x":0, "y":0, "z":0} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.5, "y":0.65, "z":0},"deformGroup":"taillightglass_R_break"}],
@@ -49,7 +49,7 @@
             "lightAttenuation":{"x":0, "y":1, "z":1}
             "lightCastShadows":false
             "flareName":"vehicleReverseLightFlare"
-            "flareScale":0.05
+            "flareScale":0.01
             "cookieName":"art/special/BNG_light_cookie_headlight.png"
             "texSize":512
             "shadowSoftness":0.4
@@ -173,7 +173,7 @@
             "lightAttenuation":{"x":0, "y":1, "z":1}
             "lightCastShadows":false
             "flareName":"vehicleBrakeLightFlare"
-            "flareScale":0.25
+            "flareScale":0.02
         }
         //taillights
         ["brake" ,         "SPOTLIGHT"        , "tl4l", "tl3l", "tl2l", {"x":180, "y":0, "z":0} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.5, "y":0.65, "z":0},"deformGroup":"taillightglass_L_break"}],
@@ -197,7 +197,7 @@
             "lightAttenuation":{"x":0, "y":1, "z":1}
             "lightCastShadows":false
             "flareName":"vehicleReverseLightFlare"
-            "flareScale":0.05
+            "flareScale":0.01
             "cookieName":"art/special/BNG_light_cookie_headlight.png"
             "texSize":512
             "shadowSoftness":0.4

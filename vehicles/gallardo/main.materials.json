@@ -1,0 +1,2167 @@
+
+{
+  "gallardo_paint": {
+    "name": "gallardo_paint",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/gallardo/gallardo_b.color.dds",
+		"metallicFactor": 1,
+		"matallicMap": "vehicles/gallardo/gallardo_c.data.dds",
+		"roughnessMap": "vehicles/gallardo/gallardo_r.data.dds",
+		"useAnisotropic": true
+      },
+      {
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/gallardo/gallardo_cc.data.dds",
+        "clearCoatRoughnessFactor": 1,
+        "colorPaletteMap": "/vehicles/gallardo/gallardo_p.color.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/gallardo/gallardo_n.dds",
+        "opacityMap": "/vehicles/gallardo/gallardo_cc.data.dds",
+        "useAnisotropic": true
+      },
+      {
+
+      },
+      {}
+    ],
+    "mapTo": "gallardo_paint",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2,
+	"version": 1.5
+  },
+  "gallardo_paint.skin.vb": {
+    "name": "gallardo_paint.skin.vb",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/gallardo/gallardo_b.color.dds",
+        "metallicFactor": 1
+      },
+      {
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/gallardo/gallardo_cc.data.dds",
+        "colorPaletteMap": "/vehicles/gallardo/gallardo_p.color.dds",
+        "colorPaletteMapUseUV": 1,
+        "detailScale": [
+          1,
+          1
+        ],
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/gallardo/gallardo_n.dds"
+      },
+      {
+        "baseColorMap": "vehicles/gallardo/gallardo_skin_vb.dds",
+        "metallicFactor": 0.75,
+        "metallicMap": "vehicles/gallardo/gallardo_c.data.dds",
+        "opacityFactor": 0.75,
+        "opacityMap": "vehicles/gallardo/gallardo_skin_vb_o.png",
+        "roughnessFactor": 0.1,
+        "roughnessMap": "vehicles/gallardo/gallardo_r.data.dds"
+      },
+      {}
+    ],
+    "mapTo": "gallardo_paint.skin.vb",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 3,
+	"version": 1.5
+  },
+  "gallardo_paint.skin.bicolore": {
+    "name": "gallardo_paint.skin.bicolore",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/gallardo/gallardo_b.color.dds",
+		"metallicFactor": 1,
+		"matallicMap": "vehicles/gallardo/gallardo_c.data.dds",
+		"roughnessMap": "vehicles/gallardo/gallardo_r.data.dds",
+		"useAnisotropic": true
+      },
+      {
+        "baseColorMap": "vehicles/gallardo/gallardo_skin_bicolore.color.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/gallardo/gallardo_cc.data.dds",
+        "colorPaletteMap": "/vehicles/gallardo/gallardo_p.color.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/gallardo/gallardo_n.dds"
+      },
+      {
+		"baseColorMap": "/vehicles/gallardo/gallardo_skin_bicolore.color.png",
+        "diffuseMap": "vehicles/gallardo/gallardo_skin_bicolore.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {}
+    ],
+    "mapTo": "gallardo_paint.skin.bicolore",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2,
+	"version": 1.5
+  },
+  "gallardo_paint.skin.tricolore": {
+    "name": "gallardo_paint.skin.tricolore",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/gallardo/gallardo_b.color.dds",
+        "metallicFactor": 1
+      },
+      {
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/gallardo/gallardo_cc.data.dds",
+        "colorPaletteMap": "/vehicles/gallardo/gallardo_p.color.dds",
+        "colorPaletteMapUseUV": 1,
+        "detailScale": [
+          1,
+          1
+        ],
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/gallardo/gallardo_n.dds"
+      },
+      {
+        "baseColorMap": "vehicles/gallardo/gallardo_skin_tricolore.dds",
+        "metallicFactor": 0.75,
+        "metallicMap": "vehicles/gallardo/gallardo_c.data.dds",
+        "opacityFactor": 0.75,
+        "opacityMap": "vehicles/gallardo/gallardo_skin_tricolore_o.png",
+        "roughnessFactor": 0.1,
+        "roughnessMap": "vehicles/gallardo/gallardo_r.data.dds"
+      },
+      {}
+    ],
+    "mapTo": "gallardo_paint.skin.tricolore",
+    "activeLayers": 3,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "gallardo_paint.skin.isp": {
+    "name": "gallardo_paint.skin.isp",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/gallardo/gallardo_b.color.dds",
+        "metallicFactor": 1,
+        "roughnessMap": "vehicles/gallardo/gallardo_r.data.dds"
+      },
+      {
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/gallardo/gallardo_cc.data.dds",
+        "colorPaletteMap": "/vehicles/gallardo/gallardo_p.color.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/gallardo/gallardo_n.dds"
+      },
+      {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorMap": "vehicles/gallardo/gallardo_skin_isp.png",
+        "opacityMap": "vehicles/gallardo/gallardo_skin_isp_o.png",
+        "roughnessFactor": 0
+      },
+      {}
+    ],
+    "mapTo": "gallardo_paint.skin.isp",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 3,
+	"version": 1.5
+  },
+  "gallardo_misc": {
+    "name": "gallardo_misc",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_misc_d.dds",
+        "specularMap": "vehicles/gallardo/gallardo_misc_s.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_misc",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_flag_it": {
+    "name": "gallardo_flag_it",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_flag_it_d.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_flag_it",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_badge_sl": {
+    "name": "gallardo_badge_sl",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_badge_sl_d.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_badge_sl",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_cf": {
+    "name": "gallardo_cf",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_cf_d.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_cf",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_gauges": {
+    "name": "gallardo_gauges",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_gauges_d.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_gauges",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_gauges_on": {
+    "name": "gallardo_gauges_on",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_gauges_d.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_gauges_g.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true,
+        "emissive": true
+      },
+      {}
+    ],
+    "mapTo": "gallardo_gauges_on",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 3
+  },
+  "gallardo_gauges.skin_gauges.sl": {
+    "name": "gallardo_gauges.skin_gauges.sl",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_gauges_d_white.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_gauges.skin_gauges.sl",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_gauges_on.skin_gauges.sl": {
+    "name": "gallardo_gauges_on.skin_gauges.sl",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_gauges_d_white.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_gauges_g_yellow.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true,
+        "emissive": true
+      },
+      {}
+    ],
+    "mapTo": "gallardo_gauges_on.skin_gauges.sl",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 3
+  },
+  "gallardo_chassis": {
+    "name": "gallardo_chassis",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_chassis_d.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_chassis",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_engine": {
+    "name": "gallardo_engine",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_engine_d.dds",
+        "specularMap": "vehicles/gallardo/gallardo_engine_s.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_engine",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_cockpit": {
+    "name": "gallardo_cockpit",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/gallardo/gallardo_cockpit_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_cockpit_d.dds",
+        "specularMap": "vehicles/gallardo/gallardo_cockpit_s.dds",
+        "normalMap": "vehicles/gallardo/gallardo_cockpit_n.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_cockpit",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_cockpit_on": {
+    "name": "gallardo_cockpit_on",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/gallardo/gallardo_cockpit_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_cockpit_d.dds",
+        "specularMap": "vehicles/gallardo/gallardo_cockpit_s.dds",
+        "normalMap": "vehicles/gallardo/gallardo_cockpit_n.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_cockpit_g.dds",
+        "specularMap": "vehicles/gallardo/gallardo_cockpit_s.dds",
+        "normalMap": "vehicles/gallardo/gallardo_cockpit_n.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true,
+        "emissive": true
+      },
+      {}
+    ],
+    "mapTo": "gallardo_cockpit_on",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 3
+  },
+  "gallardo_carpet": {
+    "name": "gallardo_carpet",
+    "class": "Material",
+    "Stages": [
+      {	
+		"baseColorMap": "vehicles/gallardo/gallardo_b.color.dds",
+		"matallicMap": "vehicles/gallardo/gallardo_c.data.dds",
+		"metallicFactor": 1,
+		"roughnessMap": "vehicles/gallardo/gallardo_r.data.dds",
+		"roughnessFactor": 1,
+        "normalMap": "vehicles/gallardo/gallardo_carpet_n.dds",
+        "diffuseColor": [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_carpet_d.dds",
+        "normalMap": "vehicles/gallardo/gallardo_carpet_n.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_carpet",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 1,
+	"version": 1.5
+  },
+  "gallardo_steeringwheel": {
+    "name": "gallardo_steeringwheel",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/gallardo/gallardo_steeringwheel_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_steeringwheel_d.dds",
+        "normalMap": "vehicles/gallardo/gallardo_steeringwheel_n.dds",
+        "specularMap": "vehicles/gallardo/gallardo_steeringwheel_s.dds",
+        "specularPower": 8,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_steeringwheel",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_mesh": {
+    "name": "gallardo_mesh",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/gallardo/gallardo_mesh_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_mesh_d.dds",
+        "normalMap": "vehicles/gallardo/gallardo_mesh_n.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_mesh",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_alcantara": {
+    "name": "gallardo_alcantara",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/gallardo/gallardo_alcantara_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_alcantara_d.dds",
+        "normalMap": "vehicles/gallardo/gallardo_alcantara_n.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_alcantara",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2,
+	"version": 1.5
+  },
+  "gallardo_leather": {
+    "name": "gallardo_leather",
+    "class": "Material",
+    "Stages": [
+      {
+        "normalMap": "vehicles/gallardo/gallardo_leather_n.dds",	
+		"baseColorMap": "vehicles/gallardo/gallardo_b.color.dds",
+		"roughnessMap": "vehicles/gallardo/gallardo_r.data.dds",
+		"roughnessFactor": 1,
+		"matallicMap": "vehicles/gallardo/gallardo_c.data.dds",
+		"metallicFactor": 0.5,
+		"useAnisotropic": true,
+        "diffuseColor": [
+          0.2,
+          0.2,
+          0.2,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_leather_d.dds",
+        "normalMap": "vehicles/gallardo/gallardo_leather_n.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_leather",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 1,
+	"version": 1.5
+  },
+  "gallardo_leather.skin.isp": {
+    "name": "gallardo_leather.skin.isp",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/gallardo/gallardo_leather_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_leather_blue_d.dds",
+        "normalMap": "vehicles/gallardo/gallardo_leather_n.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_leather.skin.isp",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2,
+	"version": 1.5
+  },
+  "gallardo_leather_quilted": {
+    "name": "gallardo_leather_quilted",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/gallardo/gallardo_leather_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_leather_quilted_d.dds",
+        "normalMap": "vehicles/gallardo/gallardo_leather_n.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_leather_quilted",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2,
+	"version": 1.5
+  },
+  "gallardo_leather_stitching_black": {
+    "name": "gallardo_leather_stitching_black",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/gallardo/gallardo_leather_stitching_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_leather_stitching_black_d.dds",
+        "normalMap": "vehicles/gallardo/gallardo_leather_stitching_n.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_leather_stitching_black",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2,
+	"version": 1.5
+  },
+  "gallardo_leather_stitching_black.skin.isp": {
+    "name": "gallardo_leather_stitching_black.skin.isp",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/gallardo/gallardo_leather_stitching_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_leather_stitching_blue_d.dds",
+        "normalMap": "vehicles/gallardo/gallardo_leather_stitching_n.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_leather_stitching_black.skin.isp",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2,
+	"version": 1.5
+  },
+  "gallardo_leather_stitching_white": {
+    "name": "gallardo_leather_stitching_white",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/gallardo/gallardo_leather_stitching_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_leather_stitching_white_d.dds",
+        "normalMap": "vehicles/gallardo/gallardo_leather_stitching_n.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_leather_stitching_white",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2,
+	"version": 1.5
+  },
+  "gallardo_leather_stitching_white.skin.isp": {
+    "name": "gallardo_leather_stitching_white.skin.isp",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/gallardo/gallardo_leather_stitching_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_leather_stitching_blue_d.dds",
+        "normalMap": "vehicles/gallardo/gallardo_leather_stitching_n.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_leather_stitching_white.skin.isp",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2,
+	"version": 1.5
+  },
+  "gallardo_screen": {
+    "name": "gallardo_screen",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "@screen_gps",
+        "specularMap": "vehicles/common/null.dds",
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "specularPower": 32,
+        "useAnisotropic": true,
+        "emissive": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_screen",
+    "castShadows": true,
+    "translucent": false,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "//cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 1
+  },
+  "gallardo_lcd": {
+    "name": "gallardo_lcd",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "gallardo_lcd_d.png",
+        "specularMap": "vehicles/common/null.dds",
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "specularPower": 32,
+        "useAnisotropic": true,
+        "emissive": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_lcd",
+    "castShadows": true,
+    "translucent": false,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "//cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 1
+  },
+  "gallardo_lcd_on": {
+    "name": "gallardo_lcd_on",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "gallardo_lcd_d.png",
+        "specularMap": "vehicles/common/null.dds",
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "specularPower": 32,
+        "useAnisotropic": true,
+        "emissive": true
+      },
+      {
+        "diffuseMap": "gallardo_lcd_g.png",
+        "specularMap": "vehicles/common/null.dds",
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "specularPower": 32,
+        "useAnisotropic": true,
+        "emissive": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_lcd_on",
+    "castShadows": true,
+    "translucent": false,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "//cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_gauges_screen": {
+    "name": "gallardo_gauges_screen",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "@gallardo_gauges_screen",
+        "opacityMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "specularPower": 32,
+        "useAnisotropic": true,
+        "emissive": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_gauges_screen",
+    "castShadows": false,
+    "translucent": true,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 1
+  },
+  "gallardo_disc": {
+    "name": "gallardo_disc",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_disc_d.dds",
+        "specularMap": "vehicles/gallardo/gallardo_disc_s.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_disc",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_badges": {
+    "name": "gallardo_badges",
+    "class": "Material",
+    "Stages": [
+      {
+        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
+        "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
+        "diffuseMap": "vehicles/gallardo/gallardo_badges_o.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_badges_d.dds",
+        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
+        "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_badges",
+    "castShadows": false,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 1,
+    "alphaRef": 36,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentZWrite": 1,
+    "activeLayers": 2
+  },
+  "gallardo_badges.skin_bodybadge.sl": {
+    "name": "gallardo_badges.skin_bodybadge.sl",
+    "class": "Material",
+    "Stages": [
+      {
+        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
+        "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
+        "diffuseMap": "vehicles/gallardo/gallardo_badges_o.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_badges_sl_d.dds",
+        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
+        "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_badges.skin_bodybadge.sl",
+    "castShadows": false,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 1,
+    "alphaRef": 36,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentZWrite": 1,
+    "activeLayers": 2
+  },
+  "gallardo_badges.skin_bodybadge.vb": {
+    "name": "gallardo_badges.skin_bodybadge.vb",
+    "class": "Material",
+    "Stages": [
+      {
+        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
+        "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
+        "diffuseMap": "vehicles/gallardo/gallardo_badges_o_vb.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_badges_d_vb.dds",
+        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
+        "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_badges.skin_bodybadge.vb",
+    "castShadows": false,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 1,
+    "alphaRef": 36,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentZWrite": 1,
+    "activeLayers": 2
+  },
+  "gallardo_badges.skin_bodybadge.ann": {
+    "name": "gallardo_badges.skin_bodybadge.ann",
+    "class": "Material",
+    "Stages": [
+      {
+        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
+        "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
+        "diffuseMap": "vehicles/gallardo/gallardo_badges_o_vb.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_badges_d_ann.dds",
+        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
+        "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_badges.skin_bodybadge.ann",
+    "castShadows": false,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 1,
+    "alphaRef": 36,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentZWrite": 1,
+    "activeLayers": 2
+  },
+  "gallardo_cockbadge": {
+    "name": "gallardo_cockbadge",
+    "class": "Material",
+    "Stages": [
+      {
+        "specularMap": "vehicles/gallardo/gallardo_cockbadge_s.dds",
+        "normalMap": "vehicles/gallardo/gallardo_cockbadge_n.dds",
+        "diffuseMap": "vehicles/gallardo/gallardo_cockbadge_o.dds",
+        "specularPower": 128,
+        "pixelSpecular": 0,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_cockbadge_d.dds",
+        "specularMap": "vehicles/gallardo/gallardo_cockbadge_s.dds",
+        "normalMap": "vehicles/gallardo/gallardo_cockbadge_n.dds",
+        "specularPower": 128,
+        "pixelSpecular": 0,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_cockbadge",
+    "castShadows": false,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 1,
+    "alphaRef": 36,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentZWrite": 1,
+    "activeLayers": 2
+  },
+  "gallardo_lights": {
+    "name": "gallardo_lights",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_lights_d.dds",
+        "specularMap": "vehicles/gallardo/gallardo_lights_s.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_lights",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 2
+  },
+  "gallardo_lights_on": {
+    "name": "gallardo_lights_on",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_lights_d.dds",
+        "specularMap": "vehicles/gallardo/gallardo_lights_s.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_lights_g.dds",
+        "specularMap": "vehicles/gallardo/gallardo_lights_s.dds",
+        "diffuseColor": [
+          1.5,
+          1.5,
+          1.5,
+          0.5
+        ],
+        "useAnisotropic": true,
+        "glow": true,
+        "emissive": true
+      },
+      {}
+    ],
+    "mapTo": "gallardo_lights_on",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 3
+  },
+  "gallardo_lights_on_intense": {
+    "name": "gallardo_lights_on_intense",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/common/null.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_lights_d.dds",
+        "specularMap": "vehicles/gallardo/gallardo_lights_s.dds",
+        "specularPower": 32,
+        "pixelSpecular": 1,
+		"emissive" : true,
+        "glow" : true,
+        "diffuseColor": [
+          0.35,
+          0.35,
+          0.35,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "diffuseMap": "vehicles/gallardo/gallardo_lights_g.dds",
+        "specularMap": "vehicles/gallardo/gallardo_lights_s.dds",
+        "diffuseColor": [
+          1.75,
+          1.75,
+          1.75,
+          1
+        ],
+        "useAnisotropic": true,
+        "emissive" : true,
+        "glow" : true,
+      },
+      {}
+    ],
+    "mapTo": "gallardo_lights_on_intense",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 3
+  },
+  "gallardo_glass": {
+    "name": "gallardo_glass",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/etkc/etkc_glass_b.color.png",
+        "normalMap": "/vehicles/common/null_n.dds",
+        "opacityMap": "/vehicles/etkc/etkc_glass_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+	"mapTo": "gallardo_glass",
+    "version": 1.5
+  },
+  "gallardo_glass_int": {
+    "name": "gallardo_glass_int",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "vehicles/etkc/etkc_glass_d.dds",
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "pixelSpecular": 1,
+        "diffuseColor": [
+          1,
+          1.5,
+          1.5,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_glass_int",
+    "castShadows": false,
+    "translucent": true,
+    "alphaTest": 0,
+    "doubleSided": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": false,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 1
+  },
+  "gallardo_glass_dmg": {
+    "name": "gallardo_glass_dmg",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/etkc/etkc_glass_dmg_b.color.png",
+        "baseColorMap": "vehicles/common/glass_dmg_n.dds",
+        "opacityMap": "/vehicles/etkc/etkc_glass_dmg_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 20,
+    "alphaTest": true,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+	"mapTo": "gallardo_glass_dmg",
+    "version": 1.5
+  },
+  "gallardo_windshield_dmg": {
+    "name": "gallardo_windshield_dmg",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/etkc/etkc_glass_dmg_b.color.png",
+        "normalMap": "vehicles/common/windshield_dmg_n.dds",
+        "opacityMap": "/vehicles/etkc/etkc_glass_dmg_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_windshield_dmg",
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "gallardo_wheel_01a": {
+    "name": "gallardo_wheel_01a",
+    "class": "Material",
+    "Stages": [
+      {
+		"ambientOcclusionMap": "vehicles/gallardo/gallardo_wheel_01a_s.dds",
+		"ambientOcclusionMapUseUV": 1,
+        "baseColorFactor": [
+          0.64,
+          0.64,
+          0.64,
+          1
+        ],
+        "baseColorMap": "vehicles/gallardo/gallardo_wheel_01a_d.dds",
+        "clearCoatFactor": 0.32,
+        "clearCoatRoughnessFactor": 0,
+        "detailMap": "vehicles/gallardo/gallardo_wheel_01a_s.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "metallicFactor": 0.53,
+        "metallicMap": "vehicles/gallardo/gallardo_c.data.dds",
+        "roughnessFactor": 0.28,
+        "roughnessMap": "vehicles/gallardo/gallardo_r.data.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_wheel_01a",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "castShadows": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "activeLayers": 1,
+	"version": 1.5
+  },
+  "gallardo_reverselight": {
+    "name": "gallardo_reverselight",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_reverselight",
+    "activeLayers": 0
+  },
+  "gallardo_signal_R": {
+    "name": "gallardo_signal_R",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_signal_R",
+    "activeLayers": 0
+  },
+  "gallardo_signal_L": {
+    "name": "gallardo_signal_L",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_signal_L",
+    "activeLayers": 0
+  },
+  "gallardo_headlight": {
+    "name": "gallardo_headlight",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_headlight",
+    "activeLayers": 0
+  },
+  "gallardo_runninglight": {
+    "name": "gallardo_runninglight",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_runninglight",
+    "activeLayers": 0
+  },
+  "gallardo_parkinglight": {
+    "name": "gallardo_parkinglight",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_parkinglight",
+    "activeLayers": 0
+  },
+  "gallardo_chmsl": {
+    "name": "gallardo_chmsl",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_chmsl",
+    "activeLayers": 0
+  },
+  "gallardo_foglight": {
+    "name": "gallardo_foglight",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_foglight",
+    "activeLayers": 0
+  },
+  "gallardo_taillight": {
+    "name": "gallardo_taillight",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_taillight",
+    "activeLayers": 0
+  },
+  "gallardo_taillight_L": {
+    "name": "gallardo_taillight_L",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_taillight_L",
+    "activeLayers": 0
+  },
+  "gallardo_taillight_R": {
+    "name": "gallardo_taillight_R",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_taillight_R",
+    "activeLayers": 0
+  },
+  "gallardo_highbeam": {
+    "name": "gallardo_highbeam",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_highbeam",
+	"activeLayers": 0
+  }
+}

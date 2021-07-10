@@ -8,7 +8,7 @@
     "slotType" : "gallardo_headlight_R",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["gallardo_headlightframe_R", ["gallardo_headlight_R"]],
+         //["gallardo_headlightframe_R", ["gallardo_headlight_R"]],
          {"deformGroup":"headlightglass_R_break", "deformMaterialBase":"gallardo_glass", "deformMaterialDamaged":"gallardo_glass_dmg"}
          ["gallardo_headlightglass_R", ["gallardo_headlight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound1", "deformVolume":0.5}],
          {"deformGroup":"headlightglass_R_break", "deformMaterialBase":"gallardo_lights", "deformMaterialDamaged":"gallardo_lights"}
@@ -26,7 +26,7 @@
             "lightAttenuation":{"x":0, "y":1, "z":1}
             "lightCastShadows":true
             "flareName":"vehicleHeadLightFlare"
-            "flareScale":0.25
+            "flareScale":0.015
             "cookieName":"art/special/BNG_light_cookie_headlight.png"
             "texSize":512
             "shadowSoftness":0.5
@@ -34,7 +34,7 @@
         //low beams
         ["lowbeam"    , "SPOTLIGHT"        , "he4r", "he3r", "he2r", {"x":210, "y":0, "z":30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.45, "y":0.85, "z":0.07},"deformGroup":"headlightglass_R_break"}],
         //high beams
-        ["highbeam" ,         "SPOTLIGHT"        , "he4r", "he3r", "he2r", {"x":210, "y":0, "z":30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.45, "y":0.85, "z":0.07},"lightRange":120,"lightBrightness":0.5,"flareScale":0.2,"deformGroup":"headlightglass_R_break"}],
+        ["highbeam" ,         "SPOTLIGHT"        , "he4r", "he3r", "he2r", {"x":210, "y":0, "z":30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.45, "y":0.85, "z":0.07},"lightRange":120,"lightBrightness":0.5,"flareScale":0.02,"deformGroup":"headlightglass_R_break"}],
         //signal
         {
             "lightInnerAngle":0
@@ -45,7 +45,7 @@
             "lightAttenuation":{"x":0, "y":1, "z":1}
             "lightCastShadows":false
             "flareName":"vehicleBrakeLightFlare"
-            "flareScale":0.15
+            "flareScale":0.02
         }
         ["signal_R"    , "SPOTLIGHT"        , "he4r", "he3r", "he2r", {"x":210, "y":-30, "z":30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.75, "y":0.5, "z":-0.0},"deformGroup":"headlightglass_R_break"}],
      ],
@@ -151,7 +151,7 @@
     "slotType" : "gallardo_headlight_L",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["gallardo_headlightframe_L", ["gallardo_headlight_L"]],
+         //["gallardo_headlightframe_L", ["gallardo_headlight_L"]],
          {"deformGroup":"headlightglass_L_break", "deformMaterialBase":"gallardo_glass", "deformMaterialDamaged":"gallardo_glass_dmg"}
          ["gallardo_headlightglass_L", ["gallardo_headlight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound2", "deformVolume":0.5}],
          {"deformGroup":"headlightglass_L_break", "deformMaterialBase":"gallardo_lights", "deformMaterialDamaged":"gallardo_lights"}
@@ -169,7 +169,7 @@
             "lightAttenuation":{"x":0, "y":1, "z":1}
             "lightCastShadows":true
             "flareName":"vehicleHeadLightFlare"
-            "flareScale":0.25
+            "flareScale":0.015
             "cookieName":"art/special/BNG_light_cookie_headlight.png"
             "texSize":512
             "shadowSoftness":0.5
@@ -177,7 +177,7 @@
         //low beams angled right slightly to avoid blinding oncoming traffic
         ["lowbeam"    , "SPOTLIGHT"        , "he4l", "he3l", "he2l", {"x":-45, "y":0, "z":-45} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.45, "y":0.85, "z":-0.07},"deformGroup":"headlightglass_L_break"}],
         //high beams
-        ["highbeam" ,         "SPOTLIGHT"        , "he4l", "he3l", "he2l", {"x":-30, "y":0, "z":-30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.45, "y":0.85, "z":-0.07},"lightRange":120,"lightBrightness":0.5,"flareScale":0.2,"deformGroup":"headlightglass_L_break"}],
+        ["highbeam" ,         "SPOTLIGHT"        , "he4l", "he3l", "he2l", {"x":-30, "y":0, "z":-30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.45, "y":0.85, "z":-0.07},"lightRange":120,"lightBrightness":0.5,"flareScale":0.02,"deformGroup":"headlightglass_L_break"}],
         //signal
         {
             "lightInnerAngle":0
@@ -188,7 +188,7 @@
             "lightAttenuation":{"x":0, "y":1, "z":1}
             "lightCastShadows":false
             "flareName":"vehicleBrakeLightFlare"
-            "flareScale":0.15
+            "flareScale":0.02
         }
         ["signal_L"    , "SPOTLIGHT"        , "he4l", "he3l", "he2l", {"x":-30, "y":0, "z":-30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.75, "y":0.5, "z":-0.0},"deformGroup":"headlightglass_L_break"}],
      ],

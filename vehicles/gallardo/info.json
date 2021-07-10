@@ -7,7 +7,7 @@
     "Type":"Car",
     "Years":{"min":2008, "max":2014},
     "Derby Class":"Compact Car",
-    "default_pc":"lp560-4_SA",
+    "default_pc":"lp550-2_M",
     "default_color":"Brilliance",
     "colors":{
         "Brilliance": "1.0 0.99 0.98 1.3",

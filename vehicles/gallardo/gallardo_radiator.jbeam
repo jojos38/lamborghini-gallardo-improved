@@ -7,9 +7,9 @@
     }
     "slotType" : "gallardo_radiator",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_radiator", ["gallardo_body"]],
-         ["gallardo_coolantlines", ["gallardo_body"]],
+         //["gallardo_coolantlines", ["gallardo_body"]],
     ],
     "mainEngine":{
         "radiatorArea":0.37,
@@ -35,9 +35,9 @@
     }
     "slotType" : "gallardo_radiator",
     "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_radiator", ["gallardo_body"]],
-         ["gallardo_coolantlines", ["gallardo_body"]],
+         //["gallardo_coolantlines", ["gallardo_body"]],
     ],
     "mainEngine":{
         "radiatorArea":0.4,
