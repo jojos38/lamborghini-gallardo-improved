@@ -222,44 +222,33 @@
     "class": "Material",
     "Stages": [
       {
-        "diffuseMap": "vehicles/common/null.dds",
-        "specularMap": "vehicles/common/null.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
+        "ambientOcclusionMap": "vehicles/gallardo/gallardo_misc_s.dds",
+        "baseColorMap": "vehicles/gallardo/gallardo_misc_d.dds",
+        "detailNormalMap": "vehicles/gallardo/gallardo_misc_n.dds",
+        "detailNormalMapStrength": 1.5,
+        "detailScale": [
           1,
           1
         ],
-        "useAnisotropic": true
+        "metallicFactor": 0.32,
+        "normalMap": "vehicles/gallardo/gallardo_misc_n.dds",
+        "roughnessFactor": 0.25
       },
       {
-        "diffuseMap": "vehicles/gallardo/gallardo_misc_d.dds",
-        "specularMap": "vehicles/gallardo/gallardo_misc_s.dds",
-        "specularPower": 32,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
+        "baseColorMap": "vehicles/gallardo/gallardo_misc_d.dds",
+        "roughnessFactor": 0.6
       },
       {},
       {}
     ],
     "mapTo": "gallardo_misc",
-    "castShadows": true,
-    "translucent": true,
-    "translucentBlendOp": "None",
-    "alphaTest": 0,
     "alphaRef": 0,
     "dynamicCubemap": true,
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
-    "activeLayers": 2
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
   },
   "gallardo_flag_it": {
     "name": "gallardo_flag_it",
@@ -352,43 +341,36 @@
     "class": "Material",
     "Stages": [
       {
-        "diffuseMap": "vehicles/common/null.dds",
-        "specularMap": "vehicles/common/null.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
+        "baseColorFactor": [
+          0.55,
+          0.55,
+          0.55,
           1
         ],
-        "useAnisotropic": true
-      },
-      {
-        "diffuseMap": "vehicles/gallardo/gallardo_cf_d.dds",
-        "specularPower": 32,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
+        "detailMap": "vehicles/gallardo/gallardo_cf_c.dds",
+        "detailNormalMap": "/vehicles/gallardo/gallardo_cf_n.dds",
+        "detailNormalMapStrength": 10,
+        "detailScale": [
+          0.65,
+          0.65
         ],
-        "useAnisotropic": true
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/gallardo/gallardo_cf_n.dds",
+        "opacityFactor": 0.1,
+        "roughnessFactor": 0.527
       },
+      {},
       {},
       {}
     ],
     "mapTo": "gallardo_cf",
-    "castShadows": true,
-    "translucent": true,
-    "translucentBlendOp": "None",
-    "alphaTest": 0,
     "alphaRef": 0,
     "dynamicCubemap": true,
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
-    "activeLayers": 2
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
   },
   "gallardo_gauges": {
     "name": "gallardo_gauges",
@@ -831,46 +813,27 @@
     "class": "Material",
     "Stages": [
       {
-        "diffuseMap": "vehicles/common/null.dds",
-        "specularMap": "vehicles/common/null.dds",
-        "normalMap": "vehicles/gallardo/gallardo_steeringwheel_n.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
+        "baseColorMap": "vehicles/gallardo/gallardo_steeringwheel_d.dds",
+        "detailScale": [
           1,
           1
         ],
-        "useAnisotropic": true
-      },
-      {
-        "diffuseMap": "vehicles/gallardo/gallardo_steeringwheel_d.dds",
+        "metallicFactor": 1,
         "normalMap": "vehicles/gallardo/gallardo_steeringwheel_n.dds",
-        "specularMap": "vehicles/gallardo/gallardo_steeringwheel_s.dds",
-        "specularPower": 8,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
+        "roughnessFactor": 0.38
       },
+      {},
       {},
       {}
     ],
     "mapTo": "gallardo_steeringwheel",
-    "castShadows": true,
-    "translucent": true,
-    "translucentBlendOp": "None",
-    "alphaTest": 0,
     "alphaRef": 0,
     "cubemap": "global_cubemap_metalblurred",
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
-    "activeLayers": 2
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
   },
   "gallardo_mesh": {
     "name": "gallardo_mesh",
@@ -1430,44 +1393,33 @@
     "class": "Material",
     "Stages": [
       {
-        "diffuseMap": "vehicles/common/null.dds",
-        "specularMap": "vehicles/common/null.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
+        "baseColorFactor": [
+          0.64,
+          0.64,
+          0.64,
+          1
+        ],
+        "baseColorMap": "vehicles/gallardo/gallardo_disc_d.dds",
+        "detailNormalMapStrength": 0.2,
+        "detailScale": [
           1,
           1
         ],
-        "useAnisotropic": true
+        "metallicFactor": 1,
+        "normalMap": "vehicles/gallardo/gallardo_disc_n.dds",
+        "roughnessFactor": 0.8
       },
-      {
-        "diffuseMap": "vehicles/gallardo/gallardo_disc_d.dds",
-        "specularMap": "vehicles/gallardo/gallardo_disc_s.dds",
-        "specularPower": 32,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
-      },
+      {},
       {},
       {}
     ],
     "mapTo": "gallardo_disc",
-    "castShadows": true,
-    "translucent": true,
-    "translucentBlendOp": "None",
-    "alphaTest": 0,
     "alphaRef": 0,
     "cubemap": "global_cubemap_metalblurred",
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
-    "activeLayers": 2
+    "translucentBlendOp": "None",
+    "version": 1.5
   },
   "gallardo_badges": {
     "name": "gallardo_badges",
