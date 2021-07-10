@@ -96,7 +96,7 @@
 		"useAnisotropic": true
       },
       {
-        "baseColorMap": "vehicles/gallardo/gallardo_skin_bicolore.color.png",
+        "baseColorMap": "vehicles/gallardo/gallardo_skin_bicolore.color.dds",
         "clearCoatFactor": 1,
         "clearCoatMap": "/vehicles/gallardo/gallardo_cc.data.dds",
         "colorPaletteMap": "/vehicles/gallardo/gallardo_p.color.dds",
@@ -199,8 +199,8 @@
           1,
           1
         ],
-        "baseColorMap": "vehicles/gallardo/gallardo_skin_isp.png",
-        "opacityMap": "vehicles/gallardo/gallardo_skin_isp_o.png",
+        "baseColorMap": "vehicles/gallardo/gallardo_skin_isp.dds",
+        "opacityMap": "vehicles/gallardo/gallardo_skin_isp_o.dds",
         "roughnessFactor": 0
       },
       {}
@@ -1474,235 +1474,120 @@
     "class": "Material",
     "Stages": [
       {
-        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
+        "baseColorMap": "vehicles/gallardo/gallardo_badges_d.dds",
         "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
-        "diffuseMap": "vehicles/gallardo/gallardo_badges_o.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
+        "opacityMap": "vehicles/gallardo/gallardo_badges_oi.dds",
+        "roughnessFactor": 0.143
       },
-      {
-        "diffuseMap": "vehicles/gallardo/gallardo_badges_d.dds",
-        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
-        "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
-      },
+      {},
       {},
       {}
     ],
     "mapTo": "gallardo_badges",
-    "castShadows": false,
-    "translucent": true,
-    "translucentBlendOp": "None",
-    "alphaTest": 1,
     "alphaRef": 36,
+    "castShadows": false,
     "dynamicCubemap": true,
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
-    "translucentZWrite": 1,
-    "activeLayers": 2
+    "translucent": true,
+    "translucentBlendOp": "Sub",
+    "version": 1.5
   },
   "gallardo_badges.skin_bodybadge.sl": {
     "name": "gallardo_badges.skin_bodybadge.sl",
     "class": "Material",
     "Stages": [
       {
-        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
+        "baseColorMap": "vehicles/gallardo/gallardo_badges_sl_d.dds",
         "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
-        "diffuseMap": "vehicles/gallardo/gallardo_badges_o.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
+        "opacityMap": "vehicles/gallardo/gallardo_badges_oi.dds",
+        "roughnessFactor": 0.143
       },
-      {
-        "diffuseMap": "vehicles/gallardo/gallardo_badges_sl_d.dds",
-        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
-        "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
-      },
+      {},
       {},
       {}
     ],
     "mapTo": "gallardo_badges.skin_bodybadge.sl",
-    "castShadows": false,
-    "translucent": true,
-    "translucentBlendOp": "None",
-    "alphaTest": 1,
     "alphaRef": 36,
+    "castShadows": false,
     "dynamicCubemap": true,
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
-    "translucentZWrite": 1,
-    "activeLayers": 2
+    "translucent": true,
+    "translucentBlendOp": "Sub",
+    "version": 1.5
   },
   "gallardo_badges.skin_bodybadge.vb": {
     "name": "gallardo_badges.skin_bodybadge.vb",
     "class": "Material",
     "Stages": [
       {
-        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
+        "baseColorMap": "vehicles/gallardo/gallardo_badges_d_vb.dds",
         "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
-        "diffuseMap": "vehicles/gallardo/gallardo_badges_o_vb.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
+        "opacityMap": "vehicles/gallardo/gallardo_badges_oi.dds",
+        "roughnessFactor": 0.143
       },
-      {
-        "diffuseMap": "vehicles/gallardo/gallardo_badges_d_vb.dds",
-        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
-        "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
-      },
+      {},
       {},
       {}
     ],
     "mapTo": "gallardo_badges.skin_bodybadge.vb",
-    "castShadows": false,
-    "translucent": true,
-    "translucentBlendOp": "None",
-    "alphaTest": 1,
     "alphaRef": 36,
+    "castShadows": false,
     "dynamicCubemap": true,
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
-    "translucentZWrite": 1,
-    "activeLayers": 2
+    "translucent": true,
+    "translucentBlendOp": "Sub",
+    "version": 1.5
   },
   "gallardo_badges.skin_bodybadge.ann": {
     "name": "gallardo_badges.skin_bodybadge.ann",
     "class": "Material",
     "Stages": [
       {
-        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
+        "baseColorMap": "vehicles/gallardo/gallardo_badges_d_ann.dds",
         "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
-        "diffuseMap": "vehicles/gallardo/gallardo_badges_o_vb.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
+        "opacityMap": "vehicles/gallardo/gallardo_badges_oi.dds",
+        "roughnessFactor": 0.143
       },
-      {
-        "diffuseMap": "vehicles/gallardo/gallardo_badges_d_ann.dds",
-        "specularMap": "vehicles/gallardo/gallardo_badges_s.dds",
-        "normalMap": "vehicles/gallardo/gallardo_badges_n.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
-      },
+      {},
       {},
       {}
     ],
     "mapTo": "gallardo_badges.skin_bodybadge.ann",
-    "castShadows": false,
-    "translucent": true,
-    "translucentBlendOp": "None",
-    "alphaTest": 1,
     "alphaRef": 36,
+    "castShadows": false,
     "dynamicCubemap": true,
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
-    "translucentZWrite": 1,
-    "activeLayers": 2
+    "translucent": true,
+    "translucentBlendOp": "Sub",
+    "version": 1.5
   },
   "gallardo_cockbadge": {
     "name": "gallardo_cockbadge",
     "class": "Material",
     "Stages": [
       {
-        "specularMap": "vehicles/gallardo/gallardo_cockbadge_s.dds",
+        "baseColorMap": "vehicles/gallardo/gallardo_cockbadge_d.dds",
+        "metallicFactor": 0.977,
         "normalMap": "vehicles/gallardo/gallardo_cockbadge_n.dds",
-        "diffuseMap": "vehicles/gallardo/gallardo_cockbadge_o.dds",
-        "specularPower": 128,
-        "pixelSpecular": 0,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
+        "opacityMap": "vehicles/gallardo/gallardo_cockbadge_oi.dds"
       },
-      {
-        "diffuseMap": "vehicles/gallardo/gallardo_cockbadge_d.dds",
-        "specularMap": "vehicles/gallardo/gallardo_cockbadge_s.dds",
-        "normalMap": "vehicles/gallardo/gallardo_cockbadge_n.dds",
-        "specularPower": 128,
-        "pixelSpecular": 0,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
-      },
+      {},
       {},
       {}
     ],
     "mapTo": "gallardo_cockbadge",
-    "castShadows": false,
-    "translucent": true,
-    "translucentBlendOp": "None",
-    "alphaTest": 1,
     "alphaRef": 36,
+    "castShadows": false,
     "dynamicCubemap": true,
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
-    "translucentZWrite": 1,
-    "activeLayers": 2
+    "translucent": true,
+    "translucentBlendOp": "Sub",
+    "version": 1.5
   },
   "gallardo_lights": {
     "name": "gallardo_lights",
@@ -1984,7 +1869,6 @@
     "Stages": [
       {
 		"ambientOcclusionMap": "vehicles/gallardo/gallardo_wheel_01a_s.dds",
-		"ambientOcclusionMapUseUV": 1,
         "baseColorFactor": [
           0.64,
           0.64,
