@@ -615,44 +615,36 @@
     "class": "Material",
     "Stages": [
       {
-        "diffuseMap": "vehicles/common/null.dds",
-        "specularMap": "vehicles/common/null.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
+        "ambientOcclusionMap": "vehicles/gallardo/gallardo_engine_m.dds",
+        "baseColorFactor": [
+          0.588235021,
+          0.588235021,
+          0.588235021,
+          1
+        ],
+        "baseColorMap": "vehicles/gallardo/gallardo_engine_c.dds",
+		"detailMap": "vehicles/gallardo/gallardo_engine_c.dds",
+		"detailScale": [
           1,
           1
         ],
-        "useAnisotropic": true
+        "metallicFactor": 0.6,
+        "metallicMap": "vehicles/gallardo/gallardo_engine_m.dds",
+        "normalMap": "vehicles/gallardo/gallardo_engine_n.dds",
+        "roughnessFactor": 0.75
       },
-      {
-        "diffuseMap": "vehicles/gallardo/gallardo_engine_d.dds",
-        "specularMap": "vehicles/gallardo/gallardo_engine_s.dds",
-        "specularPower": 32,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
-      },
+      {},
       {},
       {}
     ],
     "mapTo": "gallardo_engine",
-    "castShadows": true,
-    "translucent": true,
-    "translucentBlendOp": "None",
-    "alphaTest": 0,
     "alphaRef": 0,
     "dynamicCubemap": true,
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
-    "activeLayers": 2
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
   },
   "gallardo_cockpit": {
     "name": "gallardo_cockpit",
@@ -1384,14 +1376,14 @@
     "class": "Material",
     "Stages": [
       {
-        "diffuseMap": "@gallardo_gauges_screen",
+        "//diffuseMap": "@gallardo_gauges_screen",
         "opacityMap": "vehicles/common/null.dds",
         "specularMap": "vehicles/common/null.dds",
         "diffuseColor": [
           1,
           1,
           1,
-          1
+          0
         ],
         "specularPower": 32,
         "useAnisotropic": true,
@@ -1998,5 +1990,33 @@
     ],
     "mapTo": "gallardo_highbeam",
 	"activeLayers": 0
+  },
+  "gallardo_black": {
+    "name": "gallardo_black",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_black",
+    "castShadows": true,
+    "translucent": false,
+    "translucentBlendOp": "None",
+    "alphaTest": 0,
+    "alphaRef": 0,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "activeLayers": 1,
+	"version": 1.5
   }
 }

@@ -406,7 +406,7 @@
     "information":{
         "authors":"BeamNG",
         "name":"Adjustable Race ECU",
-        "value":10600,
+        "value":4600,
     },
     "slotType" : "gallardo_engine_ecu",
     "variables": [

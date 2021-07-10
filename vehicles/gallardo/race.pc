@@ -1,6 +1,5 @@
 {
   "format":2,
-  "licenseName":"jojos38 [Certifié 38]",
   "model":"gallardo",
   "paints":[
     {
@@ -64,8 +63,9 @@
     "gallardo_doorpanel_R":"gallardo_doorpanel_R",
     "gallardo_driveshaft":"gallardo_driveshaft",
     "gallardo_engine":"gallardo_engine_5.2",
-    "gallardo_engine_ecu":"gallardo_engine_ecu",
-    "gallardo_engine_internals":"gallardo_engine_internals_stage1",
+    "gallardo_engine_ecu":"gallardo_engine_ecu_race",
+    "gallardo_engine_internals":"gallardo_engine_internals_stage2",
+    "gallardo_enginemounts":"gallardo_enginemounts_ultra",
     "gallardo_fender_L":"gallardo_fender_L",
     "gallardo_fender_R":"gallardo_fender_R",
     "gallardo_fenderflare_FL":"",
@@ -86,6 +86,7 @@
     "gallardo_mirror_R":"gallardo_mirror_R",
     "gallardo_mod":"",
     "gallardo_muffler":"gallardo_muffler",
+    "gallardo_oilpan":"gallardo_oilpan_race",
     "gallardo_power_steering":"",
     "gallardo_radiator":"gallardo_radiator",
     "gallardo_seat_FL":"gallardo_race_seat_FL",

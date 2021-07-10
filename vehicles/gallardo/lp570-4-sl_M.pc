@@ -40,13 +40,13 @@
     }
   ],
   "parts":{
-    "brakepad_F":"brakepad_F_sport",
-    "brakepad_R":"brakepad_R_sport",
+    "brakepad_F":"brakepad_F_semi_race",
+    "brakepad_R":"brakepad_R_semi_race",
     "gallardo_ABS":"gallardo_ABS",
     "gallardo_ESC":"gallardo_ESC",
     "gallardo_body":"gallardo_body",
-    "gallardo_brake_F":"gallardo_brake_F_S",
-    "gallardo_brake_R":"gallardo_brake_R_S",
+    "gallardo_brake_F":"gallardo_brake_F_race",
+    "gallardo_brake_R":"gallardo_brake_R_race",
     "gallardo_bumper_F":"gallardo_bumper_F",
     "gallardo_bumper_R":"gallardo_bumper_R",
     "gallardo_bumperbar_F":"gallardo_bumperbar_F",

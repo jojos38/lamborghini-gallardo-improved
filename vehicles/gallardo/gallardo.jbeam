@@ -21,7 +21,7 @@
     "controller": [
         ["fileName"],
         ["vehicleController", {}],
-		["etkGauges", {"materialName": "@gallardo_gauges_screen", "htmlPath": "local://local/vehicles/gallardo/gauges_screen_v10.html"}],
+		["gallardoGauges", {"materialName": "@gallardo_gauges_screen", "htmlPath": "local://local/vehicles/gallardo/gauges_screen_v10.html"}],
         ["beamNavigator",{"screenMaterialName": "@screen_gps", "name":"gallardo_navi"}],
     ],
 
@@ -34,6 +34,8 @@
             "gallardo_chmsl":{"simpleFunction":{"brake":100}, "off":"gallardo_lights", "on":"gallardo_lights_on", "on_intense":"gallardo_lights_on_intense"},
             "gallardo_headlight":{"simpleFunction":{"lowbeam":0.49,"highbeam":1}, "off":"gallardo_lights", "on":"gallardo_lights_on", "on_intense":"gallardo_lights_on_intense"},
             "gallardo_reverselight":{"simpleFunction":{"reverse":0.49}, "off":"gallardo_lights", "on":"gallardo_lights_on", "on_intense":"gallardo_lights_on_intense"},
+			"gallardo_lcd":{"simpleFunction":"ignition", "off":"gallardo_black", "on":"gallardo_lcd_on"},
+			"gallardo_screen":{"simpleFunction":"ignition", "off":"gallardo_black", "on":"gallardo_screen"},
 
             "gallardo_gauges":{"simpleFunction":"lowhighbeam", "off":"gallardo_gauges", "on":"gallardo_gauges_on"},
 			"gallardo_cockpit":{"simpleFunction":"lowhighbeam", "off":"gallardo_cockpit", "on":"gallardo_cockpit_on"},
@@ -43,7 +45,7 @@
             "signal_R":{"simpleFunction":"signal_R", "off":"invis", "on":"decals_gauges"},
             "checkengine":{"simpleFunction":"checkengine", "off":"invis", "on":"decals_gauges"},
             "battery":{"simpleFunction":"battery", "off":"invis", "on":"decals_gauges"},
-			"lowhighbeam":{"simpleFunction":"lowhighbeam", "off":"invis", "on":"decals_gauges"},
+			"lowhighbeam":{"simpleFunction":{"lowbeam":0.49,"highbeam":1}, "off":"gallardo_lights", "on":"gallardo_lights_on", "on_intense":"gallardo_lights_on_intense"},
             "highbeam":{"simpleFunction":"highbeam", "off":"invis", "on":"decals_gauges"},
             "parkingbrake":{"simpleFunction":"parkingbrake", "off":"invis", "on":"decals_gauges"},
             "lowfuel":{"simpleFunction":"lowfuel", "off":"invis", "on":"decals_gauges"},
