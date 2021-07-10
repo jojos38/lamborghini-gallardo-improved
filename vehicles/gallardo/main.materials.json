@@ -1589,43 +1589,29 @@
     "class": "Material",
     "Stages": [
       {
-        "diffuseMap": "vehicles/common/null.dds",
+        "colorMap": "vehicles/common/null.dds",
+        "roughnessFactor": 0.445299804,
         "specularMap": "vehicles/common/null.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
         "useAnisotropic": true
       },
       {
-        "diffuseMap": "vehicles/gallardo/gallardo_lights_d.dds",
+        "colorMap": "vehicles/gallardo/gallardo_lights_d.dds",
+        "roughnessFactor": 0.607767701,
         "specularMap": "vehicles/gallardo/gallardo_lights_s.dds",
-        "specularPower": 32,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
         "useAnisotropic": true
       },
       {
-        "diffuseMap": "vehicles/gallardo/gallardo_lights_g.dds",
-        "specularMap": "vehicles/gallardo/gallardo_lights_s.dds",
+        "colorMap": "vehicles/gallardo/gallardo_lights_g.dds",
         "diffuseColor": [
-          1.5,
-          1.5,
-          1.5,
-          0.5
+          1.0,
+          1.0,
+          1.0,
+          1.0
         ],
-        "useAnisotropic": true,
+        "emissive": true,
         "glow": true,
-        "emissive": true
+        "specularMap": "vehicles/gallardo/gallardo_lights_s.dds",
+        "useAnisotropic": true
       },
       {}
     ],
@@ -1645,45 +1631,37 @@
     "class": "Material",
     "Stages": [
       {
-        "diffuseMap": "vehicles/common/null.dds",
+        "colorMap": "vehicles/common/null.dds",
+        "roughnessFactor": 0.445299804,
         "specularMap": "vehicles/common/null.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
         "useAnisotropic": true
       },
       {
-        "diffuseMap": "vehicles/gallardo/gallardo_lights_d.dds",
-        "specularMap": "vehicles/gallardo/gallardo_lights_s.dds",
-        "specularPower": 32,
-        "pixelSpecular": 1,
-		"emissive" : true,
-        "glow" : true,
+        "colorMap": "vehicles/gallardo/gallardo_lights_d.dds",
         "diffuseColor": [
-          0.35,
-          0.35,
-          0.35,
+          0.349999994,
+          0.349999994,
+          0.349999994,
           1
         ],
+        "emissive": true,
+        "glow": true,
+        "roughnessFactor": 0.607767701,
+        "specularMap": "vehicles/gallardo/gallardo_lights_s.dds",
         "useAnisotropic": true
       },
       {
-        "diffuseMap": "vehicles/gallardo/gallardo_lights_g.dds",
-        "specularMap": "vehicles/gallardo/gallardo_lights_s.dds",
+        "colorMap": "vehicles/gallardo/gallardo_lights_g.dds",
         "diffuseColor": [
-          1.75,
-          1.75,
-          1.75,
+          0.705882013,
+          0.784313977,
+          1.82745099,
           1
         ],
-        "useAnisotropic": true,
-        "emissive" : true,
-        "glow" : true,
+        "emissive": true,
+        "glow": true,
+        "specularMap": "vehicles/gallardo/gallardo_lights_s.dds",
+        "useAnisotropic": true
       },
       {}
     ],
