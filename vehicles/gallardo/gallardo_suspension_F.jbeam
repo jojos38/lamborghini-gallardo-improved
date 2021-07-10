@@ -899,7 +899,7 @@
     ],
      "props": [
         ["func"      , "mesh"           , "idRef:", "idX:", "idY:", "baseRotation"        , "rotation"            , "translation"        , "min", "max", "offset", "multiplier",],
-        ["driveshaft", "gallardo_driveshaft", "f3r", "f3l", "f8r",    {"x":0, "y":0, "z":0}, {"x":0, "y":1, "z":0} , {"x":0, "y":0, "z":0}, -360, 360, 0, 1,{"breakGroup":"driveshaft","deformGroup":"driveshaft","optional":true}],
+        //["driveshaft", "gallardo_driveshaft", "f3r", "f3l", "f8r",    {"x":0, "y":0, "z":0}, {"x":0, "y":1, "z":0} , {"x":0, "y":0, "z":0}, -360, 360, 0, 1,{"breakGroup":"driveshaft","deformGroup":"driveshaft","optional":true}],
     ],
     "beams": [
           ["id1:", "id2:"],

@@ -879,6 +879,28 @@
     "materialTag1": "vehicle",
     "activeLayers": 2
   },
+  "gallardo_metal": {
+    "name": "gallardo_metal",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/common/null.dds",
+        "metallicFactor": 1,
+        "roughnessFactor": 0.435000002
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_metal",
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
   "gallardo_alcantara": {
     "name": "gallardo_alcantara",
     "class": "Material",

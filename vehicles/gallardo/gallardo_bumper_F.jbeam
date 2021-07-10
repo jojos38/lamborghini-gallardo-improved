@@ -24,11 +24,11 @@
          {"selfCollision":true},
          {"nodeWeight":0.76},
          {"group":"gallardo_bumper_F"},
-         ["fb1rr", -0.76000, -2.04503, 0.50061],
+         ["fb1rr", -0.76000, -2.04503, 0.49061],
          ["fb1r", -0.34000, -2.19003, 0.48561],
          ["fb1", 0.00000, -2.22003, 0.47561],
          ["fb1l", 0.34000, -2.19003, 0.48561],
-         ["fb1ll", 0.76000, -2.04503, 0.50061],
+         ["fb1ll", 0.76000, -2.04503, 0.49061],
 
          ["fb2rr", -0.74000, -2.13003, 0.43061],
          ["fb2r", -0.43000, -2.24003, 0.40561],
@@ -190,7 +190,7 @@
           //attach
           {"disableTriangleBreaking":true}
           {"beamSpring":220550,"beamDamp":120},
-          {"beamDeform":4150,"beamStrength":10500},
+          {"beamDeform":4150,"beamStrength":15500},
           //r
           {"breakGroup":"frontbumper_R"},
           ["fb4rr","fe6r"],

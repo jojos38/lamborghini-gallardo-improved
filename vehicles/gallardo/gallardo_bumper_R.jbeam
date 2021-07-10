@@ -32,7 +32,7 @@
 
          ["rb2rr", -0.75000, 1.89525, 0.50120],
          ["rb2r", -0.42000, 1.99015, 0.54121],
-         ["rb2", 0.00000, 2.02570, 0.48121],
+         ["rb2", 0.00000, 2.02570, 0.58121],
          ["rb2l", 0.42000, 1.99015, 0.54121],
          ["rb2ll", 0.75000, 1.89525, 0.50120],
 
@@ -58,7 +58,7 @@
           ["id1:", "id2:"],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
           //--REAR BUMPER--
-          {"beamSpring":220550,"beamDamp":50},
+          {"beamSpring":100550,"beamDamp":50},
           {"beamDeform":32550,"beamStrength":59000},
           //rear bumper main shape
           ["rb4r","rb1rr"],
@@ -199,7 +199,7 @@
           //attach
           {"disableTriangleBreaking":true}
           {"beamSpring":330550,"beamDamp":120},
-          {"beamDeform":3750,"beamStrength":10500},
+          {"beamDeform":3750,"beamStrength":20500},
           {"breakGroup":"rearbumper_a_R"},
           //r
           ["rb1rr","q12r"],
