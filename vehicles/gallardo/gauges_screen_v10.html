@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+	<style>
+		@font-face {
+			font-family: Segment7Standard;
+			src: url(/vehicles/gallardo/Segment7Standard.ttf);
+		}
+
+		body {
+			margin: 0;
+			padding-top: 0px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			font-size: 35px;
+			overflow: hidden;
+		}
+
+		#gauge {
+			width: 100%;
+		}
+
+		#center-screen {
+			width: 15%;
+			margin-top: 10px;
+			margin-left: 120px;
+			color: #E6E6E6;
+			font-size: 20px;
+			font-variant: narrow;
+			text-align: right;
+		}
+				
+		#speed {
+			font-size: 30px;
+			padding-bottom: 50px;
+			display: inline-block;
+			font-family: Arial;
+		}
+		#time {
+			font-size: 30px;
+			text-align:center;
+			padding-bottom: 50px;
+			color: #FF0000;
+			display: inline-block;
+			font-family: Segment7Standard;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="gauge">
+		<div id="center-screen">
+			<div id="speed">
+				<div id="speedVal"></div>
+			</div>
+			<div id="time"></div>
+		</div>
+	</div>
+	<script>
+		function updateData(data) {
+			document.getElementById('time').innerText = data.time;
+			document.getElementById('speedVal').innerText = (data.speed * 3.6).toFixed(0);
+		};
+	</script>
+</body>
+
+</html>

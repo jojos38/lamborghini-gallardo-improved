@@ -1,0 +1,71 @@
+{
+"gallardo_skin_bodybadge_lp560-4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"LP560-4 Lettering",
+        "value":20,
+    }
+    "slotType" : "skin_bodybadge",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_lettering_body", ["gallardo_body","gallardo_roof"]],
+		 ["gallardo_logo_R", ["gallardo_body","gallardo_roof"]],
+    ],
+	"skinName":"",
+}
+"gallardo_skin_bodybadge_isp": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"LP560-4 ISP Lettering",
+        "value":20,
+    }
+    "slotType" : "skin_bodybadge",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_lettering_body", ["gallardo_body","gallardo_roof"]],
+    ],
+	"skinName":"",
+}
+"gallardo_skin_bodybadge_lp570-4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"LP570-4 Lettering",
+        "value":20,
+    }
+    "slotType" : "skin_bodybadge",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_lettering_body", ["gallardo_body","gallardo_roof"]],
+		 ["gallardo_logo_R", ["gallardo_body","gallardo_roof"]],
+    ],
+	"skinName":"sl",
+}
+"gallardo_skin_bodybadge_lp550-2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"LP550-2 Lettering",
+        "value":20,
+    }
+    "slotType" : "skin_bodybadge",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_lettering_body", ["gallardo_body","gallardo_roof"]],
+		 ["gallardo_logo_R", ["gallardo_body","gallardo_roof"]],
+    ],
+	"skinName":"vb",
+}
+"gallardo_skin_bodybadge_lp560-2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"LP560-2 Lettering",
+        "value":20,
+    }
+    "slotType" : "skin_bodybadge",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_lettering_body", ["gallardo_body","gallardo_roof"]],
+		 ["gallardo_logo_R", ["gallardo_body","gallardo_roof"]],
+    ],
+	"skinName":"ann",
+}
+}

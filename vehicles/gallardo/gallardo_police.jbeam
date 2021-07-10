@@ -1,0 +1,51 @@
+{
+"gallardo_lightbar": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Light Bar",
+        "value":800,
+    }
+    "slotType" : "gallardo_lightbar",
+	"slots": [
+        ["type", "default", "description"]
+        ["soundscape_siren","soundscape_siren_10", "Siren Audio"],
+    ],
+    "soundscape": [
+        ["name", "src"],
+        //affects siren location because siren soundscape part is loaded after
+        {"node:":"f15"},
+    ],
+    "controller": [
+        ["fileName"],
+        ["lightbar", {
+            "defaultModeIndex": 1,
+            "modes": [
+                ["name", "config"]
+                ["Chase", [
+                    ["electric", "value", "duration"],
+                        ["lightbar_r", 1, 0.2],
+                        ["lightbar_r", 0, 0.2],
+						
+                        ["lightbar_l", 0, 0.2],
+                        ["lightbar_l", 1, 0.2],
+                    ],
+                ],
+            ],
+        }],
+    ],
+    "glowMap":{
+            "eur_lightbar_b1":                   {"simpleFunction":"lightbar_l", "off":"eur_lightbar_b1", "on":"eur_lightbar_on"},
+            "eur_lightbar_b2":                   {"simpleFunction":"lightbar_r", "off":"eur_lightbar_b2", "on":"eur_lightbar_on"},
+			
+            "mod_lightbar_b1":                   {"simpleFunction":"lightbar_l", "off":"mod_lightbar_b1", "on":"mod_lightbar_on"},
+            "mod_lightbar_b2":                   {"simpleFunction":"lightbar_r", "off":"mod_lightbar_b2", "on":"mod_lightbar_on"},
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["gallardo_lightbar", ["gallardo_body","gallardo_roof"]],
+
+        ["led_blue_2", ["gallardo_bumper_R"], [], {"pos":{"x": -0.48473, "y":1.92162, "z":0.67024}, "rot":{"x":8.86, "y":0, "z":188}, "scale":{"x":1, "y":1, "z":1}}],
+        ["led_blue", ["gallardo_bumper_R"], [], {"pos":{"x": 0.48473, "y":1.92162, "z":0.67024}, "rot":{"x":8.86, "y":0, "z":172}, "scale":{"x":1, "y":1, "z":1}}],
+    ],
+}
+}

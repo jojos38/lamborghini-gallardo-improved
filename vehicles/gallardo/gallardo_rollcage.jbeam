@@ -1,0 +1,79 @@
+{
+"gallardo_rollcage": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Roll Cage",
+        "value":2200,
+    }
+    "slotType" : "gallardo_rollcage",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_rollcage", ["gallardo_rollcage","gallardo_body","gallardo_roof"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"selfCollision":true}
+         {"collision":true}
+         {"nodeWeight":46},
+         {"group":"gallardo_rollcage"},
+         ["rc1", 0.0, 0.45, 0.8],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1601000,"beamDamp":50},
+          {"beamDeform":180000,"beamStrength":"FLT_MAX"},
+          ["rc1","rf3r"],
+          ["rc1","rf3l"],
+          ["rc1","f3rr"],
+          ["rc1","f3ll"],
+
+          ["rc1","rf1"],
+          ["rc1","rf2"],
+          ["rc1","rf3"],
+
+          ["rc1","f9r"],
+          ["rc1","f9l"],
+          ["rc1","q2r"],
+          ["rc1","q2l"],
+
+          ["rc1","f1rr"],
+          ["rc1","f1ll"],
+
+          ["rc1","rf1r"],
+          ["rc1","rf1l"],
+
+          {"optional":true},
+          ["rf3r","f3rr"],
+          ["rf3l","f3ll"],
+          ["rf1r","rf1l"],
+          ["rf3r","rf3l"],
+
+          ["rf3r","q2r"],
+          ["rf3l","q2l"],
+          ["rf3r","f9r"],
+          ["rf3l","f9l"],
+
+          ["rf1r","f1rr"],
+          ["rf1l","f1ll"],
+          ["rf1r","f2rr"],
+          ["rf1l","f2ll"],
+          ["p2rr","f5rr"],
+          ["p2ll","f5ll"],
+
+          ["f3rr","f6rr"],
+          ["f3ll","f6ll"],
+
+          ["q1r","f1rr"],
+          ["q1l","f1ll"],
+          ["q1r","f5rr"],
+          ["q1l","f5ll"],
+          {"optional":false},
+
+    ],
+}
+},
+}

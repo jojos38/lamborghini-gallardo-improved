@@ -1,0 +1,27 @@
+{
+"gallardo_spoiler": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Spoiler",
+        "value":900,
+    }
+    "slotType" : "gallardo_spoiler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_spoiler", ["gallardo_tailgate"]],
+    ],
+}
+"gallardo_spoiler_sl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Superleggera Spoiler",
+        "value":900,
+    }
+    "slotType" : "gallardo_spoiler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_spoiler_sl", ["gallardo_tailgate"]],
+    ],
+
+}
+}

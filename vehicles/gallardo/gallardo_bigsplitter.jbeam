@@ -1,0 +1,14 @@
+{
+"gallardo_splitter_F_sl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Superleggera Front Splitter",
+        "value":600,
+    }
+    "slotType" : "gallardo_lip_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_splitter_F_sl", ["gallardo_bumper_F"]],
+    ],
+}
+}

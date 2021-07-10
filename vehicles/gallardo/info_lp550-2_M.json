@@ -1,0 +1,14 @@
+{
+"Config Type":"Factory",
+"Performance Class":"9",
+"Drivetrain":"RWD",
+"Body Style":"Coupe",
+"Value":195795,
+"Description":"Base RWD model sold from 2011-2014 with a 6-speed manual",
+"Configuration":"LP550-2 (M)",
+"Induction Type":"NA",
+"default_color":"Solar",
+"Propulsion":"ICE",
+"Transmission":"Manual",
+"Fuel Type":"Gasoline"
+}

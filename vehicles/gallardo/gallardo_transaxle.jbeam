@@ -1,0 +1,246 @@
+{
+"gallardo_transaxle_6M": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"6-Speed Manual Transaxle",
+        "value":4800,
+    }
+    "slotType" : "gallardo_transaxle",
+    "slots": [
+        ["type", "default", "description"],
+        ["gallardo_flywheel","gallardo_flywheel","Flywheel", {"coreSlot":true}],
+        ["gallardo_transfer_case","gallardo_transfer_case_AWD", "Transfer Case"{"coreSlot":true}],
+        ["gallardo_differential_R","gallardo_differential_R_LSD", "Rear Differential"],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["frictionClutch", "clutch", "mainEngine", 1],
+        ["manualGearbox", "gearbox", "clutch", 1],
+    ],
+    "vehicleController": {
+        "calculateOptimalLoadShiftPoints": true,
+        "shiftDownRPMOffsetCoef":1.22,
+        "lowShiftDownRPM":[0,0,0,1400,1600,1500,1500,1500],
+        "lowShiftUpRPM":[0,0,3400,3000,2700,2700,2700],
+        "clutchLaunchStartRPM": 2500
+        "clutchLaunchTargetRPM": 3000
+    },
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":[-2.81, 0, 3.31, 2.05, 1.46, 1.14, 0.94, 0.78],
+        "friction": 5,
+        "gearboxNode:":["tra1"],
+        "straightCutGearIndexes":{}
+    },
+    "props": [
+        ["func",   "mesh",            "idRef:", "idX:", "idY:", "baseRotation",            "rotation",              "translation",            "min", "max", "offset", "multiplier"]
+        //clutch pedal
+        ["clutch", "gallardo_clutchpedal", "f1l","f1r","f6l",        {"x":-5, "y":0, "z":180}, {"x":-20, "y":0, "z":0}, {"x":0.0, "y":0, "z":0},   0, 1, 0, 1],
+		["brake",      "gallardo_brakepedal_M",    "f1l","f1r","f6l",        {"x":0, "y":0, "z":180},   {"x":-20, "y":0, "z":0},   {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+        //displays
+        ["disp_1",         "gallardo_display1", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        ["disp_2",         "gallardo_display2", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        ["disp_3",         "gallardo_display3", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        ["disp_4",         "gallardo_display4", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        ["disp_5",         "gallardo_display5", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        ["disp_6",         "gallardo_display6", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_shiftgate_M", ["gallardo_body","gallardo_dash"]],
+         ["gallardo_shifter_M", ["gallardo_body","gallardo_dash"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--6 Speed Manual--
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"selfCollision":false},
+         {"collision":true}
+         {"group":"gallardo_transaxle"},
+         {"nodeWeight":22},
+         ["tra1", 0.0, 0.82, 0.25],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--TRANSMISSION CONE--
+          {"beamSpring":15001000,"beamDamp":500},
+          {"beamDeform":175000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e3r"],
+          ["tra1","e1l"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+"gallardo_transaxle_6SA": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"6-Speed Semi-Automatic Transaxle",
+        "value":7200,
+    }
+    "slotType" : "gallardo_transaxle",
+    "slots": [
+        ["type", "default", "description"],
+        ["gallardo_transfer_case","gallardo_transfer_case_RWD", "Transfer Case"{"coreSlot":true}],
+        ["gallardo_differential_R","gallardo_differential_R", "Rear Differential"],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["dctGearbox", "gearbox", "mainEngine", 1],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":[-2.81, 0, 3.31, 2.05, 1.46, 1.14, 0.94, 0.78],
+        "friction": 6,
+        "parkLockTorque":2000,
+        "additionalEngineInertia":0.05,
+        "gearboxNode:":["tra1"],
+    },
+    "vehicleController": {
+        "automaticModes":"RNSM",
+        "calculateOptimalLoadShiftPoints": true,
+        "shiftDownRPMOffsetCoef":1.2,
+        //"aggressionSmoothingUp":2
+        //"aggressionSmoothingDown":0.06
+        "lowShiftDownRPM":[0,0,0,1600,1600,1500,1400,1300,1300],
+        "lowShiftUpRPM":[0,0,2800,2600,2400,2200,2000,2000],
+        "clutchLaunchStartRPM": 2500
+        "clutchLaunchTargetRPM": 3000
+    },
+    "props": [
+        ["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"]
+		["brake",      "gallardo_brakepedal_A",    "f1l","f1r","f6l",        {"x":0, "y":0, "z":180},   {"x":-20, "y":0, "z":0},   {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+        //displays
+        ["disp_1",         "gallardo_display1", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        ["disp_2",         "gallardo_display2", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        ["disp_3",         "gallardo_display3", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        ["disp_4",         "gallardo_display4", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        ["disp_5",         "gallardo_display5", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        ["disp_6",         "gallardo_display6", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+   ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_shifter_A", ["gallardo_body","gallardo_dash"]],
+    ]
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"selfCollision":false},
+         {"collision":true}
+         {"group":"gallardo_transaxle"},
+         {"nodeWeight":30},
+         ["tra1", 0.0, 0.82, 0.25],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--TRANSMISSION CONE--
+          {"beamSpring":15001000,"beamDamp":500},
+          {"beamDeform":175000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e3r"],
+          ["tra1","e1l"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+"gallardo_flywheel": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Flywheel",
+        "value":150,
+    },
+    "slotType" : "gallardo_flywheel",
+    "clutch": {
+        "uiName":"Clutch",
+        "additionalEngineInertia":0.08,
+        "clutchMass":5.25,
+    },
+},
+"gallardo_transfer_case_RWD": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RWD Transfer Case",
+        "value":800,
+    },
+    "slotType" : "gallardo_transfer_case",
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["shaft", "transfercase", "gearbox", 1, {"friction":3, "uiName":"Rear Output Shaft"}],
+    ],
+},
+"gallardo_transfer_case_AWD": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"AWD Transfer Case",
+        "value":1200,
+    },
+    "slotType" : "gallardo_transfer_case",
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["differential", "transfercase", "gearbox", 1, {"diffType":"viscous", "viscousCoef":3, "viscousTorque":300, "diffTorqueSplit":0.75, "friction":5, "uiName":"Center Differential","defaultVirtualInertia":0.1}],
+    ],
+},
+"gallardo_differential_R_LSD": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Limited Slip Rear Differential",
+        "value":950,
+    }
+    "slotType" : "gallardo_differential_R",
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"]
+        ["differential", "differential_R", "transfercase", 1, {"diffType":"lsd", "gearRatio": 3.6, "lsdPreload":80, "lsdLockCoef":0.075, "lsdRevLockCoef":0.075, "friction":8, "uiName":"Rear Differential","defaultVirtualInertia":0.25}]
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         {"deformGroup":"halfshaft_break", "deformMaterialBase":"sbr", "deformMaterialDamaged":"invis"},
+         ["gallardo_halfshaft_R", ["gallardo_reardiff", "wheelhub_RL", "wheelhub_RR","gallardo_transaxle"]],
+         {"deformGroup":""},
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"selfCollision":false},
+         {"collision":true}
+         {"group":"gallardo_reardiff"},
+         {"nodeWeight":24},
+         ["rdiff", 0.0, 1.30, 0.25],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":7700550,"beamDamp":125},
+          {"beamDeform":660000,"beamStrength":"FLT_MAX"},
+          //differential
+          ["rdiff","e1r"],
+          ["rdiff","e3r"],
+          ["rdiff","e1l"],
+          ["rdiff","e3l"],
+          ["rdiff","tra1"],
+          //halfshafts
+          {"beamPrecompression":1, "beamType":"|BOUNDED", "beamLongBound":0.02, "beamShortBound":0.02},
+          {"beamSpring":0,"beamDamp":0,"beamDeform":3600,"beamStrength":9500},
+          {"beamLimitSpring":7501000,"beamLimitDamp":250},
+          {"deformGroup":"halfshaft_break"},
+          {"breakGroupType":1},
+          {"optional":true},
+          {"breakGroup":"wheel_RR"},
+          ["rw1r","rdiff", {"name":"axle_RR"}],
+          {"breakGroup":"wheel_RL"},
+          ["rw1l","rdiff", {"name":"axle_RL"}],
+          {"breakGroup":""},
+          {"optional":false},
+          {"breakGroupType":0},
+          {"deformGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+}
