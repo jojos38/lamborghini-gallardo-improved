@@ -45,7 +45,7 @@
             "signal_R":{"simpleFunction":"signal_R", "off":"invis", "on":"decals_gauges"},
             "checkengine":{"simpleFunction":"checkengine", "off":"invis", "on":"decals_gauges"},
             "battery":{"simpleFunction":"battery", "off":"invis", "on":"decals_gauges"},
-			"lowhighbeam":{"simpleFunction":{"lowbeam":0.49,"highbeam":1}, "off":"gallardo_lights", "on":"gallardo_lights_on", "on_intense":"gallardo_lights_on_intense"},
+			"lowhighbeam":{"simpleFunction":"lowhighbeam", "off":"invis", "on":"decals_gauges"},
             "highbeam":{"simpleFunction":"highbeam", "off":"invis", "on":"decals_gauges"},
             "parkingbrake":{"simpleFunction":"parkingbrake", "off":"invis", "on":"decals_gauges"},
             "lowfuel":{"simpleFunction":"lowfuel", "off":"invis", "on":"decals_gauges"},
