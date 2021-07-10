@@ -222,17 +222,16 @@
     "class": "Material",
     "Stages": [
       {
-        "ambientOcclusionMap": "vehicles/gallardo/gallardo_misc_s.dds",
         "baseColorMap": "vehicles/gallardo/gallardo_misc_d.dds",
         "detailNormalMap": "vehicles/gallardo/gallardo_misc_n.dds",
-        "detailNormalMapStrength": 1.5,
+        "detailNormalMapStrength": 2,
         "detailScale": [
           1,
           1
         ],
-        "metallicFactor": 0.32,
+        "metallicFactor": 0.9,
         "normalMap": "vehicles/gallardo/gallardo_misc_n.dds",
-        "roughnessFactor": 0.25
+        "roughnessFactor": 0.225
       },
       {
         "baseColorMap": "vehicles/gallardo/gallardo_misc_d.dds",
