@@ -8,10 +8,10 @@
     "slotType" : "gallardo_spoiler",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["bigwing_02a_a", ["gallardo_wing_a"],[],{"pos":{"x":0,"y":0.16,"z":-0.16}}],
-         ["bigwing_02c_b", ["gallardo_wing_b"],[],{"pos":{"x":0,"y":0.16,"z":-0.16}}],
-         ["bigwing_02c_c", ["gallardo_wing_c"],[],{"pos":{"x":0,"y":0.16,"z":-0.16}}],
-         ["bigwing_02c_d", ["gallardo_tailgate"],[],{"pos":{"x":0,"y":0.16,"z":-0.16}}],
+         ["bigwing_02a_a", ["gallardo_wing_a"],[],{"pos":{"x":0,"y":-0.06,"z":-0.035}}],
+         ["bigwing_02c_b", ["gallardo_wing_b"],[],{"pos":{"x":0,"y":-0.06,"z":-0.035}}],
+         ["bigwing_02c_c", ["gallardo_wing_c"],[],{"pos":{"x":0,"y":-0.06,"z":-0.035}}],
+         ["bigwing_02c_d", ["gallardo_tailgate"],[],{"pos":{"x":0,"y":-0.06,"z":-0.035}}],
 
          //["gallardo_spoiler", ["gallardo_tailgate"],[],{"pos":{"x":0,"y":0.0,"z":0.0}}],
     ],

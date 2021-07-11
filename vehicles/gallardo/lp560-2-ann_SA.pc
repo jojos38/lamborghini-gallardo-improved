@@ -1,6 +1,5 @@
 {
   "format":2,
-  "licenseName":"jojos38 [Certifié 38]",
   "model":"gallardo",
   "paints":[
     {
@@ -69,6 +68,7 @@
     "gallardo_fender_R":"gallardo_fender_R",
     "gallardo_fenderflare_FL":"",
     "gallardo_fenderflare_FR":"",
+    "gallardo_front_support":"gallardo_front_support",
     "gallardo_fueltank":"gallardo_fueltank",
     "gallardo_glass":"gallardo_glass",
     "gallardo_headlight_L":"gallardo_headlight_L",

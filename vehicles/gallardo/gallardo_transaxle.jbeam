@@ -162,6 +162,28 @@
         "clutchMass":5.25,
     },
 },
+"gallardo_flywheel_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Ultra Light Flywheel",
+        "value":400,
+    },
+    "slotType" : "gallardo_flywheel",
+    "clutch": {
+        "additionalEngineInertia":0.02,
+    },
+},
+"gallardo_flywheel_light": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Lightened Flywheel",
+        "value":200,
+    },
+    "slotType" : "gallardo_flywheel",
+    "clutch": {
+        "additionalEngineInertia":0.05,
+    },
+},
 "gallardo_transfer_case_RWD": {
     "information":{
         "authors":"BeamNG",
@@ -184,6 +206,25 @@
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"],
         ["differential", "transfercase", "gearbox", 1, {"diffType":"viscous", "viscousCoef":3, "viscousTorque":300, "diffTorqueSplit":0.75, "friction":5, "uiName":"Center Differential","defaultVirtualInertia":0.1}],
+    ],
+},
+"gallardo_transfer_case_AWD_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race AWD Transfer Case",
+        "value":2500,
+    },
+    "slotType" : "gallardo_transfer_case",
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$difftorquesplit_C", "range", "", "Differentials", 0.9, 0, 1, "Base Torque Split", "Percent torque to rear wheels", {"minDis":50, "maxDis":85,"subCategory":"Center"}],
+        ["$lsdpreload_C", "range", "N/m", "Differentials", 50, 0, 500, "Pre-load Torque", "Initial cross torque between front and rear wheels", {"subCategory":"Center"}],
+        ["$lsdlockcoef_C", "range", "", "Differentials", 0.125, 0, 0.5, "Power Lock Rate", "Additional locking torque proportional to engine torque", {"minDis":0, "maxDis":100,"subCategory":"Center"}],
+        ["$lsdlockcoefrev_C", "range", "", "Differentials", 0.02, 0, 0.5, "Coast Lock Rate" , "Additional locking torque proportional to engine braking", {"minDis":0, "maxDis":100,"subCategory":"Center"}],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["differential", "transfercase", "gearbox", 1, {"diffType":"lsd", "lsdPreload":"$lsdpreload_C", "lsdLockCoef":"$lsdlockcoef_C", "lsdRevLockCoef":"$lsdlockcoefrev_C", "diffTorqueSplit":"$difftorquesplit_C", "friction":5, "uiName":"Center Differential","defaultVirtualInertia":0.1}],
     ],
 },
 "gallardo_differential_R_LSD": {

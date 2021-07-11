@@ -12,11 +12,13 @@
 		["skin_bodybadge","gallardo_skin_bodybadge_lp560-4", "Body Lettering"{"coreSlot":true}],
         ["skin_gauges","gallardo_gauges", "Gauge Cluster"{"coreSlot":true}],
         ["gallardo_steer","gallardo_steer", "Steering Wheel"],
+		["gallardo_rear_support","gallardo_rear_support", "Rear Support"],
+		["gallardo_front_support","gallardo_front_support", "Front Support"],
 		["gallardo_skirtaddons","", "Sideskirt Addons"],
         ["gps","","Navigation Unit"{"nodeOffset":{"x":0.04,"y":-0.635,"z":0.865}}],
         ["linelock", "", "Brake Line Lock"],
         //bodywork
-        ["gallardo_bumperbar_F","gallardo_bumperbar_F", "Front Bumper Support"],
+        //["gallardo_bumperbar_F","gallardo_bumperbar_F", "Front Bumper Support"],
         ["gallardo_glass","gallardo_glass", "Glass"],
         ["gallardo_fender_R","gallardo_fender_R", "Front Right Fender"],
         ["gallardo_fender_L","gallardo_fender_L", "Front Left Fender"],
@@ -33,6 +35,7 @@
         ["gallardo_tailgate","gallardo_tailgate", "Tailgate"],
         ["gallardo_bumper_F","gallardo_bumper_F", "Front Bumper"],
         ["gallardo_bumper_R","gallardo_bumper_R", "Rear Bumper"],
+		["gallardo_fenderflare_R", "", "Rear Fender Flares"],
         //engine
         ["gallardo_fueltank","gallardo_fueltank", "Fuel Tank"],
         //driving assistance
@@ -141,8 +144,8 @@
          {"group":"gallardo_body"},
          ["f1rr", -0.90000, -0.85000, 0.14000{"group":["gallardo_body","gallardo_seats"]}],
          {"chemEnergy":1000,"burnRate":0.52,"flashPoint":300,"specHeat":0.8,"smokePoint":150,"selfIgnitionCoef":false},
-         ["f1r", -0.33000, -0.92000, 0.14000,{"group":["gallardo_body","gallardo_seats","gallardo_subframe_F",]}],
-         ["f1l", 0.33000, -0.92000, 0.14000,{"group":["gallardo_body","gallardo_seats","gallardo_subframe_F"]}],
+         ["f1r", -0.33000, -0.95000, 0.14000,{"group":["gallardo_body","gallardo_seats","gallardo_subframe_F",]}],
+         ["f1l", 0.33000, -0.95000, 0.14000,{"group":["gallardo_body","gallardo_seats","gallardo_subframe_F"]}],
          {"chemEnergy":false,"burnRate":false,"flashPoint":false,"specHeat":false,"smokePoint":false,"selfIgnitionCoef":false},
          ["f1ll", 0.90000, -0.85000, 0.14000{"group":["gallardo_body","gallardo_seats"]}],
 
@@ -2286,13 +2289,13 @@
             ["p4l","q2l","p5l"],
             ["p5l","q2l","q3l"],
 			
-			["q13l","q4l","q3l"], // me
-			["q3l","p5l","q13l"], // me
+			["q3l","q4l","q13l"], // me
+			["q13l","p5l","q3l"], // me
 			
-			["q14l","q5l","q4l"], // me
-			["q4l","q13l","q14l"], // me
+			["q4l","q5l","q14l"], // me
+			["q14l","q13l","q4l"], // me
 			
-			["tb2l","q5l","q14l"], // me
+			["q14l","q5l","tb2l"], // me
 			
 			["p6l","tb2l","tb2"], // me
 		    ["tb1","p6l","tb2"], // me
@@ -2661,5 +2664,57 @@
     "engine": {
         "ABSrate":40
     },
+}
+"gallardo_rear_support": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Factory Rear Support",
+        "value":90,
+    }
+    "slotType" : "gallardo_rear_support",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+		["gallardo_rear_support", ["gallardo_body"]],
+        {"deformGroup":""},
+    ],
+}
+"gallardo_rear_support_tube": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Tubular Rear Support",
+        "value":90,
+    }
+    "slotType" : "gallardo_rear_support",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+		["gallardo_rear_support_tube", ["gallardo_body"]],
+        {"deformGroup":""},
+    ],
+}
+"gallardo_front_support": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Factory Front Support",
+        "value":90,
+    }
+    "slotType" : "gallardo_front_support",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+		["gallardo_front_support", ["gallardo_body"]],
+        {"deformGroup":""},
+    ],
+}
+"gallardo_front_support_compact": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Liberty Walk Compact Front Support",
+        "value":90,
+    }
+    "slotType" : "gallardo_front_support",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+		["gallardo_front_support_compact", ["gallardo_body"]],
+        {"deformGroup":""},
+    ],
 }
 }

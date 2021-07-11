@@ -12,7 +12,7 @@
           {"beamPrecompression":1, "beamType":"|BOUNDED", "beamLongBound":0, "beamShortBound":0},
           {"beamSpring":31000,"beamDamp":1000},
           {"beamLimitSpring":1001000,"beamLimitDamp":1000},
-          {"beamDeform":20000,"beamStrength":90000},
+          {"beamDeform":20000,"beamStrength":10000},
           {"dampCutoffHz":500},
           {"boundZone":0.03},
 
@@ -159,7 +159,7 @@
           {"optional":true},
           {"deformLimitExpansion":""},
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-          {"beamSpring":4001000,"beamDamp":200},
+          {"beamSpring":2001000,"beamDamp":200},
           {"beamDeform":50000,"beamStrength":150000},
           {"dampCutoffHz":500},
 

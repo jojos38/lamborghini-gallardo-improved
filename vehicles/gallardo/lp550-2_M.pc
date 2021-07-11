@@ -69,6 +69,7 @@
     "gallardo_fenderflare_FL":"",
     "gallardo_fenderflare_FR":"",
     "gallardo_flywheel":"gallardo_flywheel",
+    "gallardo_front_support":"gallardo_front_support",
     "gallardo_fueltank":"gallardo_fueltank",
     "gallardo_glass":"gallardo_glass",
     "gallardo_headlight_L":"gallardo_headlight_L",

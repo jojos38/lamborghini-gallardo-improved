@@ -22,6 +22,29 @@
          ["mesh", "[group]:", "nonFlexMaterials"],
          ["gallardo_spoiler_sl", ["gallardo_tailgate"]],
     ],
-
 }
+"gallardo_spoiler_LW": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Liberty Walk Lip Spoiler",
+        "value":900,
+    }
+    "slotType" : "gallardo_spoiler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_spoiler_LW", ["gallardo_tailgate"]],
+    ],
+}
+"gallardo_spoiler_LW2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Liberty Walk Big Spoiler",
+        "value":900,
+    }
+    "slotType" : "gallardo_spoiler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_spoiler_LW2", ["gallardo_tailgate"]],
+    ],
+},
 }
