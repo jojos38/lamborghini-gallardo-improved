@@ -19,10 +19,10 @@
          {"selfCollision":true},
          {"group":"gallardo_hood"},
          {"nodeWeight":0.70},
-         ["h1rr", -0.78066, -1.25197, 0.82000],
+         ["h1rr", -0.80066, -1.25197, 0.82000],
          ["h1r", -0.31000, -1.51197, 0.79500],
          ["h1l", 0.31000, -1.51197, 0.79500],
-         ["h1ll", 0.78066, -1.25197, 0.82000],
+         ["h1ll", 0.80066, -1.25197, 0.82000],
 
          ["h2rr", -0.82966, -1.64197, 0.73000],
          ["h2r", -0.31000, -1.71197, 0.73500],
@@ -51,7 +51,7 @@
           ["id1:", "id2:"],
           //--HOOD--
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-          {"beamSpring":801000,"beamDamp":45},
+          {"beamSpring":801000,"beamDamp":25},
           {"beamDeform":30150,"beamStrength":"FLT_MAX"},
           //hood main shape
           ["h1rr","h2rr"],

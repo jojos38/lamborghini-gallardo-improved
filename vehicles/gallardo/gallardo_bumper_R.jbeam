@@ -201,7 +201,7 @@
           //attach
           {"disableTriangleBreaking":true}
           {"beamSpring":330550,"beamDamp":120},
-          {"beamDeform":3750,"beamStrength":20500},
+          {"beamDeform":3750,"beamStrength":15500},
           {"breakGroup":"rearbumper_a_R"},
           //r
           ["rb1rr","q12r"],

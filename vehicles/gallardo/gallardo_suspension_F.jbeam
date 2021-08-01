@@ -322,9 +322,9 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          //front running gear
-         ["gallardo_upperarm_F", ["gallardo_uppermounts_F","gallardo_upperarm_F"]],
-         ["gallardo_lowerarm_F", ["gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_lowerarm_F","gallardo_shockbottom_F"]],
-         ["gallardo_hub_F", ["gallardo_lowerarm_F","gallardo_upperarm_F","gallardo_tierod_F","gallardo_hub_F"]],
+         //["gallardo_upperarm_F", ["gallardo_uppermounts_F","gallardo_upperarm_F"]],
+         //["gallardo_lowerarm_F", ["gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_lowerarm_F","gallardo_shockbottom_F"]],
+         //["gallardo_hub_F", ["gallardo_lowerarm_F","gallardo_upperarm_F","gallardo_tierod_F","gallardo_hub_F"]],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -617,9 +617,9 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          //front running gear
-         ["gallardo_upperarm_F", ["gallardo_uppermounts_F","gallardo_upperarm_F"]],
-         ["gallardo_lowerarm_F", ["gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_lowerarm_F","gallardo_shockbottom_F"]],
-         ["gallardo_hub_F", ["gallardo_lowerarm_F","gallardo_upperarm_F","gallardo_tierod_F","gallardo_hub_F"]],
+         //["gallardo_upperarm_F", ["gallardo_uppermounts_F","gallardo_upperarm_F"]],
+         //["gallardo_lowerarm_F", ["gallardo_lowermounts_a_F","gallardo_lowermounts_b_F","gallardo_lowerarm_F","gallardo_shockbottom_F"]],
+         //["gallardo_hub_F", ["gallardo_lowerarm_F","gallardo_upperarm_F","gallardo_tierod_F","gallardo_hub_F"]],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],

@@ -25,53 +25,53 @@
          {"nodeWeight":0.48},
          {"selfCollision":true},
          //left wing support lower
-         ["sp1l", 0.30, 1.91, 0.83],
-         ["sp2l", 0.30, 2.08, 0.76],
+         ["sp1l", 0.30, 1.69, 0.96],
+         ["sp2l", 0.30, 1.86, 0.89],
 
          //left wing support upper
-         ["sp3l", 0.30, 2.05, 1.13],
-         ["sp4l", 0.30, 2.3, 1.17],
+         ["sp3l", 0.30, 1.83, 1.26],
+         ["sp4l", 0.30, 2.08, 1.30],
 
          {"group":"gallardo_wing_c"},
          //right wing support lower
-         ["sp1r", -0.30, 1.91, 0.83],
-         ["sp2r", -0.30, 2.08, 0.76],
+         ["sp1r", -0.30, 1.69, 0.96],
+         ["sp2r", -0.30, 1.86, 0.89],
 
          //right wing support upper
-         ["sp3r", -0.30, 2.05, 1.13],
-         ["sp4r", -0.30, 2.3, 1.17],
+         ["sp3r", -0.30, 1.83, 1.26],
+         ["sp4r", -0.30, 2.08, 1.30],
 
          //wing
          {"nodeWeight":0.3},
          {"group":"gallardo_wing_a"},
-         ["wing1rr", -0.87, 1.96, 1.14],
-         ["wing1r", -0.366, 1.96, 1.14],
-         ["wing1", 0.0, 1.96, 1.14],
-         ["wing1l", 0.366, 1.96, 1.14],
-         ["wing1ll", 0.87, 1.96, 1.14],
+         ["wing1rr", -0.87, 1.74, 1.27],
+         ["wing1r", -0.366, 1.74, 1.27],
+         ["wing1", 0.0, 1.74, 1.27],
+         ["wing1l", 0.366, 1.74, 1.27],
+         ["wing1ll", 0.87, 1.74, 1.27],
 
-         ["wing2ll2", 0.87, 2.46, 1.32{"group":"","selfCollision":false,"collision":false}],
-         ["wing2ll", 0.87, 2.46, 1.32],
-         ["wing2l", 0.360, 2.46, 1.32],
-         ["wing2", 0.0, 2.46, 1.32],
-         ["wing2r", -0.360, 2.46, 1.32],
-         ["wing2rr", -0.87, 2.46, 1.32],
-         ["wing2rr2", -0.87, 2.46, 1.32{"group":"","selfCollision":false,"collision":false}],
+         ["wing2ll2", 0.87, 2.24, 1.45{"group":"","selfCollision":false,"collision":false}],
+         ["wing2ll", 0.87, 2.24, 1.45],
+         ["wing2l", 0.360, 2.24, 1.45],
+         ["wing2", 0.0, 2.24, 1.45],
+         ["wing2r", -0.360, 2.24, 1.45],
+         ["wing2rr", -0.87, 2.24, 1.45],
+         ["wing2rr2", -0.87, 2.24, 1.45{"group":"","selfCollision":false,"collision":false}],
 
-         ["wing3rr2", -0.87, 1.96, 1.32{"group":"","selfCollision":false,"collision":false}],
-         ["wing3rr", -0.87, 1.96, 1.32],
-         ["wing3ll", 0.87, 1.96, 1.32],
-         ["wing3ll2", 0.87, 1.96, 1.32{"group":"","selfCollision":false,"collision":false}],
-
-         ["wing4rr", -0.87, 2.46, 1.19],
-         ["wing4ll", 0.87, 2.46, 1.19],
+         ["wing3rr2", -0.87, 1.74, 1.45{"group":"","selfCollision":false,"collision":false}],
+         ["wing3rr", -0.87, 1.74, 1.45],
+         ["wing3ll", 0.87, 1.74, 1.45],
+         ["wing3ll2", 0.87, 1.74, 1.45{"group":"","selfCollision":false,"collision":false}],
+		 //                 0.22  0.13
+         ["wing4rr", -0.87, 2.24, 1.32],
+         ["wing4ll", 0.87, 2.24, 1.32],
 
          {"collision":false}
          {"selfCollision":false},
          {"nodeWeight":0.35},
          {"group":""},
-         ["wing0", 0, 2.18, 1.0],
-         ["sp0", 0, 1.85, 0.6],
+         ["wing0", 0, 1.96, 1.13],
+         ["sp0", 0, 1.85, 0.73],
          {"group":""},
     ],
      "beams": [

@@ -25,32 +25,29 @@
         "torque":[
             ["rpm", "torque"]
             [0, 0],
-            [700, 273],
-            [1000, 300],
-            [2000, 333],
-            [3000, 371],
-            [3500, 411],
-            [4000, 444],
-            [4500, 468],
-            [5000, 485],
-            [5500, 495],
-            [6000, 495],
-            [6500, 488],
-            [7000, 472],
-            [7500, 452],
-            [8000, 420],
-			[8500, 410],
-			[9000, 380],
-            [10000, 291],
+            [700, 210],
+            [1000, 310],
+            [2000, 360],
+            [3000, 405],
+            [4000, 460],
+            [5000, 500],
+            [6000, 559],
+            [6500, 568],
+            [7000, 567],
+            [7500, 562],
+            [8000, 510],
+			[8500, 360],
+			[9000, 160],
+            [10000, 0],
         ],
 
         "idleRPM":850,
         //max rpm physically capable of
-        "maxRPM":8200,
+        "maxRPM":8500,
         "revLimiterType": "soft",
-        "inertia":0.12,
+        "inertia":0.11,
         "friction":12
-        "dynamicFriction":0.026,
+        "dynamicFriction":0.024,
         //"burnEfficiency":0.39
         "burnEfficiency":[
             [0, 0.11],
@@ -65,13 +62,13 @@
 
         //exhaust
         "particulates":0.04
-        "instantAfterFireCoef": 1.75,
-        "sustainedAfterFireCoef": 0.75,
+        "instantAfterFireCoef": 0.75,
+        "sustainedAfterFireCoef": 0.70,
 
         //cooling and oil system
         "thermalsEnabled":true,
         "engineBlockMaterial":"aluminum",
-        "oilVolume":6,
+        "oilVolume":7,
 
         //engine durability
         "cylinderWallTemperatureDamageThreshold":160,
@@ -95,9 +92,9 @@
         "instantAfterFireSound": "event:>Vehicle>Afterfire>i4_01>single",
         "sustainedAfterFireSound": "event:>Vehicle>Afterfire>i4_01>multi",
         "shiftAfterFireSound": "event:>Vehicle>Afterfire>i4_01>shift",
-		"instantAfterFireVolumeCoef": 10.0,
-        "sustainedAfterFireVolumeCoef": 10.0,
-        "shiftAfterFireVolumeCoef": 10.0,
+		"instantAfterFireVolumeCoef": 4.0,
+        "sustainedAfterFireVolumeCoef": 4.0,
+        "shiftAfterFireVolumeCoef": 4.0,
 		
 		//starter motor
         "starterSample":"event:>Engine>Starter>i4_2001_eng",
@@ -207,22 +204,26 @@
     "beams": [
           ["id1:", "id2:"],
           {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-          {"beamSpring":15001000,"beamDamp":500},
+          {"beamSpring":2001000,"beamDamp":500},
           {"beamDeform":175000,"beamStrength":"FLT_MAX"},
           
 		  ["exh0l", "e1l"],
 		  ["exh0l", "e3l"],
-		  ["exh0l", "em1l"],
+		  //["exh0l", "em1l"],
           ["exh0r", "e1r"],
 		  ["exh0r", "e3r"],
-		  ["exh0r", "em1r"],
+		  //["exh0r", "em1r"],
+		  ["exh0l", "r1"],
+		  ["exh0r", "r1"],
 
 		  ["exh0ll", "e1l"],
 		  ["exh0ll", "e3l"],
-		  ["exh0ll", "em1l"],
+		  //["exh0ll", "em1l"],
           ["exh0rr", "e1r"],
 		  ["exh0rr", "e3r"],
-		  ["exh0rr", "em1r"],
+		  //["exh0rr", "em1r"],
+		  ["exh0rr", "r1"],
+		  ["exh0ll", "r1"],
 	
 		  ["exh0rr", "exh0r"{"isExhaust":"mainEngine","afterFireAudioCoef":0,"afterFireVisualCoef":0}],
 		  ["exh0ll", "exh0l"{"isExhaust":"mainEngine","afterFireAudioCoef":0,"afterFireVisualCoef":0}],
@@ -398,12 +399,54 @@
 "gallardo_engine_ecu": {
     "information":{
         "authors":"BeamNG",
-        "name":"Stock ECU",
-        "value":125,
+        "name":"550 ECU",
+        "value":2125,
     }
     "slotType" : "gallardo_engine_ecu",
     "vehicleController": {
         "highShiftUpRPM":7800
+    },
+    "mainEngine":{
+      "torqueModMult":[
+            ["rpm", "torque"],
+            [5500, 1.0],
+            [6000, 0.999],
+            [6500, 0.995],
+            [7000, 0.995],
+            [8000, 0.975],
+            [8500, 1.0],
+        ],
+    },
+},
+"gallardo_engine_ecu_560": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"560 ECU",
+        "value":4125,
+    }
+    "slotType" : "gallardo_engine_ecu",
+    "vehicleController": {
+        "highShiftUpRPM":7900
+    },
+   
+},
+"gallardo_engine_ecu_570": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"570 ECU",
+        "value":7125,
+    }
+    "slotType" : "gallardo_engine_ecu",
+    "vehicleController": {
+        "highShiftUpRPM":8000
+    },
+    "mainEngine":{
+      "torqueModMult":[
+            ["rpm", "torque"],
+            [7000, 1.00001],
+            [8000, 1.020],
+            [9000, 1.0],
+        ],
     },
 },
 "gallardo_engine_ecu_tuned": {
@@ -418,6 +461,12 @@
         "revLimiterRPM":8600,
         "revLimiterType":"timeBased",
         "revLimiterCutTime":0.1,
+"torqueModMult":[
+            ["rpm", "torque"],
+            [7000, 1.0],
+            [8000, 1.05],
+            [9000, 1.0],
+        ],
     },
     "vehicleController": {
         "highShiftUpRPM":7900
@@ -543,7 +592,7 @@
     ],
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
-        ["$wastegateStart", "range", "psi", "Engine", 12, 12, 40, "Turbo Boost Pressure", "Pressure at which the wastegate begins to open", {"stepDis":0.5}],
+        ["$wastegateStart", "range", "psi", "Engine", 9, 7, 20, "Turbo Boost Pressure", "Pressure at which the wastegate begins to open", {"stepDis":0.5}],
     ],
     "turbocharger": {
         "bovSoundFileName":"event:>Vehicle>Forced_Induction>Turbo_04>turbo_bov_race",
@@ -556,7 +605,7 @@
         "whinePitchPer10kRPM": 0.05,
         "wastegateStart":"$wastegateStart",
         "wastegateLimit":"$=$wastegateStart+1",
-        "maxExhaustPower": 640000,
+        "maxExhaustPower": 5000,
         "backPressureCoef": 0.00008,
         "frictionCoef": 60,
         "inertia":8,
@@ -593,8 +642,8 @@
         //turbocharger name
         "turbocharger":"turbocharger",
         "$+idleRPMRoughness":50,
-        "instantAfterFireCoef": 1.25,
-        "sustainedAfterFireCoef": 0.8,
+        "instantAfterFireCoef": 0.9,
+        "sustainedAfterFireCoef": 0.75,
     },
     "soundConfig": {
         "sampleName": "lam_huracan_15_engine",

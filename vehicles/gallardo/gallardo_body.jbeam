@@ -95,7 +95,7 @@
         {"collision":false}
         {"beamSpring":55000,"beamDamp":250},
         //hood cam
-        ["hood", 0.0, -0.73, 1.07, 65, "f6r","f6l","f5r","f5l","p1r","p1l"{"beamDeform":5001000,"beamStrength":"FLT_MAX"}],
+        ["hood", 0.0, -0.73, 1.20, 65, "f6r","f6l","f5r","f5l","p1r","p1l"{"beamDeform":5001000,"beamStrength":"FLT_MAX"}],
         //fender cam
         //["fender", -1.33, 0.42, 0.73, 65, "f1rr","f2rr","f5rr","f6rr","f1r","f5r"{"beamDeform":5001000,"beamStrength":"FLT_MAX"}],
         //[0.6, 1.35, -0.8, 65, "f1ll","f1rr","f4rr","f4ll","f1r","f1l"],
@@ -180,10 +180,10 @@
          {"collision":true}
          {"selfCollision":true}
          ["f5ll", 0.82000, -0.85, 0.47000{"group":["gallardo_body","gps","gallardo_dash"]}],
-         ["f6rr", -0.76000, -0.92, 0.78000,{"group":["gallardo_body","gps","gallardo_windshield","gallardo_dash"]}],
-         ["f6r", -0.33000, -0.92, 0.78000,{"group":["gallardo_body","gps","gallardo_windshield","gallardo_dash"]}],
-         ["f6l", 0.33000, -0.92, 0.78000,{"group":["gallardo_body","gps","gallardo_windshield","gallardo_dash"]}],
-         ["f6ll", 0.76000, -0.85, 0.78000,{"group":["gallardo_body","gps","gallardo_windshield","gallardo_dash"]}],
+         ["f6rr", -0.76000, -1.12, 0.84000,{"group":["gallardo_body","gps","gallardo_windshield","gallardo_dash"]}],
+         ["f6r", -0.33000, -0.90, 0.97000,{"group":["gallardo_body","gps","gallardo_windshield","gallardo_dash"]}],
+         ["f6l", 0.33000, -0.90, 0.97000,{"group":["gallardo_body","gps","gallardo_windshield","gallardo_dash"]}],
+         ["f6ll", 0.76000, -1.12, 0.84000,{"group":["gallardo_body","gps","gallardo_windshield","gallardo_dash"]}],
 
          //floor thickness nodes
          {"collision":false}
@@ -215,8 +215,8 @@
 
          //front inner bodywork
          {"nodeWeight":4.8},
-         ["f14rr", -0.76000, -1.25000, 0.74000],
-         ["f14ll", 0.76000, -1.25000, 0.74000],
+         ["f14rr", -0.76000, -1.25000, 0.80000],
+         ["f14ll", 0.76000, -1.25000, 0.80000],
 
          //rad support
          {"nodeWeight":4.8},
@@ -386,8 +386,8 @@
 
          //a pillar
          {"nodeWeight":1.9},
-         ["p1r", -0.61000, -0.88665, 0.98000,{"group":["gallardo_roof","gallardo_windshield"]}],
-         ["p1l", 0.61000, -0.88665, 0.98000,{"group":["gallardo_roof","gallardo_windshield"]}],
+         ["p1r", -0.57000, -0.88665, 0.95000,{"group":["gallardo_roof","gallardo_windshield"]}],
+         ["p1l", 0.57000, -0.88665, 0.95000,{"group":["gallardo_roof","gallardo_windshield"]}],
          {"group":""},
          ["p2r", -0.67000, -0.78665, 0.98000],
          ["p2l", 0.67000, -0.78665, 0.98000],
@@ -2146,6 +2146,15 @@
             //roof
             {"dragCoef":4},
             {"group":"gallardo_roof"},
+			
+			//["rf1l","h1ll","fe7l"],
+			//["h1l","h1ll","rf1l"],
+			//["rf1","h1l","rf1l"],
+			//["h1r","h1l","rf1"],
+			//["rf1r","h1r","rf1"],
+			//["fe7r","h1rr","rf1r"],
+			//["rf1r","h1rr","h1r"],
+			
             ["rf1r","p1r","rf1"],
             ["rf1","p1l","rf1l"],
             ["p1r","f6rr","f6r"],

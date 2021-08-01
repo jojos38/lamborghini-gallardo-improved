@@ -1,7 +1,7 @@
 {
 "gallardo": {
     "information":{
-        "authors":"BeamNG",
+        "authors":"jojos38, Tsutarja495, Foxbody, twonklewonk",
         "name":"Lamborghini Gallardo",
     }
     "slotType" : "main",
@@ -16,7 +16,7 @@
         //["soundscape_lights", "soundscape_lights11", "Soundscape"]
     ],
 
-    "scaledragCoef":1.05,
+    "scaledragCoef":1.97,
 
     "controller": [
         ["fileName"],

@@ -66,7 +66,7 @@
 		["exhdl", "exh1ll"{"isExhaust":"mainEngine"}],
 		["exhdl", "exh1l"{"isExhaust":"mainEngine"}],
 
-		{"beamDeform": 50000,"beamStrength": 10000},
+		{"beamDeform": 50000,"beamStrength": 20000},
 		//{"breakGroup":"gallardo_exhaust_test"},
 		
 		["exh3l", "r1"],
@@ -167,7 +167,7 @@
 		["exhdr", "exh1rr"{"isExhaust":"mainEngine"}],
 		["exhdl", "exh1ll"{"isExhaust":"mainEngine"}],
 
-		{"beamDeform": 50000,"beamStrength": 10000},
+		{"beamDeform": 50000,"beamStrength": 20000},
 		// Right exhaust
 		["exhdr", "e1r"],
         ["exhdr", "e3r"],
@@ -297,7 +297,7 @@
 		["exhdr", "exh2rr"{"isExhaust":"mainEngine"}],
 		["exhdl", "exh2ll"{"isExhaust":"mainEngine"}],
 
-		{"beamDeform": 50000,"beamStrength": 10000},
+		{"beamDeform": 50000,"beamStrength": 20000},
 		// Right exhaust
 		["exhdr", "e1r"],
         ["exhdr", "e3r"],
@@ -427,7 +427,7 @@
 		["exhdr", "exh2rr"{"isExhaust":"mainEngine"}],
 		["exhdl", "exh2ll"{"isExhaust":"mainEngine"}],
 
-		{"beamDeform": 50000,"beamStrength": 10000},
+		{"beamDeform": 50000,"beamStrength": 20000},
 		// Right exhaust
 		["exhdr", "e1r"],
         ["exhdr", "e3r"],

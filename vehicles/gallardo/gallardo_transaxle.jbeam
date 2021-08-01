@@ -28,7 +28,7 @@
     "gearbox": {
         "uiName":"Gearbox",
         "gearRatios":[-2.81, 0, 3.31, 2.05, 1.46, 1.14, 0.94, 0.78],
-        "friction": 5,
+        "friction": 12,
         "gearboxNode:":["tra1"],
         "straightCutGearIndexes":{}
     },
@@ -94,7 +94,7 @@
     "gearbox": {
         "uiName":"Gearbox",
         "gearRatios":[-2.81, 0, 3.31, 2.05, 1.46, 1.14, 0.94, 0.78],
-        "friction": 6,
+        "friction": 12,
         "parkLockTorque":2000,
         "additionalEngineInertia":0.05,
         "gearboxNode:":["tra1"],

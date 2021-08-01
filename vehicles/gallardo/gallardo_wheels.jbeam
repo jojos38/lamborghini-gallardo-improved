@@ -9,13 +9,13 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_F_19x8","tire_F_225_35_19_sport", "Front Tires"],
+        ["tire_F_235_35_19","tire_F_235_35_19", "Front Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
         //wheels
-        ["gallardo_wheel_01a_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_01a_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_01a_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.48, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_01a_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.48, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -78,12 +78,12 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_R_19x11","tire_R_265_30_19_sport", "Rear Tires"],
+        ["tire_R_295_30_19","tire_R_295_30_19", "Rear Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["gallardo_wheel_01a_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_01a_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_01a_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_01a_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -146,13 +146,13 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_F_19x8","tire_F_225_35_19_sport", "Front Tires"],
+        ["tire_F_235_35_19","tire_F_235_35_19", "Front Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
         //wheels
-        ["gallardo_wheel_01b_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_01b_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_01b_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.48, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_01b_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -215,12 +215,12 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_R_19x11","tire_R_265_30_19_sport", "Rear Tires"],
+        ["tire_R_295_30_19","tire_R_295_30_19", "Rear Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["gallardo_wheel_01b_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_01b_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_01b_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_01b_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -283,13 +283,13 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_F_19x8","tire_F_225_35_19_sport", "Front Tires"],
+        ["tire_F_235_35_19","tire_F_235_35_19", "Front Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
         //wheels
-        ["gallardo_wheel_02a_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_02a_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_02a_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.48, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_02a_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -352,12 +352,12 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_R_19x11","tire_R_265_30_19_sport", "Rear Tires"],
+        ["tire_R_295_30_19","tire_R_295_30_19", "Rear Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["gallardo_wheel_02a_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_02a_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_02a_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_02a_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -420,13 +420,13 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_F_19x8","tire_F_225_35_19_sport", "Front Tires"],
+        ["tire_F_235_35_19","tire_F_235_35_19", "Front Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
         //wheels
-        ["gallardo_wheel_03a_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_03a_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_03a_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.48, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_03a_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -489,12 +489,12 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_R_19x11","tire_R_265_30_19_sport", "Rear Tires"],
+        ["tire_R_295_30_19","tire_R_295_30_19", "Rear Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["gallardo_wheel_03a_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_03a_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_03a_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_03a_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -557,13 +557,13 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_F_19x8","tire_F_225_35_19_sport", "Front Tires"],
+        ["tire_F_235_35_19","tire_F_235_35_19", "Front Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
         //wheels
-        ["gallardo_wheel_03b_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_03b_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_03b_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.48, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_03b_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -626,12 +626,12 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_R_19x11","tire_R_265_30_19_sport", "Rear Tires"],
+        ["tire_R_295_30_19","tire_R_295_30_19", "Rear Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["gallardo_wheel_03b_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_03b_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_03b_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_03b_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -694,13 +694,13 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_F_19x8","tire_F_225_35_19_sport", "Front Tires"],
+        ["tire_F_235_35_19","tire_F_235_35_19", "Front Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
         //wheels
-        ["gallardo_wheel_04a_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_04a_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_04a_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.48, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_04a_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -763,12 +763,12 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_R_19x11","tire_R_265_30_19_sport", "Rear Tires"],
+        ["tire_R_295_30_19","tire_R_295_30_19", "Rear Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["gallardo_wheel_04a_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_04a_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_04a_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_04a_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -831,13 +831,13 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_F_19x8","tire_F_225_35_19_sport", "Front Tires"],
+        ["tire_F_235_35_19","tire_F_235_35_19", "Front Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
         //wheels
-        ["gallardo_wheel_04b_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_04b_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_04b_19x9", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.48, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_04b_19x9", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x": 0.49, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -900,12 +900,12 @@
 
     "slots": [
         ["type", "default", "description"],
-        ["tire_R_19x11","tire_R_265_30_19_sport", "Rear Tires"],
+        ["tire_R_295_30_19","tire_R_295_30_19", "Rear Tires"],
     ],
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["gallardo_wheel_04b_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":0.9, "y":1, "z":1}}],
-        ["gallardo_wheel_04b_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":0.9, "y":1, "z":1}}],
+        ["gallardo_wheel_04b_19x11", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["gallardo_wheel_04b_19x11", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x": 0.475, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],

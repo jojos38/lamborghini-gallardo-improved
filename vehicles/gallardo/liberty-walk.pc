@@ -120,8 +120,8 @@
     "skin_gauges":"gallardo_gauges",
     "skin_interior":"gallardo_skin_interior",
     "soundscape_horn":"soundscape_horn_7",
-    "tire_F_19x8":"tire_F_225_35_19_sport",
-    "tire_R_19x11":"tire_R_275_30_19_sport",
+    "tire_F_235_35_19":"tire_F_235_35_19_sport",
+    "tire_R_295_30_19":"tire_R_295_30_19_race",
     "wheel_F_5":"gallardo_wheel_02a_19x8_F",
     "wheel_R_5":"gallardo_wheel_02a_19x11_R"
   },

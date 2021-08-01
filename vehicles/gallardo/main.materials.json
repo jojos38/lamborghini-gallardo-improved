@@ -330,6 +330,7 @@
     "mapTo": "gallardo_misc",
     "alphaRef": 0,
     "dynamicCubemap": true,
+	"doubleSided": true,
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
     "translucent": true,
