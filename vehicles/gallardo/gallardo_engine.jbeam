@@ -92,9 +92,9 @@
         "instantAfterFireSound": "event:>Vehicle>Afterfire>i4_01>single",
         "sustainedAfterFireSound": "event:>Vehicle>Afterfire>i4_01>multi",
         "shiftAfterFireSound": "event:>Vehicle>Afterfire>i4_01>shift",
-		"instantAfterFireVolumeCoef": 4.0,
-        "sustainedAfterFireVolumeCoef": 4.0,
-        "shiftAfterFireVolumeCoef": 4.0,
+	"instantAfterFireVolumeCoef": 5.5,
+        "sustainedAfterFireVolumeCoef": 5.5,
+        "shiftAfterFireVolumeCoef": 5.5,
 		
 		//starter motor
         "starterSample":"event:>Engine>Starter>i4_2001_eng",
