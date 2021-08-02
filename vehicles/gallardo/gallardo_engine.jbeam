@@ -163,7 +163,6 @@
     },
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         //["gallardo_engine", ["gallardo_body","gallardo_roof"]],
          ["gallardo_engine", ["gallardo_engine"]],
 		 ["gallardo_exhaust_header", ["gallardo_engine"]],
     ],
@@ -581,13 +580,13 @@
 
 	"slots": [
 		["type", "default", "description"],
-		["galintakes_turbofilter", "galintakes_turbofilter", "Air Filter"],
-		["galturbo_finish", "galturbo_black", "Cold Side Finsih",{"coreSlot":true}],
+		["gallardo_engine_biturbo_airfilter", "gallardo_engine_biturbo_airfilter", "Air Filter",{"coreSlot":true}],
+		//["galturbo_finish", "galturbo_black", "Cold Side Finsih",{"coreSlot":true}],
     ],
     "props": [
         ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"]
-        ["rpmspin"  , "turbine_right_gallardo", "e2r","e2l","e4r",  {"x":0, "y":0, "z":90}, {"x":0, "y":2.2, "z":0}    , {"x":0, "y":0, "z":0}, -360, 360, 0, 1],
-		["rpmspin"  , "turbine_left_gallardo", "e2r","e2l","e4r",  {"x":0, "y":0, "z":-90}, {"x":0, "y":2.2, "z":0}    , {"x":0, "y":0, "z":0}, -360, 360, 0, 1],
+        //["rpmspin"  , "turbine_right_gallardo", "e2r","e2l","e4r",  {"x":0, "y":0, "z":90}, {"x":0, "y":2.2, "z":0}    , {"x":0, "y":0, "z":0}, -360, 360, 0, 1],
+		//["rpmspin"  , "turbine_left_gallardo", "e2r","e2l","e4r",  {"x":0, "y":0, "z":-90}, {"x":0, "y":2.2, "z":0}    , {"x":0, "y":0, "z":0}, -360, 360, 0, 1],
 		
     ],
     "variables": [
@@ -695,14 +694,16 @@
     },
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["sheepey_tank", ["gallardo_engine"]],
-		["gallardo_tankintake", ["gallardo_engine"]],
-		["gallardo_exhaust_header", ["gallardo_engine"]],
-		["gallardo_exhaust_header_turbo", ["gallardo_engine"]],
-		["turboclamp", ["gallardo_engine"]],
-		["turbocharger_body", ["gallardo_engine"]],
-		["turbocharger_turbine", ["gallardo_engine"]],
-		["turboclamp_exh", ["gallardo_engine"]],
+		["gallardo_engine_biturbo", ["gallardo_engine"]],
+		//["gallardo_exhaust_biturbo_black", ["gallardo_engine"]],
+        //["sheepey_tank", ["gallardo_engine"]],
+		//["gallardo_tankintake", ["gallardo_engine"]],
+		//["gallardo_exhaust_header", ["gallardo_engine"]],
+		//["gallardo_exhaust_header_turbo", ["gallardo_engine"]],
+		//["turboclamp", ["gallardo_engine"]],
+		//["turbocharger_body", ["gallardo_engine"]],
+		//["turbocharger_turbine", ["gallardo_engine"]],
+		//["turboclamp_exh", ["gallardo_engine"]],
     ],
     "nodes": [
         ["id", "posX", "posY", "posZ"],
@@ -713,10 +714,14 @@
         {"nodeMaterial":"|NM_METAL"},
         {"nodeWeight":2.0},
         //{"group":"gallardo_exhaust"},
-	    ["exh4r", -0.38000, 1.73000, 0.51000],
-        ["exh4l", 0.38000, 1.73000, 0.51000],
-	    ["exh5r", -0.25000, 1.73000, 0.51000],
-        ["exh5l", 0.25000, 1.73000, 0.51000],
+
+		["tw1r", -0.63000, 1.80000, 0.62000],
+		["tw1l", 0.63000, 1.80000, 0.62000],
+		
+	    ["exh4r", -0.25000, 1.63000, 0.51000],
+        ["exh4l", 0.25000, 1.63000, 0.51000],
+	    ["exh5r", -0.38000, 1.63000, 0.51000],
+        ["exh5l", 0.38000, 1.63000, 0.51000],
         {"group":""},
     ],
     "beams": [
@@ -725,6 +730,19 @@
         {"deformLimitExpansion":1.1},
         {"beamSpring":1201000,"beamDamp":75},
         {"beamDeform":100000,"beamStrength":"FLT_MAX"},
+				
+		["tw1l", "e3l"],
+		["tw1l", "e1l"],
+		["tw1l", "e2l"],
+		["tw1l", "r3"],
+
+		["tw1r", "e3r"],
+		["tw1r", "e1r"],
+		["tw1r", "e2r"],
+		["tw1r", "r3"],
+		
+		["tw1l", "tw1r"],
+		
 		["exh4r", "r1"],
 		["exh4r", "exh0r"{"isExhaust":"mainEngine"}],
 		["exh4r", "e1r"],
@@ -752,16 +770,16 @@
 		{"group":""},
     ],
 },
-"galintakes_turbofilter": {
+"gallardo_engine_biturbo_airfilter": {
     "information":{
         "authors":"BeamNG",
         "name":"Turbo Air Filters",
         "value":120,
     }
-    "slotType" : "galintakes_turbofilter",
+    "slotType" : "gallardo_engine_biturbo_airfilter",
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-		["galintakes_turbofilter", ["gallardo_engine"]],
+		["gallardo_engine_biturbo_airfilter", ["gallardo_engine"]],
         {"deformGroup":""},
     ],
 }

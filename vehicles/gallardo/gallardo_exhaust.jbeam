@@ -2,7 +2,7 @@
 "gallardo_exhaust_quad": {
     "information":{
         "authors":"BeamNG",
-        "name":"Quad Tips",
+        "name":"Stock Quad Tips",
         "value":900,
     }
     "slotType" : "gallardo_exhaust",
@@ -132,11 +132,11 @@
 		{"group":"gallardo_exhaust"},
 	    ["exh1r", -0.20000, 1.73000, 0.51000],
         ["exh1l", 0.20000, 1.73000, 0.51000],
-        ["exh1rr", -0.37000, 1.90000, 0.33000],
-        ["exh1ll", 0.37000, 1.90000, 0.33000],
+        ["exh1rr", -0.37000, 1.80000, 0.33000],
+        ["exh1ll", 0.37000, 1.80000, 0.33000],
         ["exhdr", -0.37000, 1.52592, 0.33000],
         ["exhdl", 0.37000, 1.52592, 0.33000],
-		["exh", 0, 1.90, 0.50],
+		["exh", 0, 1.80, 0.50],
     ],
     "beams": [
         ["id1:", "id2:"],
@@ -250,13 +250,13 @@
 		{"group":"gallardo_exhaust"},
 	    ["exh1r", -0.20000, 1.73000, 0.51000],
         ["exh1l", 0.20000, 1.73000, 0.51000],
-        ["exh1rr", -0.37000, 1.90000, 0.33000],
-        ["exh1ll", 0.37000, 1.90000, 0.33000],
-        ["exh2rr", -0.25000, 1.90000, 0.33000],
-        ["exh2ll", 0.25000, 1.90000, 0.33000],
+        ["exh1rr", -0.37000, 1.80000, 0.33000],
+        ["exh1ll", 0.37000, 1.80000, 0.33000],
+        ["exh2rr", -0.25000, 1.80000, 0.33000],
+        ["exh2ll", 0.25000, 1.80000, 0.33000],
         ["exhdr", -0.37000, 1.52592, 0.33000],
         ["exhdl", 0.37000, 1.52592, 0.33000],
-		["exh", 0, 1.90, 0.50],
+		["exh", 0, 1.80, 0.50],
     ],
     "beams": [
         ["id1:", "id2:"],
@@ -358,6 +358,149 @@
         {"deformGroup":""},
     ],
 }
+"gallardo_exhaust_biturbo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stock Twin Turbo Quad Tips",
+        "value":900,
+    }
+    "slotType" : "gallardo_exhaust",
+	"slots": [
+		["type", "default", "description"],
+		["gallardo_exhaust_biturbo_finish", "gallardo_exhaust_biturbo_polished", "Finish"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["gallardo_exhaust_quad_turboch", ["gallardo_exhaust"]],
+    ],
+   "nodes": [
+        ["id", "posX", "posY", "posZ"],
+        {"selfCollision":false}
+        {"collision":true}
+		{"group":"gallardo_exhaust"},
+	    ["exh1r", -0.20000, 1.73000, 0.51000],
+        ["exh1l", 0.20000, 1.73000, 0.51000],
+        ["exh1rr", -0.55000, 1.90000, 0.33000],
+        ["exh1ll", 0.55000, 1.90000, 0.33000],
+		["exh2rr", -0.66200, 1.87000, 0.32500],
+        ["exh2ll", 0.66200, 1.87000, 0.32500],
+        ["exhdr", -0.62000, 1.52592, 0.20000],
+        ["exhdl", 0.62000, 1.52592, 0.20000],
+		["exh", 0, 1.90, 0.50],
+    ],
+    "beams": [
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+        {"beamSpring":500000,"beamDamp":500},
+        {"beamDeform": 50000,"beamStrength": "FLT_MAX"},
+
+		// Exhaust		
+		["exhdr", "exhdl"],
+		["exh1rr", "exh1ll"],
+		["exh1r", "exh1l"],
+		["exh1rr", "exh1l"],
+		["exh1ll", "exh1r"],
+		["exh1r", "exhdl"],
+		["exh1rr", "exhdl"],
+		["exh1l", "exhdr"],
+		["exh1ll", "exhdr"],
+		["exh1rr", "exh1r"],
+		["exh1ll", "exh1l"],
+
+		["exh2rr", "exh1ll"],
+		["exh2rr", "exh1l"],
+		["exh2ll", "exh1r"],
+		["exh2rr", "exhdl"],
+		["exh2ll", "exhdr"],
+		["exh2rr", "exh1r"],
+		["exh2ll", "exh1l"],
+
+		["exh", "exh1l"],
+		["exh", "exh1ll"],
+		["exh", "exh1r"],
+		["exh", "exh1rr"],
+		["exh", "exhdr"],
+		["exh", "exhdl"],
+
+		["exhdr", "exh1rr"{"isExhaust":"mainEngine"}],
+		["exhdl", "exh1ll"{"isExhaust":"mainEngine"}],
+		["exhdr", "exh2rr"{"isExhaust":"mainEngine"}],
+		["exhdl", "exh2ll"{"isExhaust":"mainEngine"}],
+
+		{"beamDeform": 50000,"beamStrength": 20000},
+		// Right exhaust
+		["exhdr", "e1r"],
+        ["exhdr", "e3r"],
+        ["exhdr", "r1"],
+		["exh1rr", "e3r"],
+		["exh1rr", "e1r"],
+		["exh1rr", "e4r"],
+		["exh1r", "e3r"],
+		["exh1r", "e1r"],
+		["exh1r", "e4r"],	
+		["exh5r","exhdr"{"isExhaust":"mainEngine"}],
+
+		// Left exhaust
+		["exhdl", "e1l"],
+        ["exhdl", "e3l"],
+        ["exhdl", "r1"],
+		["exh1ll", "e3l"],
+		["exh1ll", "e1l"],
+		["exh1ll", "e4l"],
+		["exh1l", "e3l"],
+		["exh1l", "e1l"],
+		["exh1l", "e4l"],
+		["exh5l","exhdl"{"isExhaust":"mainEngine"}],
+    ],
+    "triangles": [
+		["id1:","id2:","id3:"],
+		{"group":"gallardo_exhaust"},
+		{"groundModel":"metal"},
+		{"dragCoef":6},
+		{"triangleType":"NONCOLLIDABLE"},
+		["exhdl","exh1ll","exh1r"],
+		["exh1l","exh1rr","exhdr"],
+    ],
+}
+"gallardo_exhaust_biturbo_black": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black Ceramic Coated",
+        "value":120,
+    }
+    "slotType" : "gallardo_exhaust_biturbo_finish",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+		["gallardo_exhaust_biturbo_black", ["gallardo_exhaust"]],
+        {"deformGroup":""},
+    ],
+}
+"gallardo_exhaust_biturbo_chrome": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Chromed",
+        "value":120,
+    }
+    "slotType" : "gallardo_exhaust_biturbo_finish",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+		["gallardo_exhaust_biturbo_chrome", ["gallardo_exhaust"]],
+        {"deformGroup":""},
+    ],
+}
+"gallardo_exhaust_biturbo_polished": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Polished",
+        "value":120,
+    }
+    "slotType" : "gallardo_exhaust_biturbo_finish",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+		["gallardo_exhaust_biturbo_polished", ["gallardo_exhaust"]],
+        {"deformGroup":""},
+    ],
+}
 "gallardo_exhaust_quad_turbot": {
     "information":{
         "authors":"BeamNG",
@@ -380,13 +523,13 @@
 		{"group":"gallardo_exhaust"},
 	    ["exh1r", -0.20000, 1.73000, 0.51000],
         ["exh1l", 0.20000, 1.73000, 0.51000],
-        ["exh1rr", -0.54200, 1.90000, 0.40000],
-        ["exh1ll", 0.54200, 1.90000, 0.40000],
-		["exh2rr", -0.66200, 1.90000, 0.39000],
-        ["exh2ll", 0.66200, 1.90000, 0.39000],
+        ["exh1rr", -0.54200, 1.80000, 0.42000],
+        ["exh1ll", 0.54200, 1.80000, 0.42000],
+		["exh2rr", -0.66200, 1.80000, 0.41000],
+        ["exh2ll", 0.66200, 1.80000, 0.41000],
         ["exhdr", -0.62000, 1.52592, 0.40000],
         ["exhdl", 0.62000, 1.52592, 0.40000],
-		["exh", 0, 1.90, 0.50],
+		["exh", 0, 1.80, 0.50],
     ],
     "beams": [
         ["id1:", "id2:"],

@@ -1516,14 +1516,14 @@
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"]
         ["$lsdpreload_F", "range", "N/m", "Differentials", 150, 0, 500, "Front LSD Preload", "Initial cross torque between left and right wheels"]
-        ["$lsdlockcoef_F", "range", "", "Differentials", 0.25, 0, 0.5, "Front LSD Forward Locking", "Locking effect proportional to engine torque", {"minDis":0, "maxDis":100}]
-        ["$lsdlockcoefrev_F", "range", "", "Differentials", 0.13, 0, 0.5, "Front LSD Reverse Locking", "Locking effect proportional to engine braking", {"minDis":0, "maxDis":100}]
+        ["$lsdlockcoef_F", "range", "", "Differentials", 0.12, 0, 0.5, "Front LSD Forward Locking", "Locking effect proportional to engine torque", {"minDis":0, "maxDis":100}]
+        ["$lsdlockcoefrev_F", "range", "", "Differentials", 0.06, 0, 0.5, "Front LSD Reverse Locking", "Locking effect proportional to engine braking", {"minDis":0, "maxDis":100}]
     ],
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"]
-        ["torsionReactor", "torsionReactorF", "driveshaft", 1, {"gearRatio":"$finaldrive"}]
-	["differential", "differential_F", "torsionReactorF", 1, {"diffType":"lsd", "gearRatio":"$finaldrive", "lsdPreload":"$lsdpreload_F", "lsdLockCoef":"$lsdlockcoef_F", "lsdRevLockCoef":"$lsdlockcoefrev_F", "friction":8}]
-        ],
+        ["torsionReactor", "torsionReactorF", "driveshaft", 1, {"gearRatio":3.6}]
+        ["differential", "differential_F", "torsionReactorF", 1, {"diffType":"lsd", "gearRatio":1, "lsdPreload":60, "lsdLockCoef":0.05, "lsdRevLockCoef":0.0, "friction":8, "uiName":"Front Differential","defaultVirtualInertia":0.25}]
+    ],
     "torsionReactorF": {
         "torqueReactionNodes:":["fx2l","fx2r","fdiff"],
     },
