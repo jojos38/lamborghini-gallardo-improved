@@ -85,27 +85,29 @@
         "engineBlock": {"[engineGroup]:":["engine_block"]},
         "breakTriggerBeam":"engine",
         "uiName":"Engine",
-
+		
         "soundConfig": "soundConfig",
 		"soundConfigExhaust": "soundConfigExhaust",
-        
+
         "instantAfterFireSound": "event:>Vehicle>Afterfire>i4_01>single",
         "sustainedAfterFireSound": "event:>Vehicle>Afterfire>i4_01>multi",
         "shiftAfterFireSound": "event:>Vehicle>Afterfire>i4_01>shift",
-	"instantAfterFireVolumeCoef": 5.5,
+		"shiftAfterFireSound": "art/sound/gallardo_shift",
+		"instantAfterFireVolumeCoef": 5.5,
         "sustainedAfterFireVolumeCoef": 5.5,
         "shiftAfterFireVolumeCoef": 5.5,
 		
 		//starter motor
-        "starterSample":"event:>Engine>Starter>i4_2001_eng",
-        "starterSampleExhaust":"event:>Engine>Starter>i4_2001_exh",
+        "starterSample":"art/sound/gallardo_engine_startup",
+        //"starterSampleExhaust":"event:>Engine>Starter>i4_2001_exh",
         "shutOffSampleEngine":"event:>Engine>Shutoff>i4_2001_eng",
         "shutOffSampleExhaust":"event:>Engine>Shutoff>i4_2001_exh",
-        "starterVolume":0.10,
+        "starterVolume":1.75,
         "starterVolumeExhaust":1.0,
         "shutOffVolumeEngine":0.15,
         "shutOffVolumeExhaust":0.7,
         "starterThrottleKillTime":0.5,
+        "starterThrottleKillTime":1.67,
         "idleRPMStartRate":0.8,
         "idleRPMStartCoef":4
     },
@@ -146,7 +148,7 @@
         "eqLowFreq": 100,
         "eqLowWidth": 0.2,
 
-        "eqHighGain": 5,
+        "eqHighGain": 8,
         "eqHighFreq": 10000,
         "eqHighWidth": 0.2,
 
@@ -597,7 +599,7 @@
         "bovSoundFileName":"event:>Vehicle>Forced_Induction>Turbo_04>turbo_bov_race",
         "hissLoopEvent":"event:>Vehicle>Forced_Induction>Turbo_07>turbo_hiss_race",
         "whineLoopEvent":"event:>Vehicle>Forced_Induction>Turbo_07>turbo_spin_race",
-        "bovSoundPressureCoef": 1.,
+        "bovSoundPressureCoef": 1.0,
         "bovSoundVolumeCoef": 1.5,
         "hissVolumePerPSI": 22.045,
         "whineVolumePer10kRPM": 99.08,

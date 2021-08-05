@@ -149,6 +149,224 @@
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
     ],
 }
+"sunburst_transmission_6M_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race 6-Speed Manual Transmission",
+        "value":3800,
+    },
+    "slotType" : "gallardo_transaxle","slots": [
+        ["type", "default", "description"],
+        ["gallardo_transfer_case","gallardo_transfer_case_RWD", "Transfer Case"{"coreSlot":true}],
+        ["gallardo_differential_R","gallardo_differential_R", "Rear Differential"],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$gear_R", "range", ":1", "Transmission", 3.25, 0.5, 5, "Reverse Gear Ratio", "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_1", "range", ":1", "Transmission", 3.64, 0.5, 5, "1st Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_2", "range", ":1", "Transmission", 2.38, 0.5, 5, "2nd Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_3", "range", ":1", "Transmission", 1.76, 0.5, 5, "3rd Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_4", "range", ":1", "Transmission", 1.35, 0.5, 5, "4th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_5", "range", ":1", "Transmission", 1.06, 0.5, 5, "5th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_6", "range", ":1", "Transmission", 0.84, 0.5, 5, "6th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["frictionClutch", "clutch", "mainEngine", 1],
+        ["manualGearbox", "gearbox", "clutch", 1],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":["$=-$gear_R", 0, "$gear_1", "$gear_2", "$gear_3", "$gear_4", "$gear_5", "$gear_6"],
+        "friction": 1.25,
+        "dynamicFriction": 0.00124,
+        "torqueLossCoef": 0.0135,
+        "gearboxNode:":["tra1"],
+
+        "gearWhineCoefsInput":  [0.64, 0.00, 0.64, 0.64, 0.64, 0.64, 0.64, 0.64],
+        "gearWhineCoefsOutput": [0.00, 0.00, 0.64, 0.64, 0.64, 0.64, 0.64, 0.64],
+        "gearWhineInputEvent": "event:>Vehicle>Transmission>straight_01>twine_in_race",
+        "gearWhineOutputEvent": "event:>Vehicle>Transmission>straight_01>twine_out_race",
+
+        //"forwardInputPitchCoef":1
+        //"forwardOutputPitchCoef":1
+        //"reverseInputPitchCoef":0.7
+        //"reverseOutputPitchCoef":0.7
+
+        //"gearWhineInputPitchCoefSmoothing":50
+        //"gearWhineOutputPitchCoefSmoothing":50
+        //"gearWhineInputVolumeCoefSmoothing":10
+        //"gearWhineOutputVolumeCoefSmoothing":10
+
+        //"gearWhineFixedCoefOutput": 0.7
+        //"gearWhineFixedCoefInput": 0.4
+    },
+    "clutch": {
+        "clutchFreePlay":0.2,
+    },
+    "vehicleController": {
+        "transmissionShiftDelay":0.13,
+        "calculateOptimalLoadShiftPoints": true,
+        "shiftDownRPMOffsetCoef":1.20,
+        "aggressionHoldOffThrottleDelay":3,
+        //"aggressionSmoothingDown":0.05
+        //"lowShiftDownRPM":[0,0,0,1500,1700,1600,1600,1600],
+        //"lowShiftUpRPM":[0,0,3600,3200,2900,2900,2900],
+        "lowShiftDownRPM":[0,0,0,2000,2300,2300,2300,2300],
+        "lowShiftUpRPM":[0,0,4100,4000,3850,3900,3700],
+        //"wheelSlipUpThreshold":200,
+        "clutchLaunchStartRPM": 3500,
+        "clutchLaunchTargetRPM": 4000,
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sunburst_transmission_awd", ["sunburst_engine","sunburst_transmission"]],
+         ["sunburst_manual", ["sunburst_body"]],
+    ],
+    "props": [
+        ["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"]
+		["brake",      "gallardo_brakepedal_A",    "f1l","f1r","f6l",        {"x":0, "y":0, "z":180},   {"x":-20, "y":0, "z":0},   {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+        //displays
+        //["disp_1",         "gallardo_display1", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        //["disp_2",         "gallardo_display2", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        //["disp_3",         "gallardo_display3", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        //["disp_4",         "gallardo_display4", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        //["disp_5",         "gallardo_display5", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        //["disp_6",         "gallardo_display6", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+   ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"selfCollision":false},
+         {"collision":true}
+         {"group":"gallardo_transaxle"},
+         {"nodeWeight":30},
+         ["tra1", 0.0, 0.82, 0.25],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--TRANSMISSION CONE--
+          {"beamSpring":15001000,"beamDamp":500},
+          {"beamDeform":175000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e3r"],
+          ["tra1","e1l"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"sunburst_transmission_6M_SQ": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race 6-Speed Sequential Transmission",
+        "value":7900,
+    },
+    "slotType" : "gallardo_transaxle","slots": [
+        ["type", "default", "description"],
+        ["gallardo_transfer_case","gallardo_transfer_case_RWD", "Transfer Case"{"coreSlot":true}],
+        ["gallardo_differential_R","gallardo_differential_R", "Rear Differential"],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$gear_R", "range", ":1", "Transmission", 3.25, 0.5, 5, "Reverse Gear Ratio", "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_1", "range", ":1", "Transmission", 3.64, 0.5, 5, "1st Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_2", "range", ":1", "Transmission", 2.38, 0.5, 5, "2nd Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_3", "range", ":1", "Transmission", 1.76, 0.5, 5, "3rd Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_4", "range", ":1", "Transmission", 1.35, 0.5, 5, "4th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_5", "range", ":1", "Transmission", 1.06, 0.5, 5, "5th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_6", "range", ":1", "Transmission", 0.84, 0.5, 5, "6th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["frictionClutch", "clutch", "mainEngine", 1],
+        ["sequentialGearbox", "gearbox", "clutch", 1],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":["$=-$gear_R", 0, "$gear_1", "$gear_2", "$gear_3", "$gear_4", "$gear_5", "$gear_6"],
+        "friction": 1.24,
+        "dynamicFriction": 0.00124,
+        "torqueLossCoef": 0.013,
+        "gearboxNode:":["tra1"],
+
+        "gearWhineCoefsInput":  [0.64, 0.00, 0.70, 0.60, 0.50, 0.50, 0.50, 0.50],
+        "gearWhineCoefsOutput": [0.00, 0.00, 0.60, 0.60, 0.60, 0.60, 0.60, 0.60],
+        "gearWhineInputEvent": "event:>Vehicle>Transmission>straight_01>twine_in_race",
+        "gearWhineOutputEvent": "event:>Vehicle>Transmission>straight_01>twine_out_race",
+
+        //"forwardInputPitchCoef":1
+        //"forwardOutputPitchCoef":1
+        //"reverseInputPitchCoef":0.7
+        //"reverseOutputPitchCoef":0.7
+
+        //"gearWhineInputPitchCoefSmoothing":50
+        //"gearWhineOutputPitchCoefSmoothing":50
+        //"gearWhineInputVolumeCoefSmoothing":10
+        //"gearWhineOutputVolumeCoefSmoothing":10
+
+        //"gearWhineFixedCoefOutput": 0.7
+        //"gearWhineFixedCoefInput": 0.4
+    },
+    "clutch": {
+        "clutchFreePlay":0.75,
+        "lockSpringCoef":0.25,
+    },
+    "vehicleController": {
+        "calculateOptimalLoadShiftPoints": true,
+        "shiftDownRPMOffsetCoef":1.13,
+        "aggressionHoldOffThrottleDelay":3,
+        //"aggressionSmoothingDown":0.05
+        //"lowShiftDownRPM":[0,0,0,1500,1700,1600,1600,1600],
+        //"lowShiftUpRPM":[0,0,3600,3200,2900,2900,2900],
+        "lowShiftDownRPM":[0,0,0,2000,2300,2300,2300,2300],
+        "lowShiftUpRPM":[0,0,4100,4000,3850,3900,3700],
+        "clutchLaunchStartRPM": 3500,
+        "clutchLaunchTargetRPM": 4000,
+        //"wheelSlipUpThreshold":200,
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sunburst_transmission_awd", ["sunburst_engine","sunburst_transmission"]],
+         ["sunburst_manual", ["sunburst_body"]],
+    ],
+    "props": [
+        ["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"]
+		["brake",      "gallardo_brakepedal_A",    "f1l","f1r","f6l",        {"x":0, "y":0, "z":180},   {"x":-20, "y":0, "z":0},   {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+        //displays
+        //["disp_1",         "gallardo_display1", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        //["disp_2",         "gallardo_display2", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        //["disp_3",         "gallardo_display3", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        //["disp_4",         "gallardo_display4", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        //["disp_5",         "gallardo_display5", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+        //["disp_6",         "gallardo_display6", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
+   ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"selfCollision":false},
+         {"collision":true}
+         {"group":"gallardo_transaxle"},
+         {"nodeWeight":30},
+         ["tra1", 0.0, 0.82, 0.25],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--TRANSMISSION CONE--
+          {"beamSpring":15001000,"beamDamp":500},
+          {"beamDeform":175000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e3r"],
+          ["tra1","e1l"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
 "gallardo_flywheel": {
     "information":{
         "authors":"BeamNG",
