@@ -106,7 +106,6 @@
         "starterVolumeExhaust":1.0,
         "shutOffVolumeEngine":0.15,
         "shutOffVolumeExhaust":0.7,
-        "starterThrottleKillTime":0.5,
         "starterThrottleKillTime":1.67,
         "idleRPMStartRate":0.8,
         "idleRPMStartCoef":4
