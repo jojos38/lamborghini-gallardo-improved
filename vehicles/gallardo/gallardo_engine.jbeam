@@ -92,7 +92,6 @@
         "instantAfterFireSound": "event:>Vehicle>Afterfire>i4_01>single",
         "sustainedAfterFireSound": "event:>Vehicle>Afterfire>i4_01>multi",
         "shiftAfterFireSound": "event:>Vehicle>Afterfire>i4_01>shift",
-		"shiftAfterFireSound": "art/sound/gallardo_shift",
 		"instantAfterFireVolumeCoef": 5.5,
         "sustainedAfterFireVolumeCoef": 5.5,
         "shiftAfterFireVolumeCoef": 5.5,
