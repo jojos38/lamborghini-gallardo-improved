@@ -173,35 +173,28 @@
     "class": "Material",
     "Stages": [
       {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ],
         "baseColorMap": "vehicles/gallardo/gallardo_b.dds",
-		"metallicFactor": 1,
-		"matallicMap": "vehicles/gallardo/gallardo_m.dds",
-		"roughnessMap": "vehicles/gallardo/gallardo_r.dds",
-		"useAnisotropic": true
+        "metallicFactor": 1,
+        "roughnessFactor": 0,
+        "roughnessMap": "vehicles/gallardo/gallardo_r.dds"
       },
       {
-        "baseColorMap": "vehicles/gallardo/gallardo_skin_bicolore.color.dds",
         "clearCoatFactor": 1,
         "clearCoatMap": "/vehicles/gallardo/gallardo_cc.dds",
         "colorPaletteMap": "/vehicles/gallardo/gallardo_p.dds",
         "colorPaletteMapUseUV": 1,
         "instanceDiffuse": true,
         "metallicFactor": 1,
-        "normalMap": "/vehicles/gallardo/gallardo_n.dds"
+        "normalMap": "/vehicles/gallardo/gallardo_n.dds",
+        "opacityMap": "vehicles/gallardo/gallardo_skin_bicolore_o.dds"
       },
-      {
-		"baseColorMap": "/vehicles/gallardo/gallardo_skin_bicolore.color.png",
-        "diffuseMap": "vehicles/gallardo/gallardo_skin_bicolore.dds",
-        "specularPower": 128,
-        "pixelSpecular": 1,
-        "diffuseColor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "useAnisotropic": true
-      },
+      {},
       {}
     ],
     "mapTo": "gallardo_paint.skin.bicolore",
