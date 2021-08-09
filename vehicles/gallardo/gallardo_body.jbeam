@@ -2366,7 +2366,7 @@
         //needles
         ["wheelspeed", "gallardo_needle_speedo", "f1l","f1r","f6l",        {"x":22.9, "y":0, "z":180},    {"x":0, "y":-2.75, "z":0}, {"x":0, "y":0, "z":0}, 0, 95, -47.22222, 1],
         ["rpm",        "gallardo_needle_tacho",  "f1l","f1r","f6l",        {"x":22.9, "y":0, "z":180},    {"x":0, "y":-0.025, "z":0}, {"x":0, "y":0, "z":0}, 0, 10000, -5000, 1],
-        ["fuel",       "gallardo_needle_fuel",   "f1l","f1r","f6l",        {"x":20, "y":0, "z":180},    {"x":0, "y":60, "z":0},    {"x":0, "y":0, "z":0}, 0, 1, -1.8, 1],
+        ["fuel",       "gallardo_needle_fuel",   "f1l","f1r","f6l",        {"x":20, "y":0, "z":180},    {"x":0, "y":-145, "z":0},    {"x":0, "y":0, "z":0}, 0, 1, -0.3, 0.61],
         ["watertemp",  "gallardo_needle_watertemp",   "f1l","f1r","f6l",        {"x":20, "y":0, "z":180},    {"x":0, "y":-1, "z":0},  {"x":0, "y":0, "z":0}, 50, 130, -80, 1],
 		["oiltemp",  "gallardo_needle_oiltemp",   "f1l","f1r","f6l",        {"x":24.1, "y":0, "z":180},    {"x":0, "y":-0.5, "z":0},  {"x":0, "y":0, "z":0}, 50, 170, -140, 1],
 		["oiltemp",  "gallardo_needle_oilpressure",   "f1l","f1r","f6l",        {"x":24.1, "y":10, "z":180},    {"x":0, "y":0, "z":0},  {"x":0, "y":0, "z":0}, 0, 1, 0, 1],
