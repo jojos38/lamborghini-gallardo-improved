@@ -137,13 +137,13 @@
     "soundConfigExhaust": {
         "sampleName": "lam_huracan_15_exhaust",
         "mainGain": -15,
-        "maxLoadMix": 1.5,
+        "maxLoadMix": 5.5,
         "minLoadMix": 0,
         "onLoadGain":0.7,
         "offLoadGain":0.2,
 		
 		"eqLowGain": 13,
-        "eqLowFreq": 100,
+        "eqLowFreq": 80,
         "eqLowWidth": 0.2,
 
         "eqHighGain": 8,
@@ -653,7 +653,7 @@
         "offLoadGain":0.2,
 		
 		"eqLowGain": 18,
-        "eqLowFreq": 200,
+        "eqLowFreq": 100,
         "eqLowWidth": 0.3,
 
         "eqHighGain": 12,

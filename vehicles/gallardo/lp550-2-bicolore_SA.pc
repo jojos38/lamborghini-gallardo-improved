@@ -101,7 +101,7 @@
     "gallardo_taillight_L":"gallardo_taillight_L",
     "gallardo_taillight_R":"gallardo_taillight_R",
     "gallardo_towhitch":"",
-    "gallardo_transaxle":"gallardo_transaxle_6SA",
+    "gallardo_transaxle":"gallardo_transmission_6AM",
     "gallardo_transfer_case":"gallardo_transfer_case_RWD",
     "gallardo_wheeldata_F":"gallardo_wheeldata_F",
     "gallardo_wheeldata_R":"gallardo_wheeldata_R",
