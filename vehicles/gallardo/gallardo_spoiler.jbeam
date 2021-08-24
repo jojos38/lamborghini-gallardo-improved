@@ -76,7 +76,7 @@
          {"selfCollision":false},
          {"nodeWeight":0.35},
          //e{"group":""},
-         ["wing0", 0, 1.86, 0.93],
+         ["wing0", 0, 1.86, 1.13],
          ["sp0", 0, 1.85, 0.73],
          {"group":""},
     ],
@@ -100,9 +100,9 @@
 		  ["wing3rr", "wing0"]
 		  
 		  //wing reinf
-          {"beamSpring":201000,"beamDamp":50},
-          {"beamDeform":2500,"beamStrength":"FLT_MAX"},
-          ["wing2", "wing0"],
+          {"beamSpring":251000,"beamDamp":50},
+          {"beamDeform":1500,"beamStrength":"FLT_MAX"},
+		  ["wing2", "wing0"],
           ["wing1", "wing0"],
           ["wing2l", "wing0"],
           ["wing1l", "wing0"],
@@ -328,6 +328,13 @@
           ["sp3r","t3r"],
           ["sp4r","t4r"],
           ["sp4r","t3r"],
+
+	      ["wing1", "t4"],
+		  ["wing2", "t4"],
+	      ["wing1", "t4l"],
+		  ["wing2", "t4l"],
+	      ["wing1", "t4r"],
+		  ["wing2", "t4r"],
 
           //damp help
           {"beamSpring":0,"beamDamp":25},

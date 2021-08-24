@@ -2,7 +2,7 @@
 "gallardo_transaxle_6M": {
     "information":{
         "authors":"BeamNG",
-        "name":"6-Speed Manual Transaxle",
+        "name":"6-Speed Manual Transmission",
         "value":4800,
     }
     "slotType" : "gallardo_transaxle",
@@ -234,7 +234,12 @@
         //["disp_5",         "gallardo_display5", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
         //["disp_6",         "gallardo_display6", "f7r","f7l","f8r", {"x":227, "y":0, "z":0}, {"x":0, "y":0, "z":0}     , {"x":0, "y":0.013, "z":0}, -1, 1, 0, 1],
    ],
-    "nodes": [
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gallardo_shiftgate_M", ["gallardo_body","gallardo_dash"]],
+         ["gallardo_shifter_M", ["gallardo_body","gallardo_dash"]],
+    ],
+   "nodes": [
          ["id", "posX", "posY", "posZ"],
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
@@ -329,8 +334,8 @@
     },
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["sunburst_transmission_awd", ["sunburst_engine","sunburst_transmission"]],
-         ["sunburst_manual", ["sunburst_body"]],
+         ["gallardo_shiftgate_M", ["gallardo_body","gallardo_dash"]],
+         ["gallardo_shifter_M", ["gallardo_body","gallardo_dash"]],
     ],
     "props": [
         ["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"]
