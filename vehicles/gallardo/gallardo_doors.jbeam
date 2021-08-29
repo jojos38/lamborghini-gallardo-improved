@@ -843,7 +843,7 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          {"deformGroup":"doorglass_R_break", "deformMaterialBase":"gallardo_glass", "deformMaterialDamaged":"gallardo_glass_dmg"}
-         ["gallardo_doorglass_R", ["gallardo_door_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glasgallardoeaksound7", "deformVolume":0.7}],
+         ["gallardo_doorglass_R", ["gallardo_door_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound9", "deformVolume":0.7}],
          {"deformGroup":"doorglass_R_break", "deformMaterialBase":"gallardo_glass_int", "deformMaterialDamaged":"gallardo_glass_dmg"}
          //["gallardo_doorglass_R_int", ["gallardo_door_R"]],
          {"deformGroup":""}
@@ -910,7 +910,7 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          {"deformGroup":"doorglass_L_break", "deformMaterialBase":"gallardo_glass", "deformMaterialDamaged":"gallardo_glass_dmg"}
-         ["gallardo_doorglass_L", ["gallardo_door_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glasgallardoeaksound8", "deformVolume":0.7}],
+         ["gallardo_doorglass_L", ["gallardo_door_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound8", "deformVolume":0.7}],
          {"deformGroup":"doorglass_L_break", "deformMaterialBase":"gallardo_glass_int", "deformMaterialDamaged":"gallardo_glass_dmg"}
          //["gallardo_doorglass_L_int", ["gallardo_door_L"]],
          {"deformGroup":""}
