@@ -101,7 +101,7 @@
         //"starterSampleExhaust":"event:>Engine>Starter>i4_2001_exh",
         "shutOffSampleEngine":"event:>Engine>Shutoff>i4_2001_eng",
         "shutOffSampleExhaust":"event:>Engine>Shutoff>i4_2001_exh",
-        "starterVolume":1.75,
+        "starterVolume":1.50,
         "starterVolumeExhaust":1.0,
         "shutOffVolumeEngine":0.15,
         "shutOffVolumeExhaust":0.7,
@@ -117,7 +117,7 @@
         "onLoadGain":1,
         "offLoadGain":0.2,
 		
-		"eqLowGain": 12,
+		"eqLowGain": 10,
         "eqLowFreq": 400,
         "eqLowWidth": 0.3,
 
@@ -304,7 +304,7 @@
 
           //oilpan node
           {"beamSpring":1501000,"beamDamp":250},
-          {"beamDeform":8000,"beamStrength":"FLT_MAX"},
+          {"beamDeform":16000,"beamStrength":"FLT_MAX"},
           {"deformGroup":"oilpan_damage","deformationTriggerRatio":0.005},
           ["oilpan", "e1r"],
           ["oilpan", "e1l"],
@@ -369,7 +369,7 @@
 
           //oilpan node
           {"beamSpring":1501000,"beamDamp":250},
-          {"beamDeform":8000,"beamStrength":"FLT_MAX"},
+          {"beamDeform":20000,"beamStrength":"FLT_MAX"},
           {"deformGroup":"oilpan_damage","deformationTriggerRatio":0.005},
           ["oilpan", "e1r"],
           ["oilpan", "e1l"],
@@ -652,8 +652,8 @@
         "onLoadGain":1,
         "offLoadGain":0.2,
 		
-		"eqLowGain": 18,
-        "eqLowFreq": 100,
+		"eqLowGain": 12,
+        "eqLowFreq": 300,
         "eqLowWidth": 0.3,
 
         "eqHighGain": 12,
@@ -678,10 +678,10 @@
         "offLoadGain":0.2,
 		
 		"eqLowGain": 14,
-        "eqLowFreq": 80,
+        "eqLowFreq": 100,
         "eqLowWidth": 0.2,
 
-        "eqHighGain": 5,
+        "eqHighGain": 10,
         "eqHighFreq": 10000,
         "eqHighWidth": 0.2,
 

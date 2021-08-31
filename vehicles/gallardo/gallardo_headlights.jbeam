@@ -32,10 +32,10 @@
             "shadowSoftness":0.5
         }
         //low beams
-        ["lowbeam"    , "SPOTLIGHT"        , "he4r", "he3r", "he2r", {"x":210, "y":0, "z":30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.45, "y":0.85, "z":0.07},"deformGroup":"headlightglass_R_break"}],
+        ["lowhighbeam"    , "SPOTLIGHT"        , "he4r", "he3r", "he2r", {"x":-105, "y":10, "z":0} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0, "y":0, "z":-0.0},"lightRange":50,"lightBrightness":1.0,"flareScale":0.05,"lightOuterAngle":80,"deformGroup":"headlightglass_R_break"}],
         //high beams
-        ["highbeam" ,         "SPOTLIGHT"        , "he4r", "he3r", "he2r", {"x":210, "y":0, "z":30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.45, "y":0.85, "z":0.07},"lightRange":120,"lightBrightness":0.5,"flareScale":0.02,"deformGroup":"headlightglass_R_break"}],
-        //signal
+        ["highbeam"    , "SPOTLIGHT"        , "he4r", "he3r", "he2r", {"x":-100, "y":0, "z":00} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0, "y":0, "z":-0.0},"lightRange":80,"lightBrightness":2.0,"flareScale":0.02,"lightOuterAngle":110,"deformGroup":"headlightglass_R_break"}],
+		//signal
         {
             "lightInnerAngle":0
             "lightOuterAngle":120
@@ -176,9 +176,9 @@
             "shadowSoftness":0.5
         }
         //low beams angled right slightly to avoid blinding oncoming traffic
-        ["lowbeam"    , "SPOTLIGHT"        , "he4l", "he3l", "he2l", {"x":-45, "y":0, "z":-45} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.45, "y":0.85, "z":-0.07},"deformGroup":"headlightglass_L_break"}],
+        ["lowhighbeam"    , "SPOTLIGHT"        , "he4l", "he3l", "he2l", {"x":-75, "y":20, "z":0} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0, "y":0, "z":-0.0},"lightRange":50,"lightBrightness":1.0,"flareScale":0.05,"lightOuterAngle":80,"deformGroup":"headlightglass_L_break"}],
         //high beams
-        ["highbeam" ,         "SPOTLIGHT"        , "he4l", "he3l", "he2l", {"x":-30, "y":0, "z":-30} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.45, "y":0.85, "z":-0.07},"lightRange":120,"lightBrightness":0.5,"flareScale":0.02,"deformGroup":"headlightglass_L_break"}],
+        ["highbeam"    , "SPOTLIGHT"        , "he4l", "he3l", "he2l", {"x":-75, "y":20, "z":45} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0, "y":0, "z":-0.0},"lightRange":80,"lightBrightness":2.0,"flareScale":0.02,"lightOuterAngle":110,"deformGroup":"headlightglass_R_break"}],
         //signal
         {
             "lightInnerAngle":0
@@ -203,8 +203,9 @@
          {"frictionCoef":0.5},
          {"nodeWeight":0.95},
          {"group":"gallardo_headlight_L"},
+
          ["he1l", 0.68500, -1.94029, 0.60261],
-         ["he3l", 0.59669, -2.12055, 0.51012],
+         ["he3l", 0.57669, -2.12055, 0.51012],
          ["he2l", 0.81496, -1.75953, 0.67412],
          ["he4l", 0.67669, -2.09055, 0.50512],
          {"selfCollision":false}
