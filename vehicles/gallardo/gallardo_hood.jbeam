@@ -52,11 +52,13 @@
           //--HOOD--
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
           {"beamSpring":801000,"beamDamp":25},
-          {"beamDeform":30150,"beamStrength":"FLT_MAX"},
-          //hood main shape
-          ["h2ll", "f15ll"]
+          
+		  {"beamDeform":30150,"beamStrength":1000},
+		  ["h2ll", "f15ll"]
 		  ["h2rr", "f15rr"]
 		  
+		  {"beamDeform":30150,"beamStrength":"FLT_MAX"},
+          //hood main shape
 		  ["h1rr","h2rr"],
           ["h1r","h2r"],
           ["h1l","h2l"],
