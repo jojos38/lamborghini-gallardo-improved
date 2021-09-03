@@ -540,7 +540,7 @@
         "gearWhineOutputEvent": "event:>Vehicle>Transmission>helical_01>twine_out",
     },
     "vehicleController": {
-		"shiftLogicName":"automaticGearboxLogicmod"
+		"shiftLogicName":"automaticGearboxLogicmodGallardo"
         "automaticModes":"RNSM",
         "calculateOptimalLoadShiftPoints": true,
         "shiftDownRPMOffsetCoef":1.5,
