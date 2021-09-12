@@ -202,9 +202,9 @@
 
          //front frame
          {"nodeWeight":7.2},
-         ["f11rr", -0.50000, -2.00000, 0.14000],
-         ["f11", 0.00000, -2.00000, 0.14000{"group":["gallardo_body","gallardo_subframe_F"]"tag":"tow_hook","couplerStrength":101000}],
-         ["f11ll", 0.50000, -2.00000, 0.14000],
+         ["f11rr", -0.50000, -2.00000, 0.20000],
+         ["f11", 0.00000, -2.16000, 0.25000{"group":["gallardo_body","gallardo_subframe_F"]"tag":"tow_hook","couplerStrength":101000}],
+         ["f11ll", 0.50000, -2.00000, 0.20000],
          {"selfCollision":false}
          ["f10rr", -0.24000, -1.25000, 0.27000],
          ["f10ll", 0.24000, -1.25000, 0.27000],
@@ -212,7 +212,7 @@
          ["f12ll", 0.24000, -1.25000, 0.34000],
          {"selfCollision":true}
          ["f13rr", -0.65000, -2.10000, 0.43000],
-         ["f13", 0.00000, -2.09000, 0.45000{"group":["gallardo_body","gallardo_subframe_F"]}],
+         ["f13", 0.00000, -2.16000, 0.45000{"group":["gallardo_body","gallardo_subframe_F"]}],
          ["f13ll", 0.65000, -2.10000, 0.43000],
 
          //front inner bodywork

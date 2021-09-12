@@ -55,8 +55,8 @@
           ["id1:", "id2:"],
           //--FRONT BUMPER--
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-          {"beamSpring":550000,"beamDamp":50},
-          {"beamDeform":32550,"beamStrength":59000},
+          {"beamSpring":400000,"beamDamp":50},
+          {"beamDeform":72550,"beamStrength":59000},
           //front bumper main shape
           {"deformGroup":"runninglight_R_break","deformationTriggerRatio":0.01}
           ["fb4rr","fb1rr"],

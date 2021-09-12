@@ -60,7 +60,18 @@
           ["id1:", "id2:"],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
           //--REAR BUMPER--
-          {"beamSpring":100550,"beamDamp":50},
+          {"beamSpring":800000,"beamDamp":50},
+          {"beamDeform":2550,"beamStrength":59000},
+		  ["rb4ll", "rb3ll"]
+		  ["rb4l", "rb3l"]
+		  ["rb5ll", "rb3"]
+		  
+		  ["rb4rr", "rb3rr"]
+		  ["rb4r", "rb3r"]
+		  ["rb5r", "rb3"]
+		  
+		  //--REAR BUMPER--
+          {"beamSpring":150000,"beamDamp":50},
           {"beamDeform":32550,"beamStrength":59000},
           //rear bumper main shape
           ["rb4r","rb1rr"],

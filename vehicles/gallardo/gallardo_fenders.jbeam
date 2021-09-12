@@ -33,7 +33,7 @@
 
          ["fe7r", -0.88164, -0.84078, 0.77091],
          ["fe8r", -0.88052, -1.45076, 0.77194],
-         ["fe9r", -0.82172, -1.85018, 0.60771],
+         ["fe9r", -0.83172, -1.62018, 0.72771],
          ["fe10r", -0.80594, -1.95343, 0.55271],
 
          //rigidifier
@@ -47,7 +47,7 @@
           //--FENDER--
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
           {"beamSpring":743050,"beamDamp":60},
-          {"beamDeform":12050,"beamStrength":"FLT_MAX"},
+          {"beamDeform":72050,"beamStrength":"FLT_MAX"},
           //fender main shape
           ["fe1r","fe2r"],
           ["fe3r","fe4r"],
@@ -261,7 +261,7 @@
          ["fe6l", 0.89538, -1.70811, 0.57559],
          ["fe7l", 0.88164, -0.84078, 0.77091],
          ["fe8l", 0.88052, -1.45076, 0.77194],
-         ["fe9l", 0.82172, -1.85018, 0.60771],
+         ["fe9l", 0.83172, -1.62018, 0.72771],
          ["fe10l", 0.80594, -1.97343, 0.55271],
 
          //rigidifier
@@ -275,7 +275,7 @@
           //--FENDER--
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
           {"beamSpring":743050,"beamDamp":60},
-          {"beamDeform":12050,"beamStrength":"FLT_MAX"},
+          {"beamDeform":72050,"beamStrength":"FLT_MAX"},
           //fender main shape
           ["fe1l","fe2l"],
           ["fe3l","fe4l"],

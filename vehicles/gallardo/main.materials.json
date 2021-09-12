@@ -36,6 +36,7 @@
     "alphaTest": 0,
     "alphaRef": 0,
     "dynamicCubemap": true,
+	"invertBackFaceNormals": true,
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
     "activeLayers": 2,
