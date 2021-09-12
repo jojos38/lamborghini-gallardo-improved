@@ -189,9 +189,17 @@
 
           //attach
           {"disableTriangleBreaking":true}
-          {"beamSpring":220550,"beamDamp":120},
+          {"beamSpring":320550,"beamDamp":120},
           {"beamDeform":4150,"beamStrength":15500},
-          //r
+          ["fb6", "f15"],
+		  ["fb1r", "h4r"],
+		  ["fb1l", "h4l"],
+		  ["fb4rr", "fe5r"],
+		  ["fb5rr", "f20rr"],
+		  ["fb4ll", "fe5l"],
+		  ["fb5ll", "f20ll"],
+		  
+		  //r
           {"breakGroup":"frontbumper_R"},
           ["fb4rr","fe6r"],
           ["fb1rr","fe6r"],
