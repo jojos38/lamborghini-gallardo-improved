@@ -81,6 +81,7 @@
     "gallardo_headlight_R":"gallardo_headlight_R",
     "gallardo_hood":"gallardo_hood",
     "gallardo_intake":"gallardo_intake",
+	"gallardo_rollcage":"gallardo_rollcage",
     "gallardo_lettering_tailgate":"",
     "gallardo_licenseplate_F":"",
     "gallardo_licenseplate_R":"gallardo_licenseplate_R",

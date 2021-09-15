@@ -464,7 +464,7 @@
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          {"deformGroup":"halfshaft_break", "deformMaterialBase":"sbr", "deformMaterialDamaged":"invis"},
-         //["gallardo_halfshaft_R", ["gallardo_reardiff", "wheelhub_RL", "wheelhub_RR","gallardo_transaxle"]],
+         ["gallardo_susp_R_halfshaft_2", ["gallardo_reardiff", "wheelhub_RL", "wheelhub_RR","gallardo_transaxle"]],
          {"deformGroup":""},
     ],
     "nodes": [

@@ -684,6 +684,7 @@
     "mapTo": "gallardo_chassis",
     "castShadows": true,
     "translucent": true,
+	"doubleSided": true,
     "translucentBlendOp": "None",
     "alphaTest": 0,
     "alphaRef": 0,
@@ -756,6 +757,7 @@
     ],
     "mapTo": "gallardo_cockpit",
     "castShadows": true,
+	"doubleSided": true,
     "translucent": true,
     "translucentBlendOp": "None",
     "alphaTest": 0,
@@ -1003,6 +1005,7 @@
     "mapTo": "gallardo_alcantara",
     "castShadows": true,
     "translucent": true,
+	"doubleSided": true,
     "translucentBlendOp": "None",
     "alphaTest": 0,
     "alphaRef": 0,
@@ -1791,6 +1794,35 @@
 	"mapTo": "gallardo_glass",
     "version": 1.5
   },
+  "gallardo_glass_tailgate": {
+    "name": "gallardo_glass_tailgate",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/etkc/etkc_glass_b.color.png",
+        "normalMap": "/vehicles/common/null_n.dds",
+        "opacityMap": "/vehicles/etkc/etkc_glass_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+	"doubleSided": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+	"mapTo": "gallardo_glass_tailgate",
+    "version": 1.5
+  },
   "gallardo_glass_int": {
     "name": "gallardo_glass_int",
     "class": "Material",
@@ -2410,6 +2442,32 @@
       {}
     ],
     "mapTo": "gallardo_turbo_intake",
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "gallardo_yellow": {
+    "name": "gallardo_yellow",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.817367017,
+          0.56111598,
+          0.139562994,
+          1
+        ],
+		"metallicFactor": 1,
+        "roughnessFactor": 0.4
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo": "gallardo_yellow",
     "alphaRef": 0,
     "dynamicCubemap": true,
     "materialTag0": "beamng",

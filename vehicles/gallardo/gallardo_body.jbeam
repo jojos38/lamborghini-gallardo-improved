@@ -50,6 +50,8 @@
 		["soundscape_horn", "soundscape_horn_7", "Horn"],
 
         //rollcage
+		["gallardo_rollcage","", "Roll Cage"],
+		
         ["gallardo_seat_FR","gallardo_seat_FR", "Passenger Seat"],
         ["gallardo_seat_FL","gallardo_seat_FL", "Driver Seat"],
     ],
@@ -119,6 +121,8 @@
 		 ["gallardo_steeringwheel_support", ["gallardo_body"]],
 		 ["gallardo_comodo", ["gallardo_body"]],
          ["gallardo_intmirror", ["gallardo_roof"]],
+		 ["gallardo_chassis", ["gallardo_body"]],
+		 ["gallardo_chassis_bottom", ["gallardo_body"]],
          //["gallardo_sunvisor", ["gallardo_roof"]],
          //["gallardo_rearint", ["gallardo_rearint"]],
 

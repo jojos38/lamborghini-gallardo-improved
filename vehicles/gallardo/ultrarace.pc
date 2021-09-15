@@ -96,6 +96,7 @@
     "gallardo_seat_FL":"gallardo_race_seat_FL",
     "gallardo_seat_FR":"gallardo_race_seat_FR",
     "gallardo_skirtaddons":"",
+	"gallardo_rollcage":"gallardo_rollcage",
     "gallardo_spoiler":"gallardo_spoiler_sl",
     "gallardo_steer":"gallardo_steer",
     "gallardo_steering":"gallardo_steering",
