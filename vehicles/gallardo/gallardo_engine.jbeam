@@ -601,7 +601,7 @@
         "bovSoundVolumeCoef": 2.0,
         "hissVolumePerPSI": 0.5,
         "whineVolumePer10kRPM": 0.50,
-        "whinePitchPer10kRPM": 0.105,
+        "whinePitchPer10kRPM": 0.09,
         "wastegateStart":"$wastegateStart",
         "wastegateLimit":"$=$wastegateStart+1",
         "maxExhaustPower": 5000,
