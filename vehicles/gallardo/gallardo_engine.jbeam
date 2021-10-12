@@ -489,9 +489,9 @@
         "revLimiterType":"timeBased",
         "revLimiterCutTime":"$revLimiterCutTime",
         "revLimiterMaxRPMDrop":200,
-        "instantAfterFireVolumeCoef": 1.0,
-        "sustainedAfterFireVolumeCoef": 0.6,
-        "shiftAfterFireVolumeCoef": 0.9,
+		"instantAfterFireVolumeCoef": 5.5,
+        "sustainedAfterFireVolumeCoef": 5.5,
+        "shiftAfterFireVolumeCoef": 5.5,
     },
     "vehicleController": {
         "highShiftUpRPM":"$=$revLimiterRPM - 150",
@@ -643,6 +643,9 @@
         "$+idleRPMRoughness":50,
         "instantAfterFireCoef": 0.9,
         "sustainedAfterFireCoef": 0.75,
+		"instantAfterFireVolumeCoef": 15,
+        "sustainedAfterFireVolumeCoef": 15,
+        "shiftAfterFireVolumeCoef": 15,
     },
     "soundConfig": {
         "sampleName": "lam_huracan_15_engine",
