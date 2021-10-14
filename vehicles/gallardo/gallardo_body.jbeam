@@ -31,7 +31,7 @@
         ["gallardo_radiator","gallardo_radiator", "Radiator"],
 
         ["gallardo_hood","gallardo_hood", "Hood"],
-		["gallardo_lightbar","", "Light Bar"],
+		["gallardo_lightbar","", "Roof Accessories"],
         ["gallardo_tailgate","gallardo_tailgate", "Tailgate"],
         ["gallardo_bumper_F","gallardo_bumper_F", "Front Bumper"],
         ["gallardo_bumper_R","gallardo_bumper_R", "Rear Bumper"],
@@ -51,6 +51,13 @@
 
         //rollcage
 		["gallardo_rollcage","", "Roll Cage"],
+		
+		// Race addons
+		["gallardo_race_addons","", "Race Addons"],
+		
+		// Antenna
+		["gallardo_antenna","", "Antenna"],
+		
 		
         ["gallardo_seat_FR","gallardo_seat_FR", "Passenger Seat"],
         ["gallardo_seat_FL","gallardo_seat_FL", "Driver Seat"],
@@ -2537,7 +2544,7 @@
     "slotType" : "gallardo_seat_FR",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["gallardo_seat_FR_sl" ["gallardo_seats"],[],{"pos":{"x":0,"y":0.06,"z":0}}],
+         ["gallardo_seat_FR_sl" ["gallardo_seats"],[],{"pos":{"x":0,"y":-0.06,"z":0}}],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -2578,7 +2585,7 @@
     "slotType" : "gallardo_seat_FL",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["racingseat" ["gallardo_seats"], [], {"pos":{"x":0.38, "y":0.03, "z":0.155}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
+         ["racingseat" ["gallardo_seats"], [], {"pos":{"x":0.38, "y":-0.18, "z":0.155}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -2620,7 +2627,7 @@
     "slotType" : "gallardo_seat_FR",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["racingseat" ["gallardo_seats"], [], {"pos":{"x":-0.38, "y":0.03, "z":0.155}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
+         ["racingseat" ["gallardo_seats"], [], {"pos":{"x":-0.38, "y":-0.18, "z":0.155}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -2692,7 +2699,72 @@
 		["gallardo_rear_support", ["gallardo_body"]],
         {"deformGroup":""},
     ],
-}
+},
+"gallardo_race_addons": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race Addons",
+        "value":90,
+    }
+    "slotType" : "gallardo_race_addons",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+		["gallardo_race_addons", ["gallardo_body"]],
+        {"deformGroup":""},
+    ],
+},
+"gallardo_roofscoop_painted": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Painted Race Roof Vent",
+        "value":90,
+    }
+    "slotType" : "gallardo_lightbar",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+		["gallardo_roofscoop_painted", ["gallardo_body"]],
+        {"deformGroup":""},
+    ],
+},
+"gallardo_roofscoop_carbon": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Carbon Fiber Race Roof Vent",
+        "value":90,
+    }
+    "slotType" : "gallardo_lightbar",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+		["gallardo_roofscoop_carbon", ["gallardo_body"]],
+        {"deformGroup":""},
+    ],
+},
+"gallardo_antenna_small": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Small Antenna",
+        "value":90,
+    }
+    "slotType" : "gallardo_antenna",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+		["gallardo_antenna_small", ["gallardo_body"]],
+        {"deformGroup":""},
+    ],
+},
+"gallardo_antenna_big": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Big Antenna",
+        "value":90,
+    }
+    "slotType" : "gallardo_antenna",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+		["gallardo_antenna_big", ["gallardo_body"]],
+        {"deformGroup":""},
+    ],
+},
 "gallardo_rear_support_tube": {
     "information":{
         "authors":"BeamNG",
