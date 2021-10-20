@@ -39,8 +39,7 @@
         //engine
         ["gallardo_fueltank","gallardo_fueltank", "Fuel Tank"],
         //driving assistance
-        ["gallardo_ESC","gallardo_ESC", "Electronic Stability & Traction Control"],
-        ["gallardo_ABS","gallardo_ABS", "Anti-Lock Braking System"],
+        ["gallardo_DSE","gallardo_DSE", "Driving & Safety Electronics"],
         //running gear
         ["gallardo_suspension_F","gallardo_suspension_F", "Front Suspension"],
         ["gallardo_engine","gallardo_engine_5.2", "Engine"],

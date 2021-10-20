@@ -131,7 +131,6 @@
     "$tirepressure_R":32,
     "$toe_FR":1,
     "$toe_RR":1,
-    "$trackoffset_F":-0.007,
-    "$trackoffset_F":-0.006,
+    "$trackoffset_F":-0.006
   }
 }

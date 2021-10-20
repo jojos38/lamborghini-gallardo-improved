@@ -93,7 +93,7 @@
     ],
     "gearbox": {
         "uiName":"Gearbox",
-        "gearRatios":[-2.81, 0, 3.31, 2.05, 1.46, 1.14, 0.94, 0.78],
+        "gearRatios":[-2.81, 0, 3.61, 2.05, 1.46, 1.14, 0.94, 0.78],
         "friction": 12,
         "parkLockTorque":2000,
         "additionalEngineInertia":0.05,
@@ -102,13 +102,13 @@
     "vehicleController": {
         "automaticModes":"RNSM",
         "calculateOptimalLoadShiftPoints": true,
-        "shiftDownRPMOffsetCoef":1.2,
+        "shiftDownRPMOffsetCoef":1.0,
         //"aggressionSmoothingUp":2
         //"aggressionSmoothingDown":0.06
         "lowShiftDownRPM":[0,0,0,1600,1600,1500,1400,1300,1300],
         "lowShiftUpRPM":[0,0,2800,2600,2400,2200,2000,2000],
-        "clutchLaunchStartRPM": 2500
-        "clutchLaunchTargetRPM": 3000
+        "clutchLaunchStartRPM": 4000
+        "clutchLaunchTargetRPM": 4500
     },
     "props": [
         ["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"]
@@ -208,15 +208,15 @@
         "transmissionShiftDelay":0.13,
         "calculateOptimalLoadShiftPoints": true,
         "shiftDownRPMOffsetCoef":1.20,
-        "aggressionHoldOffThrottleDelay":3,
+        "aggressionHoldOffThrottleDelay":2,
         //"aggressionSmoothingDown":0.05
         //"lowShiftDownRPM":[0,0,0,1500,1700,1600,1600,1600],
         //"lowShiftUpRPM":[0,0,3600,3200,2900,2900,2900],
         "lowShiftDownRPM":[0,0,0,2000,2300,2300,2300,2300],
         "lowShiftUpRPM":[0,0,4100,4000,3850,3900,3700],
         //"wheelSlipUpThreshold":200,
-        "clutchLaunchStartRPM": 3500,
-        "clutchLaunchTargetRPM": 4000,
+        "clutchLaunchStartRPM": 4500,
+        "clutchLaunchTargetRPM": 5000,
     },
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
@@ -527,13 +527,14 @@
     ],
     "gearbox": {
         "uiName":"Gearbox",
-        "gearRatios":[-3.713, 0, 3.31, 2.05, 1.46, 1.14, 0.94, 0.78],
+        "gearRatios":[-3.713, 0, 3.333, 2.050, 1.478, 1.141, 0.946, 0.788],
         "parkLockTorque":2000,
         "oneWayViscousCoef":0.001,
-        "gearChangeTime": 0.2,
+        "gearChangeTime": 0.1,
         "shiftEfficiency":0.001,
         "friction": 5,
         "gearboxNode:":["tra1"],
+		
         "gearWhineCoefsInput":  [0.60, 0.00, 0.36, 0.32, 0.28, 0.28, 0.26, 0.26],
         "gearWhineCoefsOutput": [0.00, 0.00, 0.24, 0.28, 0.32, 0.34, 0.36, 0.36],
         "gearWhineInputEvent": "event:>Vehicle>Transmission>helical_01>twine_in",
@@ -541,9 +542,9 @@
     },
     "vehicleController": {
 		"shiftLogicName":"automaticGearboxLogicmodGallardo"
-        "automaticModes":"RNSM",
+        "automaticModes":"RNDSM",
         "calculateOptimalLoadShiftPoints": true,
-        "shiftDownRPMOffsetCoef":1.5,
+        "shiftDownRPMOffsetCoef":1.2,
         "transmissionGearChangeDelay":0.5,
         "aggressionHoldOffThrottleDelay":2.5,
         "aggressionSmoothingUp":2,
@@ -553,16 +554,16 @@
         "lowShiftDownRPM":[0,0,0,1000,1200,1300,1450,1500],
         "lowShiftUpRPM":[0,0,1800,1900,1900,2000,2000],
         "maxGearChangeTime": 0.5,
-        "minGearChangeTime": 0.4,
-        "sportGearChangeTime": 0.4,
+        "minGearChangeTime": 0.28,
+        "sportGearChangeTime": 0.28,
 		"autoDownShiftMinGear":2,
 		"torqueConverterLockupFullyMinGear":3,
 		"torqueConverterDelayLockupMinThrottle":0.15,
         "torqueConverterDelayLockupMaxThrottle":0.75,
 		"amtIdleThrottle":0.02,
-		"amtRevMatchMinThrottle":0.17,
+		"amtRevMatchMinThrottle":0.07,
 		"amtRevMatchThrottle":0.40,
-		"amtRevMatchMaxThrottle":0.80,
+		"amtRevMatchMaxThrottle":0.60,
 		"torqueConverterLockupRPM":1000,
 		"torqueConverterLockupRange":2000,
 		"torqueConverterThrottleLockupRange":1500,
