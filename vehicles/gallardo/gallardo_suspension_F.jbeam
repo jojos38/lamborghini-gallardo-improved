@@ -1425,7 +1425,7 @@
     ],
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"]
-        ["torsionReactor", "torsionReactorF", "driveshaft", 1, {"gearRatio":3.6}]
+        ["torsionReactor", "torsionReactorF", "driveshaft", 1, {"gearRatio":3.877}]
         ["differential", "differential_F", "torsionReactorF", 1, {"diffType":"lsd", "gearRatio":1, "lsdPreload":60, "lsdLockCoef":0.05, "lsdRevLockCoef":0.0, "friction":8, "uiName":"Front Differential","defaultVirtualInertia":0.25}]
     ],
     "torsionReactorF": {

@@ -459,7 +459,7 @@
     "slotType" : "gallardo_differential_R",
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"]
-        ["differential", "differential_R", "transfercase", 1, {"diffType":"lsd", "gearRatio": 3.6, "lsdPreload":80, "lsdLockCoef":0.075, "lsdRevLockCoef":0.075, "friction":8, "uiName":"Rear Differential","defaultVirtualInertia":0.25}]
+        ["differential", "differential_R", "transfercase", 1, {"diffType":"lsd", "gearRatio": 3.877, "lsdPreload":80, "lsdLockCoef":0.075, "lsdRevLockCoef":0.075, "friction":8, "uiName":"Rear Differential","defaultVirtualInertia":0.25}]
     ],
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
@@ -527,11 +527,11 @@
     ],
     "gearbox": {
         "uiName":"Gearbox",
-        "gearRatios":[-3.713, 0, 3.333, 2.050, 1.478, 1.141, 0.946, 0.788],
+        "gearRatios":[-3.713, 0, 3.313, 2.053, 1.458, 1.138, 0.939, 0.784],
         "parkLockTorque":2000,
-        "oneWayViscousCoef":0.001,
+        "oneWayViscousCoef":0,
         "gearChangeTime": 0.1,
-        "shiftEfficiency":0.001,
+        "shiftEfficiency":0,
         "friction": 5,
         "gearboxNode:":["tra1"],
 		
@@ -556,17 +556,17 @@
         "maxGearChangeTime": 0.5,
         "minGearChangeTime": 0.28,
         "sportGearChangeTime": 0.28,
-		"autoDownShiftMinGear":2,
-		"torqueConverterLockupFullyMinGear":3,
+		"autoDownShiftMinGear":1,
+		"torqueConverterLockupFullyMinGear":2,
 		"torqueConverterDelayLockupMinThrottle":0.15,
-        "torqueConverterDelayLockupMaxThrottle":0.75,
-		"amtIdleThrottle":0.02,
+        "torqueConverterDelayLockupMaxThrottle":0.95,
+		"amtIdleThrottle":0.01,
 		"amtRevMatchMinThrottle":0.07,
 		"amtRevMatchThrottle":0.40,
-		"amtRevMatchMaxThrottle":0.60,
-		"torqueConverterLockupRPM":1000,
-		"torqueConverterLockupRange":2000,
-		"torqueConverterThrottleLockupRange":1500,
+		"amtRevMatchMaxThrottle":0.80,
+		"torqueConverterLockupRPM":1500,
+		"torqueConverterLockupRange":2500,
+		"torqueConverterThrottleLockupRange":4200,
     },
 	"props": [
         ["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"]
@@ -637,20 +637,20 @@
     "slotType" : "gallardo_amtc_logicmod",
     "torqueConverter": {
         "uiName":"Torque Converter",
-        "converterDiameter": 0.001, //dummy
+        "converterDiameter": 0, //dummy
         "converterStiffness":10,
         "couplingAVRatio":0.9,
         "stallTorqueRatio":1.8,		
-        "lockupClutchTorque":1350,
+        "lockupClutchTorque":1236,
 		"lockupClutchSpring":2000,
 		"lockupClutchDampRatio":0.3,
         "additionalEngineInertia":0.04,
     },
     "vehicleController": {		
-	    "torqueConverterAMTRevMargin":0.02,
-        "torqueConverterLockupInRate":50,
-        "torqueConverterLockupOutRate":10,
-		"torqueConverterAMTCreep":0.02,
+	    "torqueConverterAMTRevMargin":0.03,
+        "torqueConverterLockupInRate":35,
+        "torqueConverterLockupOutRate":8,
+		"torqueConverterAMTCreep":0.03,
 		"torqueConverterAMTBrakeThreshold":0.15,
     },
 },

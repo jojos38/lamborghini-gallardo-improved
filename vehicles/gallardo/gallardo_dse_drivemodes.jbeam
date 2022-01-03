@@ -17,8 +17,8 @@
         ],
 
         "driveModes": {
-            "enabledModes":["comfort", "sport", "off"]
-            "defaultMode": "comfort"
+            "enabledModes":["automatic", "sport", "corsa"]
+            "defaultMode": "automatic"
             "defaultSettings": [
                 ["type"]
                 ["exhaust" {"name": "mainEngine", "mufflingOffset": 0, "gainOffset": 0}] 
@@ -30,8 +30,8 @@
 				["controller", {"controllerName":"twoStepLaunch", "isEnabled":false, "launchRPM":4000}]
             ],
             "modes": {
-                "comfort": {
-                    "name": "Comfort",
+                "automatic": {
+                    "name": "Automatic",
                     "order": 10,
                     "settings": [
                         ["type"]
@@ -62,13 +62,13 @@
                     ],
                 },
 				
-                "off": {
-                    "name": "ESC & TC Off",
+                "corsa": {
+                    "name": "Corsa",
                     "order": 50,
                     "settings": [
 						["type"]
                         ["exhaust", {"name": "mainEngine", "mufflingOffset": -1.2, "gainOffset": 1}],
-                        ["transmission", {"defaultForwardMode": "S"}],
+                        ["transmission", {"defaultForwardMode": "M"}],
 						["controller", {"controllerName":"tractionControl", "isEnabled":false}]
                         ["controller", {"controllerName":"yawControl", "isEnabled":false}]
                         ["controller", {"controllerName":"motorTorqueControl", "isEnabled":false}]
@@ -94,7 +94,7 @@
         "slotType" : "gallardo_DSE_drivemodes_default",
 
         "driveModes": {
-            "defaultMode":"comfort"
+            "defaultMode":"Automatic"
         }
     },
 
@@ -107,7 +107,7 @@
         "slotType" : "gallardo_DSE_drivemodes_default",
 
         "driveModes": {
-            "defaultMode":"off"
+            "defaultMode":"corsa"
         }
     },
 }
