@@ -113,7 +113,7 @@
 "gallardo_exhaust_dump_dual": {
     "information":{
         "authors":"BeamNG",
-        "name":"Sheepey Diffuser Dump Dual",
+        "name":"Sheepey Dump Dual",
         "value":900,
     }
     "slotType" : "gallardo_exhaust",
@@ -132,8 +132,8 @@
 		{"group":"gallardo_exhaust"},
 	    ["exh1r", -0.20000, 1.73000, 0.51000],
         ["exh1l", 0.20000, 1.73000, 0.51000],
-        ["exh1rr", -0.37000, 1.80000, 0.33000],
-        ["exh1ll", 0.37000, 1.80000, 0.33000],
+        ["exh1rr", -0.11000, 1.85000, 0.33000]
+        ["exh1ll", 0.11000, 1.85000, 0.33000],
         ["exhdr", -0.37000, 1.52592, 0.33000],
         ["exhdl", 0.37000, 1.52592, 0.33000],
 		["exh", 0, 1.80, 0.50],
@@ -231,7 +231,7 @@
 "gallardo_exhaust_dump_quad": {
     "information":{
         "authors":"BeamNG",
-        "name":"Sheepey Diffuser Dump Quad",
+        "name":"Sheepey Dump Quad",
         "value":900,
     }
     "slotType" : "gallardo_exhaust",
@@ -250,10 +250,10 @@
 		{"group":"gallardo_exhaust"},
 	    ["exh1r", -0.20000, 1.73000, 0.51000],
         ["exh1l", 0.20000, 1.73000, 0.51000],
-        ["exh1rr", -0.37000, 1.80000, 0.33000],
-        ["exh1ll", 0.37000, 1.80000, 0.33000],
-        ["exh2rr", -0.25000, 1.80000, 0.33000],
-        ["exh2ll", 0.25000, 1.80000, 0.33000],
+        ["exh1rr", -0.22000, 1.85000, 0.33000],
+        ["exh1ll", 0.22000, 1.85000, 0.33000],
+        ["exh2rr", -0.11000, 1.85000, 0.33000],
+        ["exh2ll", 0.11000, 1.85000, 0.33000],
         ["exhdr", -0.37000, 1.52592, 0.33000],
         ["exhdl", 0.37000, 1.52592, 0.33000],
 		["exh", 0, 1.80, 0.50],
@@ -504,7 +504,7 @@
 "gallardo_exhaust_quad_turbot": {
     "information":{
         "authors":"BeamNG",
-        "name":"Sheepey Quad Tips",
+        "name":"Sheepey Quad Tips OEM Style",
         "value":900,
     }
     "slotType" : "gallardo_exhaust",
@@ -523,10 +523,11 @@
 		{"group":"gallardo_exhaust"},
 	    ["exh1r", -0.20000, 1.73000, 0.51000],
         ["exh1l", 0.20000, 1.73000, 0.51000],
-        ["exh1rr", -0.54200, 1.80000, 0.42000],
-        ["exh1ll", 0.54200, 1.80000, 0.42000],
+        ["exh1rr", -0.54200, 1.90000, 0.42000],
+        ["exh1ll", 0.54200, 1.90000, 0.42000],
 		["exh2rr", -0.66200, 1.80000, 0.41000],
-        ["exh2ll", 0.66200, 1.80000, 0.41000],
+        ["exh2ll", 0.66200, 1.90000, 0.41000],
+        ["exh2rr", -0.66200, 1.90000, 0.41000],
         ["exhdr", -0.62000, 1.52592, 0.40000],
         ["exhdl", 0.62000, 1.52592, 0.40000],
 		["exh", 0, 1.80, 0.50],
