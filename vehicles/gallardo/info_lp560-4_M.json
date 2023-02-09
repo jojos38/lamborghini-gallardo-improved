@@ -1,14 +1,1 @@
-{
-"Config Type":"Factory",
-"Performance Class":"9",
-"Drivetrain":"AWD",
-"Body Style":"Coupe",
-"Value":198000,
-"Description":"Base model produced from 2008-2014 with a 6-speed manual",
-"Configuration":"LP560-4 (M)",
-"Induction Type":"NA",
-"default_color":"Brilliance",
-"Propulsion":"ICE",
-"Transmission":"Manual",
-"Fuel Type":"Gasoline"
-}
+{"Config Type":"Factory","Performance Class":"9","Drivetrain":"AWD","Body Style":"Coupe","Value":198000,"Description":"Base model produced from 2008-2014 with a 6-speed manual","Configuration":"LP560-4 (M)","Induction Type":"NA","default_color":"Brilliance","Propulsion":"ICE","Transmission":"Manual","Fuel Type":"Gasoline"}

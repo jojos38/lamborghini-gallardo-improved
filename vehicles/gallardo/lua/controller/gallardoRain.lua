@@ -1,38 +1,33 @@
--- This Source Code Form is subject to the terms of the bCDDL, v. 1.1.
--- If a copy of the bCDDL was not distributed with this
--- file, You can obtain one at http://beamng.com/bCDDL-1.1.txt
+--- @diagnostic disable: lowercase-global
 
 local M = {}
-
 local htmlTexture = require("htmlTexture")
-local updateFPS = 60
+local environment = getfenv(0)
 
-local function updateGFX(dt)
+--- @type function
+local log = environment.log
+--- @type function
+local dump = environment.dump
+--- @type function
+local nop = environment.nop
 
-end
-
-local function init(jbeamData)
+--- Initializes the rain texture for the Gallardo.
+--- @param jbeamData table The jbeam data for the rain texture.
+function M.init(jbeamData)
 	gaugesScreenName = jbeamData.materialName
 	htmlPath = jbeamData.htmlPath
 	local width = jbeamData.textureWidth or 1920
 	local height = jbeamData.textureHeight or 1920
 	dump(jbeamData)
 	if not gaugesScreenName then
-		log("E", "fs65transhtml", "Got no material name for the texture, can't display anything...")
 		M.updateGFX = nop
+		pcall(log, "E", "fs65transhtml", "No material name specified")
+	elseif htmlPath then
+		htmlTexture.create(gaugesScreenName, htmlPath, width, height, 60, "automatic")
 	else
-		if htmlPath then
-			htmlTexture.create(gaugesScreenName, htmlPath, width, height, updateFPS, "automatic")
-			-- htmlTexture.call(gaugesScreenName, "setGearFromLua", {value="N"})
-		else
-			log("E", "fs65transhtml", "Got no html path for the texture, can't display anything...")
-			M.updateGFX = nop
-		end
+		M.updateGFX = nop
+		pcall(log, "E", "fs65transhtml", "No html path specified")
 	end
 end
-
-
-M.init = init
-M.updateGFX = updateGFX
 
 return M
