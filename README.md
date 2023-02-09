@@ -1,4 +1,4 @@
-# Lamborghini Gallardo 1.26 - shawnjb Edition
+# Lamborghini Gallardo 1.27
 
 Originally created by [Tsutarja495](https://www.beamng.com/members/tsutarja495.52856/), this mod was updated by [jojos38](https://beamng.com/members/jojos38.31610/) and optimized by long-time Lua programmer [shawnjb](https://github.com/shawnjb).
 
