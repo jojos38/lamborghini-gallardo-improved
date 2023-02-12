@@ -2,6 +2,8 @@
 
 Originally created by [Tsutarja495](https://www.beamng.com/members/tsutarja495.52856/), this mod was updated by [jojos38](https://beamng.com/members/jojos38.31610/)
 
+Forum thread: https://www.beamng.com/threads/improved-lamborghini-gallardo-v1-27.80412/
+
 ## Latest update:
 * Thanks to long-time Lua programmer [shawnjb](https://github.com/shawnjb) for the update
 * Optimized Lua code
