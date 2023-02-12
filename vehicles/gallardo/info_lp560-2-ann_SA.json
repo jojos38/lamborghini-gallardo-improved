@@ -1,14 +1,1 @@
-{
-"Config Type":"Factory",
-"Performance Class":"9",
-"Drivetrain":"AWD",
-"Body Style":"Coupe",
-"Value":340000,
-"Description":"Final edition of the gallardo, celebrating the 50th anniversary of Lamborghini road vehicles",
-"Configuration":"LP560-2 50° Anniversario (SA)",
-"Induction Type":"NA",
-"default_color":"Brilliance",
-"Propulsion":"ICE",
-"Transmission":"Semi-Automatic",
-"Fuel Type":"Gasoline"
-}
+{"Config Type":"Factory","Performance Class":"9","Drivetrain":"AWD","Body Style":"Coupe","Value":340000,"Description":"Final edition of the gallardo, celebrating the 50th anniversary of Lamborghini road vehicles","Configuration":"LP560-2 50° Anniversario (SA)","Induction Type":"NA","default_color":"Brilliance","Propulsion":"ICE","Transmission":"Semi-Automatic","Fuel Type":"Gasoline"}

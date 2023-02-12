@@ -1,14 +1,1 @@
-{
-"Config Type":"Factory",
-"Performance Class":"9",
-"Drivetrain":"AWD",
-"Body Style":"Coupe",
-"Value":247305,
-"Description":"Limited edition RWD model with an optional 6-speed semi-automatic",
-"Configuration":"LP550-2 Valentino Balboni (SA)",
-"Induction Type":"NA",
-"default_color":"Pitch",
-"Propulsion":"ICE",
-"Transmission":"Semi-Automatic",
-"Fuel Type":"Gasoline"
-}
+{"Config Type":"Factory","Performance Class":"9","Drivetrain":"AWD","Body Style":"Coupe","Value":247305,"Description":"Limited edition RWD model with an optional 6-speed semi-automatic","Configuration":"LP550-2 Valentino Balboni (SA)","Induction Type":"NA","default_color":"Pitch","Propulsion":"ICE","Transmission":"Semi-Automatic","Fuel Type":"Gasoline"}

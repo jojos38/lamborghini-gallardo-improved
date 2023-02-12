@@ -1,14 +1,1 @@
-{
-"Config Type":"Service",
-"Performance Class":"9",
-"Drivetrain":"AWD",
-"Body Style":"Coupe",
-"Value":1250000,
-"Description":"A Lamborghini gallardo with a powerful twin turbo kit",
-"Configuration":"Twin Turbo Kit (SA)",
-"Induction Type":"NA",
-"default_color":"Brilliance",
-"Propulsion":"ICE",
-"Transmission":"Manual",
-"Fuel Type":"Gasoline"
-}
+{"Config Type":"Service","Performance Class":"9","Drivetrain":"AWD","Body Style":"Coupe","Value":1250000,"Description":"A Lamborghini gallardo with a powerful twin turbo kit","Configuration":"Twin Turbo Kit (SA)","Induction Type":"NA","default_color":"Brilliance","Propulsion":"ICE","Transmission":"Manual","Fuel Type":"Gasoline"}
