@@ -11,6 +11,15 @@ Forum thread: https://www.beamng.com/threads/improved-lamborghini-gallardo-v1-27
 * Fixed all syntax errors
 * Prerequisites for some Lua errors have been made
 
+## How to format the files
+Simply format the jbeam into cjson and the cs into torquescript on Visual Studio Code\
+{
+    "files.associations": {
+        "*.jbeam": "cjson",
+        "*.cs": "torquescript"
+    }
+}
+
 ## Media
 
 ![](https://beamng.com/data/attachments/808/808333-00676969ca421ac2f0ddbcdd422c5318.jpg)
