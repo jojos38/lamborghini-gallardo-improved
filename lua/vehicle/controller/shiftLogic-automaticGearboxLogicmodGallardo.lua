@@ -5,8 +5,14 @@ local M = {}
 local max = math.max
 local min = math.min
 local abs = math.abs
-local clamp = function(v, min, max) return min(max(v, min), max) end
-local fsign = fsign
+--- Clamps a number between two other numbers.
+--- @param v number Value to be clamped.
+--- @param x number Minimum value.
+--- @param y number Maximum value.
+local clamp = function(v, x, y) return min(max(v, x), y) end
+--- Returns the sign of a number.
+--- @param v number Value to be checked.
+local fsign = function(v) return v >= 0 and 1 or -1 end
 
 local constants = { rpmToAV = 0.104719755, avToRPM = 9.549296596425384 }
 
