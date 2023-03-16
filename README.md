@@ -1,24 +1,38 @@
-# Lamborghini Gallardo 1.27
+# Lamborghini Gallardo 1.28
 
 Originally created by [Tsutarja495](https://www.beamng.com/members/tsutarja495.52856/), this mod was updated by [jojos38](https://beamng.com/members/jojos38.31610/)
 
 Forum thread: https://www.beamng.com/threads/improved-lamborghini-gallardo-v1-27.80412/
 
 ## Latest update:
-* Thanks to long-time Lua programmer [shawnjb](https://github.com/shawnjb) for the update
-* Optimized Lua code
-* Minified JSON files, resulting in a 50% reduction in file size
-* Fixed all syntax errors
-* Prerequisites for some Lua errors have been made
+
+- Thanks to long-time Lua programmer [shawnjb](https://github.com/shawnjb) for the update
+- Optimized Lua code
+- Minified JSON files, resulting in a 50% reduction in file size
+- Fixed all syntax errors
+- Prerequisites for some Lua errors have been made
 
 ## How to format the files
+
 Simply format the jbeam into cjson and the cs into torquescript on Visual Studio Code\
-`{
+```json
+{
     "files.associations": {
         "*.jbeam": "cjson",
         "*.cs": "torquescript"
     }
-}`
+}
+```
+
+## Documentation Snippets for the Project
+
+If you want IntelliSense in Visual Studio Code while working on this project, you can use the LDoc project created by [shawnjb](https://github.com/shawnjb) to include documentation IntelliSense for the project.
+
+Run this script to download the LDoc project and copy the documentation files into the project.
+
+```bash
+python setup.py
+```
 
 ## Media
 
@@ -28,6 +42,7 @@ Simply format the jbeam into cjson and the cs into torquescript on Visual Studio
 ![](https://beamng.com/data/attachments/820/820992-bcd60b77817180af5b4d49e1766c6982.jpg)
 
 ## Credits
+
 Thanks to Tsutarja495 for having made the original model\
 Thanks to default0.0player for having made the semi automatic transmission\
 Thanks to Dummiesman for explaining me how to improve the jbeam / nodes\
