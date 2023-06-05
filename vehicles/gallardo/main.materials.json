@@ -880,18 +880,35 @@
     "name": "gallardo_glass_dmg",
     "mapTo": "gallardo_glass_dmg",
     "class": "Material",
+    "persistentId": "2fecffc8-3f3d-431c-8cb0-d6ab2590d5e9",
     "Stages": [
       {
-        "baseColorMap": "vehicles/etkc/etkc_glass_dmg_b.color.png",
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ],
         "baseColorMap": "vehicles/etkc/etkc_glass_dmg_b.color.png",
         "opacityMap": "/vehicles/etkc/etkc_glass_dmg_o.data.png",
         "pixelSpecular": true,
-        "roughnessFactor": 0,
-        "useAnisotropic": true
+        "roughnessFactor": 0
       },
-      {},
-      {},
-      {}
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
     ],
     "alphaRef": 20,
     "alphaTest": true,
@@ -899,7 +916,6 @@
     "dynamicCubemap": true,
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
-    "order_simset": 1852795252,
     "translucent": true,
     "translucentBlendOp": "PreMulAlpha",
     "translucentRecvShadows": true,
@@ -2498,25 +2514,46 @@
   "gallardo_windshield_dmg": {
     "name": "gallardo_windshield_dmg",
     "mapTo": "gallardo_windshield_dmg",
-    "class": "Material",
+    "class": "material",
+    "persistentId": "c1c0a0ab-61da-4514-ab31-d774b4a7f7d8",
     "Stages": [
       {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ],
         "baseColorMap": "vehicles/etkc/etkc_glass_dmg_b.color.png",
         "normalMap": "vehicles/common/windshield_dmg_n.dds",
+        "opacityFactor": 0.229000002,
         "opacityMap": "/vehicles/etkc/etkc_glass_dmg_o.data.png",
         "pixelSpecular": true,
-        "roughnessFactor": 0,
-        "useAnisotropic": true
+        "roughnessFactor": 0
       },
-      {},
-      {},
-      {}
+      {
+        "baseColorFactor": null,
+        "opacityFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "opacityFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "opacityFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
     ],
     "castShadows": false,
     "dynamicCubemap": true,
     "materialTag0": "beamng",
     "materialTag1": "vehicle",
-    "order_simset": 1852795252,
     "translucent": true,
     "translucentBlendOp": "PreMulAlpha",
     "translucentRecvShadows": true,
