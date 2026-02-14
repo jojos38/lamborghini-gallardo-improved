@@ -4,17 +4,10 @@ Originally created by [Tsutarja495](https://www.beamng.com/members/tsutarja495.5
 
 Forum thread: https://www.beamng.com/threads/improved-lamborghini-gallardo-v1-27.80412/
 
-## Latest update:
-
-- Thanks to long-time Lua programmer [shawnjb](https://github.com/shawnjb) for the update
-- Optimized Lua code
-- Minified JSON files, resulting in a 50% reduction in file size
-- Fixed all syntax errors
-- Prerequisites for some Lua errors have been made
-
 ## How to format the files
 
-Simply format the jbeam into cjson and the cs into torquescript on Visual Studio Code\
+Simply format the `jbeam` into `cjson` and the `cs` into `torquescript` on Visual Studio Code
+
 ```json
 {
     "files.associations": {
@@ -22,16 +15,6 @@ Simply format the jbeam into cjson and the cs into torquescript on Visual Studio
         "*.cs": "torquescript"
     }
 }
-```
-
-## Documentation Snippets for the Project
-
-If you want IntelliSense in Visual Studio Code while working on this project, you can use the LDoc project created by [shawnjb](https://github.com/shawnjb) to include documentation IntelliSense for the project.
-
-Run this script to download the LDoc project and copy the documentation files into the project.
-
-```bash
-python setup.py
 ```
 
 ## Media
@@ -43,16 +26,18 @@ python setup.py
 
 ## Credits
 
-Thanks to Tsutarja495 for having made the original model\
-Thanks to default0.0player for having made the semi automatic transmission\
-Thanks to Dummiesman for explaining me how to improve the jbeam / nodes\
-Thanks to Raging Midget vs Gaming (twonklewonk) for the update 1.8\
-Thanks to Subin for the twin turbo 3D model\
-Thanks to Revolution Racecraft for allowing me to use the changes from an old project from them\
-Thanks to DJS for the suspensions 3D model\
-Thanks to SimonPlayzFromYT for helping on testing the mod\
-Thanks to danyk10 for tweaking and implementing semi automatic transmission\
-Thanks to JulianR32 for the remaking all the twin turbo pipes\
-Thanks to Nejc for getting multiple 3D models\
-Thanks to shawnjb for optimizing the Lua code, fixing errors and reducing ZIP size\
-Thanks to someone for the tire thickness and grip fix
+| Contributor                           | Contribution                                        |
+| ------------------------------------- | --------------------------------------------------- |
+| Tsutarja495                           | Made the original model                             |
+| default0.0player                      | Made the semi automatic transmission                |
+| Dummiesman                            | Explained how to improve the jbeam / nodes          |
+| Raging Midget vs Gaming (twonklewonk) | Update 1.8                                          |
+| Subin                                 | Twin turbo 3D model                                 |
+| Revolution Racecraft                  | Allowed use of changes from an old project          |
+| DJS                                   | Suspensions 3D model                                |
+| SimonPlayzFromYT                      | Helped test the mod                                 |
+| danyk10                               | Tweaked and implemented semi automatic transmission |
+| JulianR32                             | Remade all the twin turbo pipes                     |
+| Nejc                                  | Provided multiple 3D models                         |
+| s2kd (Shawn Bragdon) | Optimized Lua code, fixed errors, reduced ZIP size  |
+| someone                               | Tire thickness and grip fix                         |
