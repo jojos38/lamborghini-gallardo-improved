@@ -284,8 +284,7 @@ local function shiftToGearIndex(index)
 	local desiredMode = automaticHandling.hShifterModeLookup[index]
 	if not desiredMode or not automaticHandling.existingModeLookup[desiredMode] then
 		if desiredMode and not automaticHandling.existingModeLookup[desiredMode] then
-			guihooks.message({ txt = "vehicle.drivetrain.cannotShiftAuto", context = { mode = desiredMode } }, 2,
-				"vehicle.shiftLogic.cannotShift")
+			guihooks.message({ txt = "vehicle.drivetrain.cannotShiftAuto", context = { mode = desiredMode } }, 2, "vehicle.shiftLogic.cannotShift")
 		end
 		desiredMode = "N"
 	end
@@ -389,11 +388,7 @@ local function updateInGearArcade(dt)
 				if (engine.ignitionCoef < 1 or (engine.idleAVStartOffset > 1 and M.throttle <= 0)) then
 					M.throttle = M.throttle
 				elseif engineAV < gearboxOutputAV * gearbox.gearRatios[gearIndex] * (1 - torqueConverterHandling.lockupAMTRevMargin) then
-					M.throttle = min(
-							max(
-								automaticHandling.amtRevMatchThrottle * revmatchmodifier +
-								automaticHandling.amtRevMatchMinThrottle * (1 - revmatchmodifier), M.throttle),
-							automaticHandling.amtRevMatchMaxThrottle)
+					M.throttle = min(max(automaticHandling.amtRevMatchThrottle * revmatchmodifier + automaticHandling.amtRevMatchMinThrottle * (1 - revmatchmodifier), M.throttle), automaticHandling.amtRevMatchMaxThrottle)
 				elseif engineAV > gearboxOutputAV * gearbox.gearRatios[gearIndex] * (1 + torqueConverterHandling.lockupAMTRevMargin) and engineAV > engine.idleAV * (1 + torqueConverterHandling.lockupAMTRevMargin) then
 					M.throttle = min(automaticHandling.amtIdleThrottle, M.throttle)
 					if (M.smoothedValues.drivingAggression > 0.75 and abs(gearIndex) > 1) and not (isSportMode or isManualMode) then
@@ -405,38 +400,22 @@ local function updateInGearArcade(dt)
 			elseif torqueConverterHandling.lockupAMTRevMargin > 0 and gearIndex >= torqueConverterHandling.lockupFullyMinGear and gearboxInputAV > engine.idleAV * (1 + torqueConverterHandling.lockupAMTRevMargin) then
 				lockupTarget = 1
 			elseif torqueConverterHandling.lockupAMTRevMargin > 0 then
-				lockupTarget = max(
-						clamp(
-							(max(engineAV, gearboxInputAV) - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) /
-							torqueConverterHandling.lockupRange, 0, 1),
-						clamp(
-							torqueConverterHandling.lockupAMTCreep -
-							max(M.brake, input.parkingbrake) * torqueConverterHandling.lockupAMTCreep /
-							torqueConverterHandling.lockupAMTBrakeThreshold, 0, torqueConverterHandling.lockupAMTCreep))
+				lockupTarget = max(clamp((max(engineAV, gearboxInputAV) - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) / torqueConverterHandling.lockupRange, 0, 1), clamp(torqueConverterHandling.lockupAMTCreep - max(M.brake, input.parkingbrake) * torqueConverterHandling.lockupAMTCreep / torqueConverterHandling.lockupAMTBrakeThreshold, 0, torqueConverterHandling.lockupAMTCreep))
 				if gearboxInputAV < -1 then
 					M.brake = max(M.brake, torqueConverterHandling.lockupAMTBrakeThreshold)
-					lockupTarget = clamp(
-							(max(engineAV, gearboxInputAV) - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) /
-							torqueConverterHandling.lockupRange, 0, 1)
+					lockupTarget = clamp((max(engineAV, gearboxInputAV) - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) / torqueConverterHandling.lockupRange, 0, 1)
 				end
 			elseif torqueConverterHandling.lockupIdleCoef > 0 and gearboxInputAV > engine.idleAV * torqueConverterHandling.lockupIdleCoef and M.brake <= 0.25 then
-				lockupTarget = clamp(
-						(gearboxOutputAV - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) /
-						torqueConverterHandling.lockupRange, 0, 1)
+				lockupTarget = clamp((gearboxOutputAV - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) / torqueConverterHandling.lockupRange, 0, 1)
 			elseif torqueConverterHandling.lockupFullyMinGear > 0 and gearIndex >= torqueConverterHandling.lockupFullyMinGear and gearboxInputAV > engine.idleAV and M.brake <= 0.25 then
 				lockupTarget = 1
 			elseif torqueConverterHandling.lockupMinGear > 0 and gearIndex >= torqueConverterHandling.lockupMinGear and M.brake <= 0.2 and (not gearbox.isShifting or isSportMode) then
-				lockupTarget = clamp(
-						(gearboxInputAV - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) /
-						torqueConverterHandling.lockupRange, 0, 1)
+				lockupTarget = clamp((gearboxInputAV - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) / torqueConverterHandling.lockupRange, 0, 1)
 			elseif torqueConverterHandling.lockupMinGear > 0 and gearIndex >= torqueConverterHandling.lockupMinGear and M.brake <= 0.2 and gearbox.isShifting then
-				lockupTarget = clamp(
-						clamp(0.5 - M.smoothedValues.drivingAggression, 0, 0.5) *
-						((gearboxInputAV - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) / torqueConverterHandling.lockupRange),
-						0, 0.5)
+				lockupTarget = clamp(clamp(0.5 - M.smoothedValues.drivingAggression, 0, 0.5) * ((gearboxInputAV - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) / torqueConverterHandling.lockupRange), 0, 0.5)
 			end
 		end
-		--mod lockup logic
+		-- mod lockup logic
 		electrics.values.lockupClutchRatio = torqueConverterHandling.lockupSmoother:getUncapped(lockupTarget, dt)
 	end
 
@@ -573,11 +552,7 @@ local function updateInGear(dt)
 						M.throttle = min(max(automaticHandling.amtRevMatchThrottle, M.throttle),
 								automaticHandling.amtRevMatchMaxThrottle)
 					else
-						M.throttle = min(
-								max(
-									automaticHandling.amtRevMatchThrottle * revmatchmodifier +
-									automaticHandling.amtRevMatchMinThrottle * (1 - revmatchmodifier), M.throttle),
-								automaticHandling.amtRevMatchMaxThrottle)
+						M.throttle = min(max(automaticHandling.amtRevMatchThrottle * revmatchmodifier + automaticHandling.amtRevMatchMinThrottle * (1 - revmatchmodifier), M.throttle), automaticHandling.amtRevMatchMaxThrottle)
 					end
 				elseif engineAV > gearboxOutputAV * gearbox.gearRatios[gearIndex] * (1 + torqueConverterHandling.lockupAMTRevMargin) and engineAV > engine.idleAV * (1 + torqueConverterHandling.lockupAMTRevMargin) then
 					M.throttle = min(automaticHandling.amtIdleThrottle, M.throttle)
@@ -590,43 +565,26 @@ local function updateInGear(dt)
 			elseif torqueConverterHandling.lockupAMTRevMargin > 0 and gearIndex >= torqueConverterHandling.lockupFullyMinGear and gearboxInputAV > engine.idleAV * (1 + torqueConverterHandling.lockupAMTRevMargin) then
 				lockupTarget = 1
 			elseif torqueConverterHandling.lockupAMTRevMargin > 0 then
-				lockupTarget = max(
-						clamp(
-							(max(engineAV, gearboxInputAV) - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) /
-							torqueConverterHandling.lockupRange, 0, 1),
-						clamp(
-							torqueConverterHandling.lockupAMTCreep -
-							max(M.brake, input.parkingbrake) * torqueConverterHandling.lockupAMTCreep /
-							torqueConverterHandling.lockupAMTBrakeThreshold, 0, torqueConverterHandling.lockupAMTCreep))
+				lockupTarget = max(clamp((max(engineAV, gearboxInputAV) - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) / torqueConverterHandling.lockupRange, 0, 1), clamp(torqueConverterHandling.lockupAMTCreep - max(M.brake, input.parkingbrake) * torqueConverterHandling.lockupAMTCreep / torqueConverterHandling.lockupAMTBrakeThreshold, 0, torqueConverterHandling.lockupAMTCreep))
 				if gearboxInputAV < -1 then
 					M.brake = max(M.brake, torqueConverterHandling.lockupAMTBrakeThreshold - input.parkingbrake)
-					lockupTarget = clamp(
-							(max(engineAV, gearboxInputAV) - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) /
-							torqueConverterHandling.lockupRange, 0, 1)
+					lockupTarget = clamp((max(engineAV, gearboxInputAV) - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) / torqueConverterHandling.lockupRange, 0, 1)
 				end
 			elseif torqueConverterHandling.lockupIdleCoef > 0 and gearboxInputAV > engine.idleAV * torqueConverterHandling.lockupIdleCoef and M.brake <= 0.25 then
-				lockupTarget = clamp(
-						(gearboxOutputAV - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) /
-						torqueConverterHandling.lockupRange, 0, 1)
+				lockupTarget = clamp((gearboxOutputAV - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) / torqueConverterHandling.lockupRange, 0, 1)
 			elseif torqueConverterHandling.lockupFullyMinGear > 0 and gearIndex >= torqueConverterHandling.lockupFullyMinGear and gearboxInputAV > engine.idleAV and M.brake <= 0.25 then
 				lockupTarget = 1
 			elseif torqueConverterHandling.lockupMinGear > 0 and gearIndex >= torqueConverterHandling.lockupMinGear and M.brake <= 0.2 and (not gearbox.isShifting or isSportMode) then
-				lockupTarget = clamp(
-						(gearboxInputAV - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) /
-						torqueConverterHandling.lockupRange, 0, 1)
+				lockupTarget = clamp((gearboxInputAV - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) / torqueConverterHandling.lockupRange, 0, 1)
 			elseif torqueConverterHandling.lockupMinGear > 0 and gearIndex >= torqueConverterHandling.lockupMinGear and M.brake <= 0.2 and gearbox.isShifting then
-				lockupTarget = clamp(
-						clamp(0.5 - M.smoothedValues.drivingAggression, 0, 0.5) *
-						((gearboxInputAV - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) / torqueConverterHandling.lockupRange),
-						0, 0.5)
+				lockupTarget = clamp(clamp(0.5 - M.smoothedValues.drivingAggression, 0, 0.5) * ((gearboxInputAV - torqueConverterHandling.lockupThrottleRange * clamp(M.throttle / (torqueConverterHandling.lockupDelayMaxThrottle - torqueConverterHandling.lockupDelayMinThrottle) + torqueConverterHandling.lockupDelayMinThrottle / (torqueConverterHandling.lockupDelayMinThrottle - torqueConverterHandling.lockupDelayMaxThrottle), 0, 1) - torqueConverterHandling.lockupAV) / torqueConverterHandling.lockupRange), 0, 0.5)
 			end
 		end
-		--mod lockup logic
+		-- mod lockup logic
 		electrics.values.lockupClutchRatio = torqueConverterHandling.lockupSmoother:getUncapped(lockupTarget, dt)
 	end
 
-	M.throttle = (gearbox.isShiftingUp and not isSportMode) and
-		min(M.throttle, automaticHandling.throttleCoefWhileShifting) or M.throttle
+	M.throttle = (gearbox.isShiftingUp and not isSportMode) and min(M.throttle, automaticHandling.throttleCoefWhileShifting) or M.throttle
 
 	if gearbox.gearIndex ~= gearIndex then
 		newDesiredGearIndex = gearIndex
@@ -649,12 +607,9 @@ local function updateWhileShifting()
 	M.brake = M.inputValues.brake
 	M.isArcadeSwitched = false
 
-	local gearChangeTime = min(
-			max(
-				automaticHandling.gearChangeTimeRange * (M.smoothedValues.drivingAggression - 0.5) * 2 +
-				automaticHandling.maxGearChangeTime, automaticHandling.minGearChangeTime),
-			automaticHandling.maxGearChangeTime)
+	local gearChangeTime = min(max(automaticHandling.gearChangeTimeRange * (M.smoothedValues.drivingAggression - 0.5) * 2 + automaticHandling.maxGearChangeTime, automaticHandling.minGearChangeTime), automaticHandling.maxGearChangeTime)
 	local autoMode = string.sub(automaticHandling.mode, 1, 1)
+	
 	if (autoMode == "S" or autoMode == "M") then
 		if abs(newDesiredGearIndex) > 1 and abs(newDesiredGearIndex) > abs(gearbox.gearIndex) and M.throttle > 0 then
 			engine:cutIgnition(automaticHandling.sportGearChangeTime * 0.5)
@@ -663,10 +618,13 @@ local function updateWhileShifting()
 			M.throttle = 1
 		end
 	end
+	
 	gearbox:setGearIndex(newDesiredGearIndex, gearChangeTime)
 	newDesiredGearIndex = 0
+	
 	M.timer.gearChangeDelayTimer = M.timerConstants.gearChangeDelay
 	M.updateGearboxGFX = gearboxLogic.inGear
+	
 	updateExposedData()
 end
 
@@ -744,29 +702,22 @@ local function init(jbeamData, sharedFunctionTable)
 	if torqueConverter then
 		torqueConverterHandling.hasTorqueConverter = true
 		torqueConverterHandling.lockupAV = (jbeamData.torqueConverterLockupRPM or 0) * constants.rpmToAV
-		torqueConverterHandling.lockupRange = (jbeamData.torqueConverterLockupRange or (torqueConverterHandling.lockupAV * 0.2 * constants.avToRPM)) *
-			constants.rpmToAV
-		torqueConverterHandling.lockupThrottleRange = (jbeamData.torqueConverterThrottleLockupRange or 0) *
-			constants.rpmToAV
-		--mod delay torqueConverterLockup with throttle application
-		torqueConverterHandling.lockupDelayMinThrottle = jbeamData.torqueConverterDelayLockupMinThrottle or 0
-		--mod no lockup delay below this throttle value
-		torqueConverterHandling.lockupDelayMaxThrottle = jbeamData.torqueConverterDelayLockupMaxThrottle or 1
-		--mod max lockup delay above this throttle value
+		torqueConverterHandling.lockupRange = (jbeamData.torqueConverterLockupRange or (torqueConverterHandling.lockupAV * 0.2 * constants.avToRPM)) * constants.rpmToAV
+		torqueConverterHandling.lockupThrottleRange = (jbeamData.torqueConverterThrottleLockupRange or 0) * constants.rpmToAV --mod delay torqueConverterLockup with throttle application
+		torqueConverterHandling.lockupDelayMinThrottle = jbeamData.torqueConverterDelayLockupMinThrottle or 0 --mod no lockup delay below this throttle value
+		torqueConverterHandling.lockupDelayMaxThrottle = jbeamData.torqueConverterDelayLockupMaxThrottle or 1 --mod max lockup delay above this throttle value
 		torqueConverterHandling.lockupMinGear = jbeamData.torqueConverterLockupMinGear or 0
-		torqueConverterHandling.lockupFullyMinGear = jbeamData.torqueConverterLockupFullyMinGear or
-			0 --mod overdrive always lock TC
+		torqueConverterHandling.lockupFullyMinGear = jbeamData.torqueConverterLockupFullyMinGear or 0 --mod overdrive always lock TC
 		torqueConverterHandling.hasLockup = torqueConverterHandling.lockupAV > 0
-		torqueConverterHandling.lockupIdleCoef = jbeamData.torqueConverterlockupIdleCoef or
-			0 --mod output speed lock stall prevention
-		torqueConverterHandling.lockupAMTRevMargin = jbeamData.torqueConverterAMTRevMargin or
-			0 --mod AMT rev match margin
+		torqueConverterHandling.lockupIdleCoef = jbeamData.torqueConverterlockupIdleCoef or 0 --mod output speed lock stall prevention
+		torqueConverterHandling.lockupAMTRevMargin = jbeamData.torqueConverterAMTRevMargin or 0 --mod AMT rev match margin
 		torqueConverterHandling.lockupAMTCreep = jbeamData.torqueConverterAMTCreep or 0 --mod AMT idle creep
-		torqueConverterHandling.lockupAMTBrakeThreshold = jbeamData.torqueConverterAMTBrakeThreshold or
-			0.01 --mod AMT this amount of brake disable idle creep
+		torqueConverterHandling.lockupAMTBrakeThreshold = jbeamData.torqueConverterAMTBrakeThreshold or 0.01 --mod AMT this amount of brake disable idle creep
+		
 		local lockupRate = jbeamData.torqueConverterLockupRate or 5
 		local lockupInRate = jbeamData.torqueConverterLockupInRate or lockupRate * 2
 		local lockupOutRate = jbeamData.torqueConverterLockupOutRate or lockupRate
+
 		torqueConverterHandling.lockupSmoother = newTemporalSmoothing(lockupInRate, lockupOutRate)
 	end
 
@@ -798,8 +749,7 @@ local function init(jbeamData, sharedFunctionTable)
 	automaticHandling.throttleCoefWhileShifting = jbeamData.throttleCoefWhileShifting or 1
 	automaticHandling.amtIdleThrottle = jbeamData.amtIdleThrottle or 0.01 --mod AMT upshift throttle cut
 	automaticHandling.amtRevMatchThrottle = jbeamData.amtRevMatchThrottle or 0.5 --mod AMT downshift rev match
-	automaticHandling.amtRevMatchMinThrottle = jbeamData.amtRevMatchMinThrottle or
-		automaticHandling.amtRevMatchThrottle --mod AMT downshift rev match
+	automaticHandling.amtRevMatchMinThrottle = jbeamData.amtRevMatchMinThrottle or automaticHandling.amtRevMatchThrottle --mod AMT downshift rev match
 	automaticHandling.amtRevMatchMaxThrottle = jbeamData.amtRevMatchMaxThrottle or 1 --mod AMT downshift rev match
 	M.maxRPM = engine.maxRPM
 	M.idleRPM = engine.idleRPM
