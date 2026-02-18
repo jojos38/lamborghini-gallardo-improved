@@ -1,21 +1,8 @@
-# Lamborghini Gallardo 1.28
+# Lamborghini Gallardo for BeamNG.drive
 
-Originally created by [Tsutarja495](https://www.beamng.com/members/tsutarja495.52856/), this mod was updated by [jojos38](https://beamng.com/members/jojos38.31610/)
+Originally created by [Tsutarja495](https://www.beamng.com/members/52856/), this mod was updated by [jojos38](https://beamng.com/members/31610/)
 
-Forum thread: https://www.beamng.com/threads/improved-lamborghini-gallardo-v1-27.80412/
-
-## How to format the files
-
-Simply format the `jbeam` into `cjson` and the `cs` into `torquescript` on Visual Studio Code
-
-```json
-{
-    "files.associations": {
-        "*.jbeam": "cjson",
-        "*.cs": "torquescript"
-    }
-}
-```
+Forum thread: https://www.beamng.com/threads/80412/
 
 ## Media
 
