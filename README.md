@@ -1,21 +1,8 @@
-# Lamborghini Gallardo 1.28
+# Lamborghini Gallardo for BeamNG.drive
 
-Originally created by [Tsutarja495](https://www.beamng.com/members/tsutarja495.52856/), this mod was updated by [jojos38](https://beamng.com/members/jojos38.31610/)
+Originally created by [Tsutarja495](https://www.beamng.com/members/52856/), this mod was updated by [jojos38](https://beamng.com/members/31610/)
 
-Forum thread: https://www.beamng.com/threads/improved-lamborghini-gallardo-v1-27.80412/
-
-## How to format the files
-
-Simply format the `jbeam` into `cjson` and the `cs` into `torquescript` on Visual Studio Code
-
-```json
-{
-    "files.associations": {
-        "*.jbeam": "cjson",
-        "*.cs": "torquescript"
-    }
-}
-```
+Forum thread: https://www.beamng.com/threads/80412/
 
 ## Media
 
@@ -26,18 +13,18 @@ Simply format the `jbeam` into `cjson` and the `cs` into `torquescript` on Visua
 
 ## Credits
 
-| Contributor                           | Contribution                                        |
-| ------------------------------------- | --------------------------------------------------- |
-| Tsutarja495                           | Made the original model                             |
-| default0.0player                      | Made the semi automatic transmission                |
-| Dummiesman                            | Explained how to improve the jbeam / nodes          |
-| Raging Midget vs Gaming (twonklewonk) | Update 1.8                                          |
-| Subin                                 | Twin turbo 3D model                                 |
-| Revolution Racecraft                  | Allowed use of changes from an old project          |
-| DJS                                   | Suspensions 3D model                                |
-| SimonPlayzFromYT                      | Helped test the mod                                 |
-| danyk10                               | Tweaked and implemented semi automatic transmission |
-| JulianR32                             | Remade all the twin turbo pipes                     |
-| Nejc                                  | Provided multiple 3D models                         |
-| s2kd (Shawn Bragdon) | Optimized Lua code, fixed errors, reduced ZIP size  |
-| someone                               | Tire thickness and grip fix                         |
+| Contributor                             | Contribution                                        |
+| --------------------------------------- | --------------------------------------------------- |
+| Tsutarja495                             | Made the original model                             |
+| default0.0player                        | Made the semi automatic transmission                |
+| Dummiesman                              | Explained how to improve the jbeam / nodes          |
+| Raging Midget vs Gaming (twonklewonk)   | Update 1.8                                          |
+| Subin                                   | Twin turbo 3D model                                 |
+| Revolution Racecraft                    | Allowed use of changes from an old project          |
+| DJS                                     | Suspensions 3D model                                |
+| SimonPlayzFromYT                        | Helped test the mod                                 |
+| danyk10                                 | Tweaked and implemented semi automatic transmission |
+| JulianR32                               | Remade all the twin turbo pipes                     |
+| Nejc                                    | Provided multiple 3D models                         |
+| [krumzoid](https://github.com/krumzoid) | General optimizations                               |
+| someone                                 | Tire thickness and grip fix                         |

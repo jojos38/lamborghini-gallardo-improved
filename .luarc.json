@@ -1,0 +1,9 @@
+{
+    "diagnostics.disable": [
+        "undefined-global", 
+        "undefined-field", 
+        "need-check-nil", 
+        "param-type-mismatch"
+    ],
+    "runtime.version": "LuaJIT"
+}
