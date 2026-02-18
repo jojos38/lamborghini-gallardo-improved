@@ -26,18 +26,18 @@ Simply format the `jbeam` into `cjson` and the `cs` into `torquescript` on Visua
 
 ## Credits
 
-| Contributor                           | Contribution                                        |
-| ------------------------------------- | --------------------------------------------------- |
-| Tsutarja495                           | Made the original model                             |
-| default0.0player                      | Made the semi automatic transmission                |
-| Dummiesman                            | Explained how to improve the jbeam / nodes          |
-| Raging Midget vs Gaming (twonklewonk) | Update 1.8                                          |
-| Subin                                 | Twin turbo 3D model                                 |
-| Revolution Racecraft                  | Allowed use of changes from an old project          |
-| DJS                                   | Suspensions 3D model                                |
-| SimonPlayzFromYT                      | Helped test the mod                                 |
-| danyk10                               | Tweaked and implemented semi automatic transmission |
-| JulianR32                             | Remade all the twin turbo pipes                     |
-| Nejc                                  | Provided multiple 3D models                         |
-| s2kd (Shawn Bragdon) | Optimized Lua code, fixed errors, reduced ZIP size  |
-| someone                               | Tire thickness and grip fix                         |
+| Contributor                             | Contribution                                        |
+| --------------------------------------- | --------------------------------------------------- |
+| Tsutarja495                             | Made the original model                             |
+| default0.0player                        | Made the semi automatic transmission                |
+| Dummiesman                              | Explained how to improve the jbeam / nodes          |
+| Raging Midget vs Gaming (twonklewonk)   | Update 1.8                                          |
+| Subin                                   | Twin turbo 3D model                                 |
+| Revolution Racecraft                    | Allowed use of changes from an old project          |
+| DJS                                     | Suspensions 3D model                                |
+| SimonPlayzFromYT                        | Helped test the mod                                 |
+| danyk10                                 | Tweaked and implemented semi automatic transmission |
+| JulianR32                               | Remade all the twin turbo pipes                     |
+| Nejc                                    | Provided multiple 3D models                         |
+| [krumzoid](https://github.com/krumzoid) | General optimizations                               |
+| someone                                 | Tire thickness and grip fix                         |
